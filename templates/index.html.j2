@@ -1,0 +1,168 @@
+{% extends "base.html.j2" %}
+{% set main_id = "top" %}
+{% block content %}
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="hero-banner">
+            <strong>{{ page.hero.banner.label[lang] }}</strong>
+            <span>{{ page.hero.banner.text[lang] }}</span>
+            <a href="{{ page_href('bootcamp') }}">{{ page.hero.banner.link_text[lang] }}</a>
+          </p>
+          <p class="eyebrow">{{ page.hero.eyebrow[lang] }}</p>
+          <h1>{{ page.hero.title[lang] | mark }}</h1>
+          <p class="lead">{{ page.hero.lead[lang] }}</p>
+          <div class="hero-actions">
+            <a class="button" href="{{ t(page.hero.primary_cta.url) }}">{{ page.hero.primary_cta.label[lang] }}</a>
+            <a class="button button-secondary" href="{{ page_href(page.hero.secondary_cta.page) }}">{{ page.hero.secondary_cta.label[lang] }}</a>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-label="{{ page.hero.image.caption[lang] }}">
+          <img src="{{ asset(page.hero.image.src) }}" alt="{{ page.hero.image.alt[lang] }}" />
+        </div>
+      </section>
+
+      <section class="stats section-shell" aria-label="{{ page.stats.aria[lang] }}">
+        {%- for stat in page.stats['items'] %}
+        <article>
+          <strong>{{ stat.value }}</strong>
+          <span>{{ stat.label[lang] }}</span>
+        </article>
+        {%- endfor %}
+      </section>
+
+      <section class="intro section-shell">
+        <div>
+          <p class="eyebrow">{{ page.intro.eyebrow[lang] }}</p>
+          <h2>{{ page.intro.title[lang] | mark }}</h2>
+        </div>
+        <div class="text-stack">
+          <p>{{ page.intro.body[lang] }}</p>
+        </div>
+      </section>
+
+      <section class="section-shell" id="{{ anchor('programme') }}">
+        <div class="section-heading">
+          <p class="eyebrow">{{ page.programme.eyebrow[lang] }}</p>
+          <h2>{{ page.programme.title[lang] | mark }}</h2>
+        </div>
+        <ol class="program-list">
+          {%- for item in page.programme['items'] %}
+          <li>
+            <h3>{{ item.title[lang] }}</h3>
+            <p>{{ item.body[lang] }}</p>
+          </li>
+          {%- endfor %}
+        </ol>
+      </section>
+
+      <section class="bootcamp section-shell" id="{{ anchor('bootcamp') }}">
+        <div class="image-collage">
+          <img class="image-large" src="{{ asset(page.bootcamp.image_large.src) }}" alt="{{ page.bootcamp.image_large.alt[lang] }}" />
+          <img class="image-small" src="{{ asset(page.bootcamp.image_small.src) }}" alt="{{ page.bootcamp.image_small.alt[lang] }}" />
+        </div>
+        <div class="bootcamp-copy">
+          <p class="eyebrow">{{ page.bootcamp.eyebrow[lang] }}</p>
+          <h2>{{ page.bootcamp.title[lang] | mark }}</h2>
+          <p>{{ page.bootcamp.body[lang] }}</p>
+          <dl class="details">
+            {%- for d in page.bootcamp.details %}
+            <div>
+              <dt>{{ d.term[lang] }}</dt>
+              <dd>{{ d.definition[lang] }}</dd>
+            </div>
+            {%- endfor %}
+          </dl>
+          <a class="button" href="{{ page_href(page.bootcamp.cta.page) }}">{{ page.bootcamp.cta.label[lang] }}</a>
+        </div>
+      </section>
+
+      <span class="divider-dots" aria-hidden="true"></span>
+
+      <section class="section-shell" id="{{ anchor('engagement') }}">
+        <div class="section-heading">
+          <p class="eyebrow">{{ page.engagement.eyebrow[lang] }}</p>
+          <h2>{{ page.engagement.title[lang] | mark }}</h2>
+        </div>
+        <div class="bento">
+          {%- for tile in page.engagement.tiles %}
+          <article class="bento-tile {{ tile.classes }}">
+            <div>
+              <p class="eyebrow"{% if tile.get('eyebrow_inverted') %} style="color: rgba(255, 255, 255, 0.72);"{% endif %}>{{ tile.eyebrow[lang] }}</p>
+              <h3>{{ tile.title[lang] }}</h3>
+              {%- if tile.get('body') %}
+              <p>{{ tile.body[lang] }}</p>
+              {%- endif %}
+            </div>
+            <a class="tile-link" href="{{ page_href(tile.link.page, anchor_key=tile.link.get('anchor_key')) }}">{{ tile.link.label[lang] }}</a>
+          </article>
+          {%- endfor %}
+        </div>
+      </section>
+
+      <section class="section-shell partners">
+        <div class="section-heading">
+          <p class="eyebrow">{{ page.partner_quote.eyebrow[lang] }}</p>
+          <h2>{{ page.partner_quote.title[lang] }}</h2>
+        </div>
+        <blockquote class="quote">
+          <p>{{ page.partner_quote.quote[lang] }}</p>
+          <footer>{{ page.partner_quote.attribution }}</footer>
+        </blockquote>
+        <p class="partners-cta">
+          {{ page.partner_quote.cta_text[lang] }}
+          <a href="{{ page_href(page.partner_quote.cta_link.page) }}">{{ page.partner_quote.cta_link.label[lang] }}</a>
+        </p>
+      </section>
+
+      <section class="team-section section-shell" id="{{ anchor('team') }}">
+        <div class="section-heading">
+          <p class="eyebrow">{{ page.team_preview.eyebrow[lang] }}</p>
+          <h2>{{ page.team_preview.title[lang] }}</h2>
+        </div>
+        <div class="team-grid">
+          {%- for member in team_preview_members %}
+          <article class="team-card">
+            <img src="{{ asset(member.image) }}" alt="{{ member.name }}" />
+            <h3>{{ member.name }}</h3>
+            <p>{{ member.role[lang] }}</p>
+          </article>
+          {%- endfor %}
+          <a class="team-card team-cta-card" href="{{ page_href(page.team_preview.cta.page) }}" aria-label="{{ page.team_preview.cta.aria[lang] }}">
+            <h3>{{ page.team_preview.cta.label_h3[lang] }}</h3>
+            <p>{{ page.team_preview.cta.label_body[lang] }}</p>
+            <strong>{{ page.team_preview.cta.label_link[lang] }}</strong>
+          </a>
+        </div>
+      </section>
+
+      <section class="news-contact section-shell" id="{{ anchor('contact') }}">
+        <div class="event-card">
+          <p class="eyebrow">{{ page.news_contact.news.eyebrow[lang] }}</p>
+          <h2>{{ page.news_contact.news.title[lang] }}</h2>
+          <p>{{ page.news_contact.news.body[lang] }}</p>
+          <a class="inline-link" href="{{ page_href(page.news_contact.news.cta.page) }}">{{ page.news_contact.news.cta.label[lang] }}</a>
+        </div>
+        <div class="contact-card">
+          <p class="eyebrow">{{ page.news_contact.contact.eyebrow[lang] }}</p>
+          <h2>{{ page.news_contact.contact.title[lang] }}</h2>
+          <a href="mailto:{{ site.footer.email }}">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3 7 9 6 9-6" />
+            </svg>
+            <span>{{ site.footer.email }}</span>
+          </a>
+          <a href="{{ site.footer.instagram.url }}">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+            <span>@projectaccess.at</span>
+          </a>
+        </div>
+      </section>
+
+      {% include "_partials/press.html.j2" %}
+{% endblock %}

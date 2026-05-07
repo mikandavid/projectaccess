@@ -1,0 +1,222 @@
+{
+  "meta": {
+    "title": {
+      "de": "Bootcamp 2026 — Project Access Austria",
+      "en": "Bootcamp 2026 — Project Access Austria"
+    },
+    "description": {
+      "de": "Alle Details zum kostenlosen Project Access Austria Bootcamp 2026 in Horn: Termine, Inhalte, Teilnahme, Kosten und FAQs.",
+      "en": "Details on the free Project Access Austria bootcamp 2026 in Horn: dates, content, participation, costs and FAQs."
+    }
+  },
+  "header_cta": {
+    "url": "https://projectaccess.org/join-our-program",
+    "label": { "de": "Kostenlos starten", "en": "Apply for free" }
+  },
+  "hero": {
+    "eyebrow": { "de": "Bootcamp 2026", "en": "Bootcamp 2026" },
+    "title": {
+      "de": "Bootcamp für internationale **Bewerbungen**.",
+      "en": "Bootcamp for international **applications**."
+    },
+    "lead": {
+      "de": "Rund 40 Schüler:innen und Studierende aus Österreich und Südtirol arbeiten an ihren Bewerbungen — mit Admissions Officers, Studierenden und Alumni internationaler Universitäten. Kostenlos.",
+      "en": "Around 40 students from Austria and South Tyrol work on their applications with admissions officers, students and alumni of international universities. Free of charge."
+    },
+    "primary_cta": {
+      "url": "https://projectaccess.org/join-our-program",
+      "label": { "de": "Zur Anmeldung", "en": "Apply" }
+    },
+    "secondary_cta": {
+      "url": {
+        "de": "mailto:austria@projectaccess.org?subject=Frage%20zum%20Bootcamp",
+        "en": "mailto:austria@projectaccess.org?subject=Bootcamp%20question"
+      },
+      "label": { "de": "Fragen stellen", "en": "Ask a question" }
+    },
+    "image": {
+      "src": "assets/DSC_6695.jpg",
+      "alt": {
+        "de": "Teilnehmende beim Project Access Austria Bootcamp 2025",
+        "en": "Participants at the Project Access Austria bootcamp 2025"
+      }
+    }
+  },
+  "details": [
+    {
+      "term": { "de": "Datum", "en": "Date" },
+      "definition": { "de": "23.–26. Juli 2026", "en": "23–26 July 2026" }
+    },
+    {
+      "term": { "de": "Ort", "en": "Location" },
+      "definition": { "de": "Horn, Niederösterreich", "en": "Horn, Lower Austria" }
+    },
+    {
+      "term": { "de": "Kosten", "en": "Cost" },
+      "definition": {
+        "de": "Gratis inkl. Unterkunft & Verpflegung",
+        "en": "Free, including accommodation and meals"
+      }
+    },
+    {
+      "term": { "de": "Teilnahme", "en": "Participation" },
+      "definition": {
+        "de": "~40 Plätze · Bachelor, Master, PhD",
+        "en": "~40 places · bachelor, master, PhD"
+      }
+    }
+  ],
+  "about": {
+    "eyebrow": { "de": "Worum es geht", "en": "About the bootcamp" },
+    "title": {
+      "de": "Inhalte und Ablauf.",
+      "en": "Programme and structure."
+    },
+    "body": {
+      "de": "Vier Tage in kleinen Gruppen: Studienwahl, Essay, Interview und Finanzierung. Ein fertiger Bewerbungsplan ist nicht nötig — das Bootcamp hilft besonders, wenn du noch herausfindest, welche Universitäten passen und wie eine Bewerbung aufgebaut sein sollte.",
+      "en": "Four days in small groups: course choice, essays, interviews and funding. You don't need a finished plan — the bootcamp is particularly useful when you are still figuring out which universities fit and how an application is structured."
+    }
+  },
+  "topics": {
+    "eyebrow": { "de": "Inhalte", "en": "Topics" },
+    "title": {
+      "de": "Schwerpunkte.",
+      "en": "Focus areas."
+    },
+    "items": [
+      {
+        "de": "Studienwahl und realistische Bewerbungsstrategie",
+        "en": "Choice of studies and a realistic application strategy"
+      },
+      {
+        "de": "Personal Statement, Common App Essay, fachspezifische Unterlagen",
+        "en": "Personal statement, Common App essay, subject-specific materials"
+      },
+      {
+        "de": "Interviewvorbereitung mit konkretem Feedback",
+        "en": "Interview preparation with detailed feedback"
+      },
+      {
+        "de": "Finanzierung, Stipendien und Lebenshaltungskosten im Ausland",
+        "en": "Funding, scholarships and living costs abroad"
+      },
+      {
+        "de": "Bewerbungsfristen und ein realistischer Zeitplan",
+        "en": "Application deadlines and a realistic timeline"
+      },
+      {
+        "de": "Austausch mit anderen Bewerber:innen aus Österreich und Südtirol",
+        "en": "Exchange with other applicants from Austria and South Tyrol"
+      }
+    ]
+  },
+  "image_band": {
+    "aria": {
+      "de": "Eindrücke vom Bootcamp",
+      "en": "Impressions from the bootcamp"
+    },
+    "images": [
+      {
+        "src": "assets/Website_1.jpg",
+        "alt": {
+          "de": "Workshop beim Project Access Austria Bootcamp",
+          "en": "Workshop at the Project Access Austria bootcamp"
+        }
+      },
+      {
+        "src": "assets/DSC07694.jpg",
+        "alt": {
+          "de": "Teilnehmende bei einer Gruppenarbeit",
+          "en": "Participants during group work"
+        }
+      },
+      {
+        "src": "assets/DSC_7265.jpg",
+        "alt": {
+          "de": "Bootcamp-Teilnehmende in Horn",
+          "en": "Bootcamp participants in Horn"
+        }
+      }
+    ]
+  },
+  "audience": {
+    "eyebrow": { "de": "Zielgruppe", "en": "Who can apply" },
+    "title": {
+      "de": "Wer teilnehmen kann.",
+      "en": "Who can take part."
+    },
+    "body": {
+      "de": "Schüler:innen und Studierende aus Österreich oder Südtirol, die ein Bachelor-, Master- oder PhD-Studium an einer internationalen Universität in Erwägung ziehen. Vorrang für Bewerber:innen mit weniger Zugang zu privater Beratung, internationalen Schulnetzwerken oder familiärer Erfahrung mit Auslandsstudien.",
+      "en": "Students from Austria or South Tyrol considering a bachelor, master or PhD programme at an international university. Priority for applicants with less access to private guidance, international school networks or family experience of studying abroad."
+    }
+  },
+  "faq": {
+    "eyebrow": { "de": "FAQ", "en": "FAQ" },
+    "title": {
+      "de": "Häufige Fragen.",
+      "en": "Frequently asked questions."
+    },
+    "items": [
+      {
+        "question": {
+          "de": "Muss ich schon wissen, wo ich mich bewerben will?",
+          "en": "Do I need to know where I want to apply?"
+        },
+        "answer": {
+          "de": "Nein. Das Bootcamp hilft auch bei Orientierung und Studienwahl.",
+          "en": "No. The bootcamp also helps with orientation and choosing a course."
+        }
+      },
+      {
+        "question": {
+          "de": "Kostet die Teilnahme etwas?",
+          "en": "Is there a participation fee?"
+        },
+        "answer": {
+          "de": "Nein. Unterkunft und Verpflegung sind frei. Reisekosten unterstützen wir auf Anfrage.",
+          "en": "No. Accommodation and meals are free. Travel costs can be supported on request."
+        }
+      },
+      {
+        "question": {
+          "de": "Master oder PhD?",
+          "en": "Master or PhD?"
+        },
+        "answer": {
+          "de": "Ja. Bachelor-, Master- und PhD-Interessierte sind willkommen.",
+          "en": "Yes. Bachelor, master and PhD applicants are welcome."
+        }
+      },
+      {
+        "question": {
+          "de": "Bekomme ich automatisch eine:n Mentor:in?",
+          "en": "Do I automatically get a mentor?"
+        },
+        "answer": {
+          "de": "Nein. Mentoring läuft über das internationale Project Access Programm und ist separat zum Bootcamp.",
+          "en": "No. Mentoring runs through the international Project Access programme and is separate from the bootcamp."
+        }
+      },
+      {
+        "question": {
+          "de": "Auslandssemester?",
+          "en": "Exchange semester?"
+        },
+        "answer": {
+          "de": "Nein. Das Bootcamp ist auf reguläre Studiengänge im Ausland ausgelegt, nicht auf Austausch.",
+          "en": "No. The bootcamp is aimed at full degree programmes abroad, not exchange semesters."
+        }
+      },
+      {
+        "question": {
+          "de": "Wann soll ich mich bewerben?",
+          "en": "When should I apply?"
+        },
+        "answer": {
+          "de": "So früh wie möglich. Plätze sind begrenzt und werden laufend vergeben.",
+          "en": "As early as possible. Places are limited and assigned on a rolling basis."
+        }
+      }
+    ]
+  }
+}

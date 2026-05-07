@@ -1,0 +1,8 @@
+      <section class="press section-shell">
+        <p class="eyebrow">{{ site.press.eyebrow[lang] }}</p>
+        <ul class="press-list">
+          {%- for item in site.press['items'] %}
+          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+          {%- endfor %}
+        </ul>
+      </section>

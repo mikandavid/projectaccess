@@ -1,0 +1,15 @@
+    <footer class="footer">
+      <div>
+        <strong>{{ site.footer.name }}</strong>
+        <p>{{ site.footer.subtitle[lang] }}</p>
+        <p>{{ site.footer.legal_prefix[lang] }}<a href="mailto:{{ site.footer.email }}">{{ site.footer.email }}</a></p>
+      </div>
+      <div>
+        <p>{{ site.footer.address[lang] }}</p>
+        <p>
+          <a href="{{ site.footer.international.url }}">{{ site.footer.international.label }}</a>
+          ·
+          <a href="{{ site.footer.instagram.url }}">{{ site.footer.instagram.label }}</a>
+        </p>
+      </div>
+    </footer>

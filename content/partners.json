@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "title": {
+      "de": "Partner:innen — Project Access Austria",
+      "en": "Partners — Project Access Austria"
+    },
+    "description": {
+      "de": "Schulen, Unternehmen, Stiftungen und private Unterstützer:innen helfen Project Access Austria, kostenlose Programme, Bootcamps und Schulpartnerschaften möglich zu machen.",
+      "en": "Schools, companies, foundations and private supporters help Project Access Austria run free programmes, bootcamps and school partnerships."
+    }
+  },
+  "header_cta": {
+    "url": {
+      "de": "mailto:austria@projectaccess.org?subject=Partnerschaft%20mit%20PA%20Austria",
+      "en": "mailto:austria@projectaccess.org?subject=Partnership%20with%20PA%20Austria"
+    },
+    "label": { "de": "Partner:in werden", "en": "Become a partner" }
+  },
+  "hero": {
+    "eyebrow": { "de": "Partner:innen", "en": "Partners" },
+    "title": {
+      "de": "**Partner:innen** ermöglichen kostenlose Programme.",
+      "en": "**Partners** make our free programmes possible."
+    },
+    "lead": {
+      "de": "Schulen, Unternehmen, Stiftungen und private Unterstützer:innen ermöglichen kostenlose Beratung, Bootcamps und Schulprogramme — vor allem für junge Menschen mit weniger Zugang zu internationalen Bildungsnetzwerken.",
+      "en": "Schools, companies, foundations and private supporters enable free guidance, bootcamps and school programmes — especially for young people with less access to international education networks."
+    },
+    "primary_cta": {
+      "url": {
+        "de": "mailto:austria@projectaccess.org?subject=Partnerschaft%20mit%20PA%20Austria",
+        "en": "mailto:austria@projectaccess.org?subject=Partnership%20with%20PA%20Austria"
+      },
+      "label": { "de": "Partnerschaft anfragen", "en": "Enquire about partnership" }
+    },
+    "secondary_cta": {
+      "anchor_key": "schools",
+      "label": { "de": "Für Schulen", "en": "For schools" }
+    },
+    "image": {
+      "src": "assets/partner-event.jpg",
+      "alt": {
+        "de": "Project Access Austria Veranstaltung mit Partner:innen",
+        "en": "Project Access Austria event with partners"
+      }
+    }
+  },
+  "support_forms": {
+    "eyebrow": {
+      "de": "Formen der Unterstützung",
+      "en": "Forms of support"
+    },
+    "title": {
+      "de": "Vier Formen, mit denen Partner:innen helfen.",
+      "en": "Four ways partners help."
+    },
+    "tiles": [
+      {
+        "classes": "w-3 h-2 accent-yellow",
+        "eyebrow": { "de": "Förderung", "en": "Funding" },
+        "title": {
+          "de": "Bootcamp und Programme tragen.",
+          "en": "Fund the bootcamp and programmes."
+        },
+        "body": {
+          "de": "Sponsoring für Bootcamp, Unterkunft, Verpflegung, Materialien oder Reisekosten — und damit Zugang für Bewerber:innen, die diese Kosten sonst nicht stemmen könnten.",
+          "en": "Sponsoring for the bootcamp, accommodation, meals, materials or travel costs — and access for applicants who could not otherwise afford them."
+        }
+      },
+      {
+        "classes": "w-3 accent-cream",
+        "eyebrow": { "de": "Räume", "en": "Spaces" },
+        "title": {
+          "de": "Workshops, Trainings, Infoabende.",
+          "en": "Workshops, trainings, info evenings."
+        }
+      },
+      {
+        "classes": "w-3",
+        "eyebrow": { "de": "Expertise", "en": "Expertise" },
+        "title": {
+          "de": "Workshops, Mentoring, Interviewtraining.",
+          "en": "Workshops, mentoring, interview training."
+        }
+      },
+      {
+        "classes": "w-3 accent-green",
+        "eyebrow": { "de": "Netzwerk", "en": "Network" },
+        "title": {
+          "de": "Schulen, Alumni, Förder:innen, Stiftungen.",
+          "en": "Schools, alumni, funders, foundations."
+        }
+      }
+    ]
+  },
+  "impact": {
+    "eyebrow": {
+      "de": "Förderung in Zahlen",
+      "en": "Funding in numbers"
+    },
+    "title": {
+      "de": "Was Förderung möglich macht.",
+      "en": "What funding enables."
+    },
+    "items": [
+      {
+        "value": "40",
+        "label": {
+          "de": "Bootcamp-Plätze pro Jahr",
+          "en": "bootcamp places per year"
+        }
+      },
+      {
+        "value": "120",
+        "label": {
+          "de": "Teilnehmende in drei Jahren",
+          "en": "participants in three years"
+        }
+      },
+      {
+        "value": "185",
+        "label": {
+          "de": "Jugendliche im Mentoring",
+          "en": "students mentored"
+        }
+      }
+    ]
+  },
+  "partner_quote": {
+    "eyebrow": { "de": "Partnerstimme", "en": "Partner quote" },
+    "quote": {
+      "de": "Sozioökonomischer Hintergrund ist eine zentrale Dimension von Vielfalt. Project Access sorgt dafür, dass Talent und Leidenschaft den Bildungsweg bestimmen — nicht die Herkunft.",
+      "en": "Socioeconomic background is a central dimension of diversity. Project Access ensures that talent and passion shape the educational path — not background."
+    },
+    "attribution": "Dr. Patrick Guggenberger · Associate Partner, McKinsey"
+  },
+  "schools": {
+    "eyebrow": { "de": "Schulpartnerschaften", "en": "School partnerships" },
+    "title": {
+      "de": "Kostenlose Programme für **Schulen**.",
+      "en": "Free programmes for **schools**."
+    },
+    "body": {
+      "de": "Viele Talente erfahren zu spät, was möglich ist. Project Access Austria bringt Studierende und Alumni internationaler Universitäten direkt an österreichische Schulen — kostenlos und auf die Schule zugeschnitten.",
+      "en": "Many students learn too late what is possible. Project Access Austria brings students and alumni of international universities directly to Austrian schools — free of charge and tailored to each school."
+    },
+    "cta": {
+      "url": {
+        "de": "mailto:austria@projectaccess.org?subject=Schulpartnerschaft%20mit%20PA%20Austria",
+        "en": "mailto:austria@projectaccess.org?subject=School%20partnership%20with%20PA%20Austria"
+      },
+      "label": {
+        "de": "Schulpartnerschaft anfragen",
+        "en": "Enquire about a school partnership"
+      }
+    },
+    "image": {
+      "src": "assets/school-session.jpg",
+      "alt": {
+        "de": "Project Access Austria Session mit Schüler:innen",
+        "en": "Project Access Austria session with students"
+      }
+    }
+  },
+  "schools_offer": {
+    "eyebrow": { "de": "Was wir anbieten", "en": "What we offer" },
+    "title": {
+      "de": "Was Schulen erhalten.",
+      "en": "What schools receive."
+    },
+    "items": [
+      {
+        "label": { "de": "Schulbesuche", "en": "School visits" },
+        "body": {
+          "de": "durch Studierende und Alumni internationaler Universitäten.",
+          "en": "by students and alumni of international universities."
+        }
+      },
+      {
+        "label": { "de": "Webinare", "en": "Webinars" },
+        "body": {
+          "de": "für Abschlussklassen oder interessierte Jahrgänge.",
+          "en": "for final-year classes or interested year groups."
+        }
+      },
+      {
+        "label": { "de": "Materialien", "en": "Materials" },
+        "body": {
+          "de": "zu Studium im Ausland, Bewerbungen und Finanzierung.",
+          "en": "on studying abroad, applications and funding."
+        }
+      },
+      {
+        "label": {
+          "de": "Persönliche Ansprechperson",
+          "en": "A personal contact"
+        },
+        "body": {
+          "de": "aus dem PA Austria Team.",
+          "en": "in the PA Austria team."
+        }
+      },
+      {
+        "label": { "de": "Sessionplanung", "en": "Session planning" },
+        "body": {
+          "de": "nach Zielgruppe, Format und Schwerpunkt.",
+          "en": "by audience, format and focus."
+        }
+      }
+    ]
+  },
+  "schools_topics": {
+    "image": {
+      "src": "assets/school-workshop.jpg",
+      "alt": {
+        "de": "Workshop-Situation mit Project Access Austria",
+        "en": "Workshop with Project Access Austria"
+      }
+    },
+    "eyebrow": { "de": "Mögliche Themen", "en": "Possible topics" },
+    "title": {
+      "de": "Themen für Schulsessions.",
+      "en": "Topics for school sessions."
+    },
+    "items": [
+      {
+        "de": "Bewerbungen im UK, in den USA und in Europa",
+        "en": "Applications in the UK, the US and Europe"
+      },
+      {
+        "de": "Auswahl passender Studiengänge und Universitäten",
+        "en": "Choosing courses and universities that fit"
+      },
+      {
+        "de": "Personal Statement, Essay und Interviews",
+        "en": "Personal statement, essay and interviews"
+      },
+      {
+        "de": "Stipendien, Finanzierung und Kosten im Ausland",
+        "en": "Scholarships, funding and costs abroad"
+      },
+      {
+        "de": "Studium in Österreich vs. Studium im Ausland",
+        "en": "Studying in Austria vs. abroad"
+      }
+    ]
+  },
+  "cta_panel": {
+    "eyebrow": { "de": "Kontakt", "en": "Contact" },
+    "title": {
+      "de": "Anfragen und Kontakt.",
+      "en": "Enquiries and contact."
+    },
+    "body": {
+      "de": "Schreiben Sie uns mit dem passenden Betreff — wir antworten innerhalb weniger Tage.",
+      "en": "Write to us with the relevant subject line — we reply within a few days."
+    },
+    "primary_cta": {
+      "url": {
+        "de": "mailto:austria@projectaccess.org?subject=Partnerschaft%20mit%20PA%20Austria",
+        "en": "mailto:austria@projectaccess.org?subject=Partnership%20with%20PA%20Austria"
+      },
+      "label": {
+        "de": "Partnerschaft anfragen",
+        "en": "Enquire about partnership"
+      }
+    },
+    "secondary_cta": {
+      "url": {
+        "de": "mailto:austria@projectaccess.org?subject=Schulpartnerschaft%20mit%20PA%20Austria",
+        "en": "mailto:austria@projectaccess.org?subject=School%20partnership%20with%20PA%20Austria"
+      },
+      "label": {
+        "de": "Schulpartnerschaft anfragen",
+        "en": "Enquire about school partnership"
+      }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "title": {
+      "de": "Team — Project Access Austria",
+      "en": "Team — Project Access Austria"
+    },
+    "description": {
+      "de": "Das Team von Project Access Austria: Studierende und Alumni, die Schüler:innen und Studierende kostenlos bei Bewerbungen an internationale Universitäten unterstützen.",
+      "en": "The Project Access Austria team: students and alumni who support applicants to international universities free of charge."
+    }
+  },
+  "header_cta": {
+    "url": "https://projectaccess.org/join-our-program",
+    "label": { "de": "Kostenlos starten", "en": "Apply for free" }
+  },
+  "hero": {
+    "eyebrow": { "de": "Team", "en": "Team" },
+    "title": {
+      "de": "Studierende und Alumni aus **Österreich** und Südtirol.",
+      "en": "Students and alumni from **Austria** and South Tyrol."
+    },
+    "lead": {
+      "de": "Ein ehrenamtliches Team aus 16 Studierenden und Absolvent:innen organisiert Mentoring, Schulbesuche, Bootcamps, Programme, Tech und Kommunikation.",
+      "en": "A volunteer team of 16 students and graduates runs mentoring, school visits, bootcamps, programmes, tech and communications."
+    },
+    "primary_cta": {
+      "page": "involvement",
+      "label": { "de": "Mitmachen", "en": "Get involved" }
+    },
+    "secondary_cta": {
+      "url": {
+        "de": "mailto:austria@projectaccess.org?subject=Mitmachen%20bei%20PA%20Austria",
+        "en": "mailto:austria@projectaccess.org?subject=Volunteering%20with%20PA%20Austria"
+      },
+      "label": { "de": "Kontakt", "en": "Contact" }
+    }
+  },
+  "members": [
+    {
+      "key": "diana",
+      "image": "assets/Diana.jpeg",
+      "name": "Diana",
+      "role": {
+        "de": "Leitung Master & Doktorat · LSE",
+        "en": "Lead, master & PhD · LSE"
+      }
+    },
+    {
+      "key": "katrin_outreach",
+      "image": "assets/Katrin_Outreach.jpg",
+      "name": "Katrin",
+      "role": {
+        "de": "Leitung Schul- & Öffentlichkeitsarbeit · Oxford / Warwick",
+        "en": "Lead, schools & outreach · Oxford / Warwick"
+      }
+    },
+    {
+      "key": "yoan",
+      "image": "assets/DSC0130.jpg",
+      "name": "Yoan",
+      "role": {
+        "de": "Leitung Programme · WU Wien / QUT",
+        "en": "Lead, programmes · WU Vienna / QUT"
+      }
+    },
+    {
+      "key": "emmely",
+      "image": "assets/IMG_2870.png",
+      "name": "Emmely",
+      "role": {
+        "de": "Soziale Medien · IMC FH Krems",
+        "en": "Social media · IMC FH Krems"
+      }
+    },
+    {
+      "key": "daniel",
+      "image": "assets/Daniel.jpg",
+      "name": "Daniel",
+      "role": {
+        "de": "Master & Doktorat · MedUni Innsbruck",
+        "en": "Master & PhD · MedUni Innsbruck"
+      }
+    },
+    {
+      "key": "sonu",
+      "image": "assets/Sonu_Maramangalam.jpg",
+      "name": "Sonu",
+      "role": {
+        "de": "Master & Doktorat · Oxford",
+        "en": "Master & PhD · Oxford"
+      }
+    },
+    {
+      "key": "zeno",
+      "image": "assets/Zeno.jpg",
+      "name": "Zeno",
+      "role": {
+        "de": "Schul- & Öffentlichkeitsarbeit · Georgia Tech",
+        "en": "Schools & outreach · Georgia Tech"
+      }
+    },
+    {
+      "key": "katrin_tum",
+      "image": "assets/Katrin2.jpg",
+      "name": "Katrin",
+      "role": {
+        "de": "Schul- & Öffentlichkeitsarbeit · TUM",
+        "en": "Schools & outreach · TUM"
+      }
+    },
+    {
+      "key": "theo",
+      "image": "assets/Foto_Haselbauer_Theodor.jpg",
+      "name": "Theo",
+      "role": {
+        "de": "Schul- & Öffentlichkeitsarbeit · WU Wien",
+        "en": "Schools & outreach · WU Vienna"
+      }
+    },
+    {
+      "key": "valentin",
+      "image": "assets/Screenshot_2026-03-04.png",
+      "name": "Valentin",
+      "role": {
+        "de": "Schul- & Öffentlichkeitsarbeit",
+        "en": "Schools & outreach"
+      }
+    },
+    {
+      "key": "melanie",
+      "image": "assets/Melanie.jpeg",
+      "name": "Melanie",
+      "role": {
+        "de": "Programme · ESCP",
+        "en": "Programmes · ESCP"
+      }
+    },
+    {
+      "key": "nicholas",
+      "image": "assets/Nicholas.jpg",
+      "name": "Nicholas",
+      "role": {
+        "de": "Programme · WU Wien",
+        "en": "Programmes · WU Vienna"
+      }
+    },
+    {
+      "key": "sarah",
+      "image": "assets/Sarah.jpg",
+      "name": "Sarah",
+      "role": {
+        "de": "Programme · Oxford / American University of Paris",
+        "en": "Programmes · Oxford / American University of Paris"
+      }
+    },
+    {
+      "key": "yan",
+      "image": "assets/Yan.jpg",
+      "name": "Yan",
+      "role": {
+        "de": "Programme · Sciences Po",
+        "en": "Programmes · Sciences Po"
+      }
+    },
+    {
+      "key": "david_amsterdam",
+      "image": "assets/David.jpeg",
+      "name": "David",
+      "role": {
+        "de": "Programme · VU Amsterdam",
+        "en": "Programmes · VU Amsterdam"
+      }
+    },
+    {
+      "key": "david_tu",
+      "image": "assets/IMG_7820.jpeg",
+      "name": "David",
+      "role": {
+        "de": "Technologie · TU Wien",
+        "en": "Technology · TU Vienna"
+      }
+    }
+  ]
+}

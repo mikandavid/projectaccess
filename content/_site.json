@@ -1,0 +1,106 @@
+{
+  "brand_text": "Project Access Austria",
+  "brand_aria": {
+    "de": "Project Access Austria Startseite",
+    "en": "Project Access Austria home"
+  },
+  "nav_aria": {
+    "de": "Hauptnavigation",
+    "en": "Main navigation"
+  },
+  "nav": [
+    {
+      "page": "index",
+      "anchor_key": "programme",
+      "label": { "de": "Programm", "en": "Programme" }
+    },
+    {
+      "page": "bootcamp",
+      "label": { "de": "Bootcamp", "en": "Bootcamp" }
+    },
+    {
+      "page": "involvement",
+      "label": { "de": "Mitmachen", "en": "Get involved" }
+    },
+    {
+      "page": "partners",
+      "label": { "de": "Partner", "en": "Partners" }
+    },
+    {
+      "page": "team",
+      "label": { "de": "Team", "en": "Team" }
+    }
+  ],
+  "language_switch": {
+    "label": {
+      "de": "Sprache",
+      "en": "Language"
+    },
+    "de_label": "DE",
+    "en_label": "EN",
+    "de_aria": {
+      "de": "Deutsche Version anzeigen",
+      "en": "Show German version"
+    },
+    "en_aria": {
+      "de": "Englische Version anzeigen",
+      "en": "Show English version"
+    }
+  },
+  "footer": {
+    "name": "Project Access Austria",
+    "subtitle": {
+      "de": "Projekt Hochschulzugang · Verein mit Sitz in Wien",
+      "en": "Projekt Hochschulzugang · association based in Vienna"
+    },
+    "legal_prefix": {
+      "de": "ZVR-Zahl: 1037731270 · ",
+      "en": "Register number (ZVR): 1037731270 · "
+    },
+    "address": {
+      "de": "Zustellanschrift: Neustiftgasse 4, 2193 Wilfersdorf, Österreich",
+      "en": "Postal address: Neustiftgasse 4, 2193 Wilfersdorf, Austria"
+    },
+    "international": {
+      "url": "https://projectaccess.org",
+      "label": "Project Access International"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/projectaccess.at/",
+      "label": "Instagram"
+    },
+    "email": "austria@projectaccess.org"
+  },
+  "press": {
+    "eyebrow": {
+      "de": "In den News",
+      "en": "In the press"
+    },
+    "items": [
+      {
+        "url": "https://www.diepresse.com/5494575/oxford-cambridge-und-co-top-unis-fur-alle",
+        "label": "Die Presse — Oxford, Cambridge und Co.: Top-Unis für alle"
+      },
+      {
+        "url": "https://kurier.at/kiku/trotz-corona-covid19-und-brexit-wie-gehts-hier-zu-oxbridge/400849982",
+        "label": "Kurier — Trotz Corona und Brexit: Wie geht's nach Oxbridge?"
+      },
+      {
+        "url": "https://www.noen.at/moedling/moedling-neue-herausforderung-unistudium-im-ausland-moedling-auslandsstudium-studium-217793508",
+        "label": "NÖN — Neue Herausforderung Unistudium im Ausland"
+      },
+      {
+        "url": "https://www.pressreader.com/austria/der-standard/20190720/282011853953461",
+        "label": "Der Standard — über Project Access"
+      },
+      {
+        "url": "https://weltweitestars.com/lifestyle/so-klappts-mit-dem-studium-im-ausland/",
+        "label": "Weltweite Stars — So klappt's mit dem Studium im Ausland"
+      },
+      {
+        "url": "https://www.meinbezirk.at/klosterneuburg/c-lokales/brg-maturantin-auf-bestem-weg-nach-grossbritannien_a2915174",
+        "label": "MeinBezirk — BRG-Maturantin auf bestem Weg nach Großbritannien"
+      }
+    ]
+  }
+}

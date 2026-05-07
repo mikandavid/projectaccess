@@ -1,0 +1,24 @@
+{% extends "base.html.j2" %}
+{% block content %}
+      <section class="page-hero section-shell">
+        <p class="eyebrow">{{ page.hero.eyebrow[lang] }}</p>
+        <h1>{{ page.hero.title[lang] | mark }}</h1>
+        <p class="lead">{{ page.hero.lead[lang] }}</p>
+        <div class="hero-actions">
+          <a class="button" href="{{ page_href(page.hero.primary_cta.page) }}">{{ page.hero.primary_cta.label[lang] }}</a>
+          <a class="button button-secondary" href="{{ t(page.hero.secondary_cta.url) }}">{{ page.hero.secondary_cta.label[lang] }}</a>
+        </div>
+      </section>
+
+      <section class="team-section section-shell">
+        <div class="full-team-grid">
+          {%- for member in page.members %}
+          <article class="team-card">
+            <img src="{{ asset(member.image) }}" alt="{{ member.name }}" />
+            <h3>{{ member.name }}</h3>
+            <p>{{ member.role[lang] }}</p>
+          </article>
+          {%- endfor %}
+        </div>
+      </section>
+{% endblock %}

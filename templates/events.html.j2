@@ -1,0 +1,60 @@
+{% extends "base.html.j2" %}
+{% block content %}
+      <section class="page-hero page-hero-split section-shell">
+        <div>
+          <p class="eyebrow">{{ page.hero.eyebrow[lang] }}</p>
+          <h1>{{ page.hero.title[lang] | mark }}</h1>
+          <p class="lead">{{ page.hero.lead[lang] }}</p>
+          <div class="hero-actions">
+            <a class="button" href="{{ t(page.hero.primary_cta.url) }}">{{ page.hero.primary_cta.label[lang] }}</a>
+            <a class="button button-secondary" href="{{ t(page.hero.secondary_cta.url) }}">{{ page.hero.secondary_cta.label[lang] }}</a>
+          </div>
+        </div>
+        <img class="page-hero-image" src="{{ asset(page.hero.image.src) }}" alt="{{ page.hero.image.alt[lang] }}" />
+      </section>
+
+      <section class="section-shell cta-panel">
+        <p class="eyebrow">{{ page.current.eyebrow[lang] }}</p>
+        <h2>{{ page.current.title[lang] }}</h2>
+        <p>{{ page.current.body[lang] }}</p>
+        <div class="hero-actions">
+          <a class="button" href="{{ t(page.current.primary_cta.url) }}">{{ page.current.primary_cta.label[lang] }}</a>
+          <a class="button button-secondary" href="{{ t(page.current.secondary_cta.url) }}">{{ page.current.secondary_cta.label[lang] }}</a>
+        </div>
+      </section>
+
+      <section class="section-shell image-text-card">
+        <img src="{{ asset(page.next_event.image.src) }}" alt="{{ page.next_event.image.alt[lang] }}" />
+        <div>
+          <p class="eyebrow">{{ page.next_event.eyebrow[lang] }}</p>
+          <h2>{{ page.next_event.title }}</h2>
+          <dl class="details">
+            {%- for d in page.next_event.details %}
+            <div>
+              <dt>{{ d.term[lang] }}</dt>
+              <dd>{{ d.definition[lang] }}</dd>
+            </div>
+            {%- endfor %}
+          </dl>
+          <a class="button" href="{{ page_href(page.next_event.cta.page) }}">{{ page.next_event.cta.label[lang] }}</a>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">{{ page.archive.eyebrow[lang] }}</p>
+          <h2>{{ page.archive.title[lang] }}</h2>
+        </div>
+        <div class="archive-grid">
+          {%- for item in page.archive['items'] %}
+          <article>
+            <p class="eyebrow">{{ item.tag[lang] }}</p>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.body[lang] }}</p>
+          </article>
+          {%- endfor %}
+        </div>
+      </section>
+
+      {% include "_partials/press.html.j2" %}
+{% endblock %}
