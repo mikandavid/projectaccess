@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": {
-      "de": "Bootcamp 2026 — Project Access Austria",
-      "en": "Bootcamp 2026 — Project Access Austria"
+      "de": "Bootcamp 2026 | Project Access Austria",
+      "en": "Bootcamp 2026 | Project Access Austria"
     },
     "description": {
-      "de": "Alle Details zum kostenlosen Project Access Austria Bootcamp 2026 in Horn: Termine, Inhalte, Teilnahme, Kosten und FAQs.",
-      "en": "Details on the free Project Access Austria bootcamp 2026 in Horn: dates, content, participation, costs and FAQs."
+      "de": "Termine, Inhalte, Teilnahme, Kosten und FAQs zum kostenlosen Project Access Austria Bootcamp 2026 in Horn.",
+      "en": "Dates, topics, eligibility, costs and FAQs for the free Project Access Austria bootcamp 2026 in Horn."
     }
   },
   "header_cta": {
@@ -16,12 +16,12 @@
   "hero": {
     "eyebrow": { "de": "Bootcamp 2026", "en": "Bootcamp 2026" },
     "title": {
-      "de": "Bootcamp für internationale **Bewerbungen**.",
-      "en": "Bootcamp for international **applications**."
+      "de": "Vier Tage für deine internationale **Bewerbung**.",
+      "en": "Four days for your international **application**."
     },
     "lead": {
-      "de": "Rund 40 Schüler:innen und Studierende aus Österreich und Südtirol arbeiten an ihren Bewerbungen — mit Admissions Officers, Studierenden und Alumni internationaler Universitäten. Kostenlos.",
-      "en": "Around 40 students from Austria and South Tyrol work on their applications with admissions officers, students and alumni of international universities. Free of charge."
+      "de": "Rund 40 Schüler:innen und Studierende aus Österreich und Südtirol arbeiten an ihren Bewerbungen, gemeinsam mit Admissions Officers, Studierenden und Alumni internationaler Universitäten. Die Teilnahme ist kostenlos.",
+      "en": "Around 40 students from Austria and South Tyrol work on their applications with admissions officers, students and alumni of international universities. Participation is free."
     },
     "primary_cta": {
       "url": "https://projectaccess.org/join-our-program",
@@ -54,7 +54,7 @@
     {
       "term": { "de": "Kosten", "en": "Cost" },
       "definition": {
-        "de": "Gratis inkl. Unterkunft & Verpflegung",
+        "de": "Gratis, inklusive Unterkunft und Verpflegung",
         "en": "Free, including accommodation and meals"
       }
     },
@@ -69,24 +69,24 @@
   "about": {
     "eyebrow": { "de": "Worum es geht", "en": "About the bootcamp" },
     "title": {
-      "de": "Inhalte und Ablauf.",
-      "en": "Programme and structure."
+      "de": "Was dich erwartet.",
+      "en": "What to expect."
     },
     "body": {
-      "de": "Vier Tage in kleinen Gruppen: Studienwahl, Essay, Interview und Finanzierung. Ein fertiger Bewerbungsplan ist nicht nötig — das Bootcamp hilft besonders, wenn du noch herausfindest, welche Universitäten passen und wie eine Bewerbung aufgebaut sein sollte.",
-      "en": "Four days in small groups: course choice, essays, interviews and funding. You don't need a finished plan — the bootcamp is particularly useful when you are still figuring out which universities fit and how an application is structured."
+      "de": "Vier Tage in kleinen Gruppen: Studienwahl, Essays, Interviews und Finanzierung. Du brauchst keinen fertigen Plan. Das Bootcamp ist besonders hilfreich, wenn du noch herausfindest, welche Universitäten passen und wie eine gute Bewerbung aufgebaut ist.",
+      "en": "Four days in small groups: course choice, essays, interviews and funding. You do not need a finished plan. The bootcamp is especially useful if you are still figuring out which universities fit and what a strong application looks like."
     }
   },
   "topics": {
     "eyebrow": { "de": "Inhalte", "en": "Topics" },
     "title": {
-      "de": "Schwerpunkte.",
-      "en": "Focus areas."
+      "de": "Daran arbeiten wir.",
+      "en": "What we work on."
     },
     "items": [
       {
         "de": "Studienwahl und realistische Bewerbungsstrategie",
-        "en": "Choice of studies and a realistic application strategy"
+        "en": "Course choice and a realistic application strategy"
       },
       {
         "de": "Personal Statement, Common App Essay, fachspezifische Unterlagen",
@@ -106,7 +106,7 @@
       },
       {
         "de": "Austausch mit anderen Bewerber:innen aus Österreich und Südtirol",
-        "en": "Exchange with other applicants from Austria and South Tyrol"
+        "en": "Conversations with other applicants from Austria and South Tyrol"
       }
     ]
   },
@@ -142,12 +142,12 @@
   "audience": {
     "eyebrow": { "de": "Zielgruppe", "en": "Who can apply" },
     "title": {
-      "de": "Wer teilnehmen kann.",
-      "en": "Who can take part."
+      "de": "Für wen das Bootcamp gedacht ist.",
+      "en": "Who the bootcamp is for."
     },
     "body": {
-      "de": "Schüler:innen und Studierende aus Österreich oder Südtirol, die ein Bachelor-, Master- oder PhD-Studium an einer internationalen Universität in Erwägung ziehen. Vorrang für Bewerber:innen mit weniger Zugang zu privater Beratung, internationalen Schulnetzwerken oder familiärer Erfahrung mit Auslandsstudien.",
-      "en": "Students from Austria or South Tyrol considering a bachelor, master or PhD programme at an international university. Priority for applicants with less access to private guidance, international school networks or family experience of studying abroad."
+      "de": "Das Bootcamp richtet sich an Schüler:innen und Studierende aus Österreich oder Südtirol, die über ein Bachelor-, Master- oder PhD-Studium an einer internationalen Universität nachdenken. Vorrang haben Bewerber:innen, die weniger Zugang zu privater Beratung, internationalen Schulnetzwerken oder familiärer Erfahrung mit Auslandsstudien haben.",
+      "en": "The bootcamp is for students from Austria or South Tyrol who are considering a bachelor, master or PhD programme at an international university. We prioritise applicants with less access to private guidance, international school networks or family experience with studying abroad."
     }
   },
   "faq": {
@@ -163,8 +163,8 @@
           "en": "Do I need to know where I want to apply?"
         },
         "answer": {
-          "de": "Nein. Das Bootcamp hilft auch bei Orientierung und Studienwahl.",
-          "en": "No. The bootcamp also helps with orientation and choosing a course."
+          "de": "Nein. Das Bootcamp hilft dir auch bei Orientierung und Studienwahl.",
+          "en": "No. The bootcamp also helps you with orientation and course choice."
         }
       },
       {
@@ -173,8 +173,8 @@
           "en": "Is there a participation fee?"
         },
         "answer": {
-          "de": "Nein. Unterkunft und Verpflegung sind frei. Reisekosten unterstützen wir auf Anfrage.",
-          "en": "No. Accommodation and meals are free. Travel costs can be supported on request."
+          "de": "Nein. Unterkunft und Verpflegung sind frei. Bei Reisekosten können wir auf Anfrage unterstützen.",
+          "en": "No. Accommodation and meals are free. We can help with travel costs on request."
         }
       },
       {
@@ -193,7 +193,7 @@
           "en": "Do I automatically get a mentor?"
         },
         "answer": {
-          "de": "Nein. Mentoring läuft über das internationale Project Access Programm und ist separat zum Bootcamp.",
+          "de": "Nein. Mentoring läuft über das internationale Project Access Programm und ist vom Bootcamp getrennt.",
           "en": "No. Mentoring runs through the international Project Access programme and is separate from the bootcamp."
         }
       },
@@ -203,8 +203,8 @@
           "en": "Exchange semester?"
         },
         "answer": {
-          "de": "Nein. Das Bootcamp ist auf reguläre Studiengänge im Ausland ausgelegt, nicht auf Austausch.",
-          "en": "No. The bootcamp is aimed at full degree programmes abroad, not exchange semesters."
+          "de": "Nein. Das Bootcamp ist für reguläre Studiengänge im Ausland gedacht, nicht für Austauschsemester.",
+          "en": "No. The bootcamp is for full degree programmes abroad, not exchange semesters."
         }
       },
       {

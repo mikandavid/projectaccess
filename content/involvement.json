@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": {
-      "de": "Mitmachen — Project Access Austria",
-      "en": "Get involved — Project Access Austria"
+      "de": "Mitmachen | Project Access Austria",
+      "en": "Get involved | Project Access Austria"
     },
     "description": {
-      "de": "Mentor:in werden oder dem ehrenamtlichen Team von Project Access Austria beitreten.",
-      "en": "Become a mentor or join the volunteer team of Project Access Austria."
+      "de": "Als Mentor:in Bewerber:innen unterstützen oder im ehrenamtlichen Team von Project Access Austria mitarbeiten.",
+      "en": "Support applicants as a mentor or volunteer with the Project Access Austria team."
     }
   },
   "header_cta": {
@@ -16,12 +16,12 @@
   "hero": {
     "eyebrow": { "de": "Mitmachen", "en": "Get involved" },
     "title": {
-      "de": "Mentor:in werden oder im **Team** mitwirken.",
-      "en": "Become a mentor or join the **team**."
+      "de": "Als Mentor:in oder im **Team** mitarbeiten.",
+      "en": "Mentor applicants or join the **team**."
     },
     "lead": {
-      "de": "Du studierst im Ausland oder hast an einer internationalen Universität studiert? Begleite Bewerber:innen direkt — oder gestalte im PA Austria Team Programme und Outreach mit.",
-      "en": "Currently studying or have studied at an international university? Mentor applicants directly — or help run programmes and outreach in the PA Austria team."
+      "de": "Du studierst im Ausland oder hast an einer internationalen Universität studiert? Dann kannst du Bewerber:innen direkt begleiten oder im PA Austria Team Bootcamp, Schulbesuche und Outreach mitorganisieren.",
+      "en": "Studying abroad, or studied at an international university? You can mentor applicants directly or help the PA Austria team organise the bootcamp, school visits and outreach."
     },
     "primary_cta": {
       "url": "https://projectaccess.org/become-a-mentor",
@@ -45,12 +45,12 @@
   "mentoring": {
     "eyebrow": { "de": "Mentor:in werden", "en": "Becoming a mentor" },
     "title": {
-      "de": "Mentoring im internationalen Project Access Programm.",
-      "en": "Mentoring in the international Project Access programme."
+      "de": "Mentoring im internationalen Project Access Programm",
+      "en": "Mentoring in the international Project Access programme"
     },
     "body": {
-      "de": "Mentor:innen begleiten talentierte junge Menschen aus Österreich und Südtirol durch Essay, Interview und Auswahl. Es braucht keine perfekten Antworten — Erfahrung, ehrliches Feedback und Zeit reichen aus.",
-      "en": "Mentors support students from Austria and South Tyrol on essays, interviews and selection. You don't need perfect answers — experience, honest feedback and time are enough."
+      "de": "Mentor:innen begleiten junge Menschen aus Österreich und Südtirol bei Essays, Interviews und Auswahlprozessen. Du brauchst keine perfekten Antworten. Erfahrung, ehrliches Feedback und ein bisschen Zeit reichen oft schon sehr weit.",
+      "en": "Mentors support students from Austria and South Tyrol with essays, interviews and selection processes. You do not need perfect answers. Experience, honest feedback and a bit of time already help a lot."
     }
   },
   "fit": {
@@ -73,8 +73,8 @@
         "en": "can give constructive feedback and want to invest time"
       },
       {
-        "de": "fairen Hochschulzugang als wichtig erachtest",
-        "en": "consider fair university access important"
+        "de": "dich für fairen Hochschulzugang einsetzen möchtest",
+        "en": "care about fair access to university"
       }
     ]
   },
@@ -88,12 +88,12 @@
     },
     "eyebrow": { "de": "PA Austria Team", "en": "PA Austria team" },
     "title": {
-      "de": "Im Team mitwirken.",
-      "en": "Volunteer in the team."
+      "de": "Im Team Verantwortung übernehmen.",
+      "en": "Take on a role in the team."
     },
     "body": {
-      "de": "Wir organisieren Bootcamps, Schulbesuche, Studienmessen, Programme, Social Media, Kommunikation, Tech und Partnerschaften und suchen Menschen, die Verantwortung übernehmen.",
-      "en": "We organise bootcamps, school visits, study fairs, programmes, social media, communications, tech and partnerships, and look for people willing to take responsibility."
+      "de": "Wir organisieren Bootcamps, Schulbesuche, Studienmessen, Social Media, Kommunikation, Tech und Partnerschaften. Dafür suchen wir Menschen, die mitdenken und Aufgaben übernehmen.",
+      "en": "We organise bootcamps, school visits, study fairs, social media, communications, tech and partnerships. We are looking for people who think along and take ownership."
     },
     "primary_cta": {
       "page": "team",
@@ -110,7 +110,7 @@
   "areas": {
     "eyebrow": { "de": "Arbeitsbereiche", "en": "Areas" },
     "title": {
-      "de": "Arbeitsbereiche.",
+      "de": "Woran du mitarbeiten kannst.",
       "en": "Areas of work."
     },
     "tiles": [
@@ -118,12 +118,12 @@
         "classes": "w-3 accent-cream",
         "eyebrow": { "de": "Programme & Bootcamp", "en": "Programmes & bootcamp" },
         "title": {
-          "de": "Inhalte, Trainer:innen, Ablauf.",
-          "en": "Content, trainers, structure."
+          "de": "Inhalte, Trainer:innen und Ablauf.",
+          "en": "Content, trainers and structure."
         },
         "body": {
-          "de": "Teilnehmenden-Betreuung und Organisation rund um das Bootcamp.",
-          "en": "Participant support and bootcamp organisation."
+          "de": "Teilnehmende betreuen und das Bootcamp mitorganisieren.",
+          "en": "Support participants and help organise the bootcamp."
         }
       },
       {
@@ -134,20 +134,20 @@
           "en": "School visits, webinars, fairs."
         },
         "body": {
-          "de": "Öffentliche Sessions und Materialien.",
-          "en": "Public sessions and materials."
+          "de": "Sessions vorbereiten, Schulen kontaktieren und Materialien erstellen.",
+          "en": "Prepare sessions, contact schools and create materials."
         }
       },
       {
         "classes": "w-3",
         "eyebrow": { "de": "Partnerschaften", "en": "Partnerships" },
         "title": {
-          "de": "Sponsoring und Netzwerk.",
-          "en": "Sponsoring and network."
+          "de": "Sponsoring und Netzwerk pflegen.",
+          "en": "Build sponsorships and networks."
         },
         "body": {
-          "de": "Förder:innen, Räume und Expertise.",
-          "en": "Funders, spaces and expertise."
+          "de": "Förder:innen, Räume und Expert:innen für unsere Arbeit gewinnen.",
+          "en": "Bring in funders, spaces and experts for our work."
         }
       },
       {
@@ -158,8 +158,8 @@
           "en": "Social media, web, tools."
         },
         "body": {
-          "de": "Bewerbungsprozesse und laufende Updates.",
-          "en": "Application processes and ongoing updates."
+          "de": "Bewerbungsprozesse, Website und laufende Updates betreuen.",
+          "en": "Maintain application processes, the website and regular updates."
         }
       }
     ]
@@ -167,8 +167,8 @@
   "cta_panel": {
     "eyebrow": { "de": "Kontakt", "en": "Get in touch" },
     "title": {
-      "de": "Kontakt aufnehmen.",
-      "en": "Get in touch."
+      "de": "Interesse? Schreib uns.",
+      "en": "Interested? Get in touch."
     },
     "primary_cta": {
       "url": "https://projectaccess.org/become-a-mentor",

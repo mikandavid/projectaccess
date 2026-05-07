@@ -3,29 +3,30 @@
         <span class="brand-mark" aria-hidden="true">PA</span>
         <span class="brand-text">{{ site.brand_text }}</span>
       </a>
-      <nav class="nav" aria-label="{{ site.nav_aria[lang] }}">
-        {%- for item in site.nav %}
-        <a href="{{ page_href(item.page, anchor_key=item.get('anchor_key')) }}">{{ item.label[lang] }}</a>
-        {%- endfor %}
-      </nav>
       <div class="header-actions">
-        <div class="lang-switch" role="group" aria-label="{{ site.language_switch.label[lang] }}">
-          <a
-            href="{{ self_href if lang == 'de' else alt_lang_href }}"
-            class="lang-switch-link{% if lang == 'de' %} is-active{% endif %}"
-            aria-label="{{ site.language_switch.de_aria[lang] }}"
-            {% if lang == 'de' %}aria-current="true"{% endif %}
-          >{{ site.language_switch.de_label }}</a>
+        <a class="lang-switch" href="{{ alt_lang_href }}" aria-label="{{ site.language_switch.label[lang] }}">
+          <span class="lang-switch-link{% if lang == 'de' %} is-active{% endif %}" {% if lang == 'de' %}aria-current="true"{% endif %}>{{ site.language_switch.de_label }}</span>
           <span class="lang-switch-sep" aria-hidden="true">·</span>
-          <a
-            href="{{ self_href if lang == 'en' else alt_lang_href }}"
-            class="lang-switch-link{% if lang == 'en' %} is-active{% endif %}"
-            aria-label="{{ site.language_switch.en_aria[lang] }}"
-            {% if lang == 'en' %}aria-current="true"{% endif %}
-          >{{ site.language_switch.en_label }}</a>
-        </div>
+          <span class="lang-switch-link{% if lang == 'en' %} is-active{% endif %}" {% if lang == 'en' %}aria-current="true"{% endif %}>{{ site.language_switch.en_label }}</span>
+        </a>
         {% if page.header_cta %}
         <a class="button button-small" href="{{ t(page.header_cta.url) }}">{{ page.header_cta.label[lang] }}</a>
         {% endif %}
+      </div>
+      <input
+        id="site-nav-toggle"
+        class="nav-toggle-input"
+        type="checkbox"
+        aria-label="{{ site.menu_toggle.open_label[lang] }}"
+      />
+      <label for="site-nav-toggle" class="nav-toggle" aria-hidden="true">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </label>
+      <div class="nav-shell-panel">
+        <nav class="nav" aria-label="{{ site.nav_aria[lang] }}">
+          {%- for item in site.nav %}
+          <a href="{{ page_href(item.page, anchor_key=item.get('anchor_key')) }}">{{ item.label[lang] }}</a>
+          {%- endfor %}
+        </nav>
       </div>
     </header>

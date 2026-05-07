@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Schulen, Unternehmen, Stiftungen und private Unterstützer:innen helfen Project Access Austria, kostenlose Programme, Bootcamps und Schulpartnerschaften möglich zu machen." />
-    <title>Partner:innen — Project Access Austria</title>
+    <meta name="description" content="Schulen, Unternehmen, Stiftungen und private Unterstützer:innen helfen Project Access Austria, Mentoring, Bootcamp und Schulbesuche kostenlos anzubieten." />
+    <title>Partner:innen | Project Access Austria</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
     <link rel="alternate" hreflang="de" href="partners.html" />
     <link rel="alternate" hreflang="en" href="en/partners.html" />
   </head>
@@ -21,32 +22,33 @@
         <span class="brand-mark" aria-hidden="true">PA</span>
         <span class="brand-text">Project Access Austria</span>
       </a>
-      <nav class="nav" aria-label="Hauptnavigation">
-        <a href="index.html#programm">Programm</a>
-        <a href="bootcamp.html">Bootcamp</a>
-        <a href="mitmachen.html">Mitmachen</a>
-        <a href="partners.html">Partner</a>
-        <a href="team.html">Team</a>
-      </nav>
       <div class="header-actions">
-        <div class="lang-switch" role="group" aria-label="Sprache">
-          <a
-            href="partners.html"
-            class="lang-switch-link is-active"
-            aria-label="Deutsche Version anzeigen"
-            aria-current="true"
-          >DE</a>
+        <a class="lang-switch" href="en/partners.html" aria-label="Sprache">
+          <span class="lang-switch-link is-active" aria-current="true">DE</span>
           <span class="lang-switch-sep" aria-hidden="true">·</span>
-          <a
-            href="en/partners.html"
-            class="lang-switch-link"
-            aria-label="Englische Version anzeigen"
-            
-          >EN</a>
-        </div>
+          <span class="lang-switch-link" >EN</span>
+        </a>
         
         <a class="button button-small" href="mailto:austria@projectaccess.org?subject=Partnerschaft%20mit%20PA%20Austria">Partner:in werden</a>
         
+      </div>
+      <input
+        id="site-nav-toggle"
+        class="nav-toggle-input"
+        type="checkbox"
+        aria-label="Menü öffnen"
+      />
+      <label for="site-nav-toggle" class="nav-toggle" aria-hidden="true">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </label>
+      <div class="nav-shell-panel">
+        <nav class="nav" aria-label="Hauptnavigation">
+          <a href="index.html#programm">Programm</a>
+          <a href="bootcamp.html">Bootcamp</a>
+          <a href="mitmachen.html">Mitmachen</a>
+          <a href="partners.html">Partner</a>
+          <a href="team.html">Team</a>
+        </nav>
       </div>
     </header>
 
@@ -55,8 +57,8 @@
       <section class="page-hero page-hero-split section-shell">
         <div>
           <p class="eyebrow">Partner:innen</p>
-          <h1><span class="mark">Partner:innen</span> ermöglichen kostenlose Programme.</h1>
-          <p class="lead">Schulen, Unternehmen, Stiftungen und private Unterstützer:innen ermöglichen kostenlose Beratung, Bootcamps und Schulprogramme — vor allem für junge Menschen mit weniger Zugang zu internationalen Bildungsnetzwerken.</p>
+          <h1><span class="mark">Partner:innen</span> halten unsere Angebote kostenlos.</h1>
+          <p class="lead">Mit Schulen, Unternehmen, Stiftungen und privaten Unterstützer:innen erreichen wir junge Menschen, die sonst oft später von internationalen Studienmöglichkeiten erfahren. Beiträge können Räume, Finanzierung, Expertise oder Kontakte sein.</p>
           <div class="hero-actions">
             <a class="button" href="mailto:austria@projectaccess.org?subject=Partnerschaft%20mit%20PA%20Austria">Partnerschaft anfragen</a>
             <a class="button button-secondary" href="#schulen">Für Schulen</a>
@@ -68,32 +70,32 @@
       <section class="section-shell">
         <div class="section-heading">
           <p class="eyebrow">Formen der Unterstützung</p>
-          <h2>Vier Formen, mit denen Partner:innen helfen.</h2>
+          <h2>So können Partner:innen helfen.</h2>
         </div>
         <div class="bento">
           <article class="bento-tile w-3 h-2 accent-yellow">
             <div>
               <p class="eyebrow">Förderung</p>
-              <h3>Bootcamp und Programme tragen.</h3>
-              <p>Sponsoring für Bootcamp, Unterkunft, Verpflegung, Materialien oder Reisekosten — und damit Zugang für Bewerber:innen, die diese Kosten sonst nicht stemmen könnten.</p>
+              <h3>Bootcamp und Mentoring finanzieren.</h3>
+              <p>Sponsoring hilft bei Unterkunft, Verpflegung, Materialien und Reisekosten. So können auch Bewerber:innen teilnehmen, für die diese Kosten sonst zu hoch wären.</p>
             </div>
           </article>
           <article class="bento-tile w-3 accent-cream">
             <div>
               <p class="eyebrow">Räume</p>
-              <h3>Workshops, Trainings, Infoabende.</h3>
+              <h3>Räume für Workshops und Infoabende.</h3>
             </div>
           </article>
           <article class="bento-tile w-3">
             <div>
               <p class="eyebrow">Expertise</p>
-              <h3>Workshops, Mentoring, Interviewtraining.</h3>
+              <h3>Know-how für Workshops und Interviews.</h3>
             </div>
           </article>
           <article class="bento-tile w-3 accent-green">
             <div>
               <p class="eyebrow">Netzwerk</p>
-              <h3>Schulen, Alumni, Förder:innen, Stiftungen.</h3>
+              <h3>Kontakte zu Schulen, Alumni und Förder:innen.</h3>
             </div>
           </article>
         </div>
@@ -101,7 +103,7 @@
 
       <section class="section-shell impact-panel">
         <p class="eyebrow">Förderung in Zahlen</p>
-        <h2>Was Förderung möglich macht.</h2>
+        <h2>Was Partner:innen möglich machen.</h2>
         <div class="impact-grid">
           <article>
             <strong>40</strong>
@@ -121,18 +123,18 @@
       <section class="section-shell partners">
         <p class="eyebrow">Partnerstimme</p>
         <blockquote class="quote">
-          <p>Sozioökonomischer Hintergrund ist eine zentrale Dimension von Vielfalt. Project Access sorgt dafür, dass Talent und Leidenschaft den Bildungsweg bestimmen — nicht die Herkunft.</p>
+          <p>Wir bei McKinsey sind fest davon überzeugt, dass vielfältigere Teams bessere Ergebnisse erzielen. Neben Geschlecht und ethnischer Herkunft ist der sozioökonomische Hintergrund eine zentrale Dimension, entlang derer wir als Unternehmen jeden Tag daran arbeiten, vielfältiger und inklusiver zu werden. Es ist uns eine Freude, eine Organisation wie Project Access zu unterstützen, die sicherstellt, dass nur Talent und Leidenschaft den Bildungsweg eines Menschen bestimmen, nicht der sozioökonomische Hintergrund.</p>
           <footer>Dr. Patrick Guggenberger · Associate Partner, McKinsey</footer>
         </blockquote>
       </section>
 
       <span class="divider-dots" aria-hidden="true"></span>
 
-      <section class="section-shell page-hero-split" id="schulen">
+      <section class="section-shell page-hero-split school-partnership-section" id="schulen">
         <div>
           <p class="eyebrow">Schulpartnerschaften</p>
-          <h2>Kostenlose Programme für <span class="mark">Schulen</span>.</h2>
-          <p>Viele Talente erfahren zu spät, was möglich ist. Project Access Austria bringt Studierende und Alumni internationaler Universitäten direkt an österreichische Schulen — kostenlos und auf die Schule zugeschnitten.</p>
+          <h2>Kostenlose Sessions für <span class="mark">Schulen</span>.</h2>
+          <p>Viele Schüler:innen erfahren erst spät, welche Studienwege im Ausland offenstehen und wie Bewerbungen funktionieren. Project Access Austria bringt Studierende und Alumni internationaler Universitäten direkt an österreichische Schulen, kostenlos und passend zum Bedarf der Schule.</p>
           <div class="hero-actions">
             <a class="button" href="mailto:austria@projectaccess.org?subject=Schulpartnerschaft%20mit%20PA%20Austria">Schulpartnerschaft anfragen</a>
           </div>
@@ -143,14 +145,14 @@
       <section class="section-shell two-column-section">
         <div>
           <p class="eyebrow">Was wir anbieten</p>
-          <h2>Was Schulen erhalten.</h2>
+          <h2>Was Schulen bekommen.</h2>
         </div>
         <ul class="schools-offers">
-          <li><strong>Schulbesuche</strong> durch Studierende und Alumni internationaler Universitäten.</li>
+          <li><strong>Schulbesuche</strong> mit Studierenden und Alumni internationaler Universitäten.</li>
           <li><strong>Webinare</strong> für Abschlussklassen oder interessierte Jahrgänge.</li>
           <li><strong>Materialien</strong> zu Studium im Ausland, Bewerbungen und Finanzierung.</li>
-          <li><strong>Persönliche Ansprechperson</strong> aus dem PA Austria Team.</li>
-          <li><strong>Sessionplanung</strong> nach Zielgruppe, Format und Schwerpunkt.</li>
+          <li><strong>Persönliche Ansprechperson</strong> aus unserem PA Austria Team.</li>
+          <li><strong>Sessionplanung</strong> abgestimmt auf Zielgruppe, Format und Schwerpunkt.</li>
         </ul>
       </section>
 
@@ -158,7 +160,7 @@
         <img src="assets/school-workshop.jpg" alt="Workshop-Situation mit Project Access Austria" />
         <div>
           <p class="eyebrow">Mögliche Themen</p>
-          <h2>Themen für Schulsessions.</h2>
+          <h2>Mögliche Themen für Schulsessions.</h2>
           <ul class="feature-list feature-list-compact">
             <li>Bewerbungen im UK, in den USA und in Europa</li>
             <li>Auswahl passender Studiengänge und Universitäten</li>
@@ -172,7 +174,7 @@
       <section class="section-shell cta-panel">
         <p class="eyebrow">Kontakt</p>
         <h2>Anfragen und Kontakt.</h2>
-        <p>Schreiben Sie uns mit dem passenden Betreff — wir antworten innerhalb weniger Tage.</p>
+        <p>Schreiben Sie uns mit dem passenden Betreff. Wir melden uns innerhalb weniger Tage.</p>
         <div class="hero-actions">
           <a class="button" href="mailto:austria@projectaccess.org?subject=Partnerschaft%20mit%20PA%20Austria">Partnerschaft anfragen</a>
           <a class="button button-secondary" href="mailto:austria@projectaccess.org?subject=Schulpartnerschaft%20mit%20PA%20Austria">Schulpartnerschaft anfragen</a>
@@ -196,5 +198,21 @@
       </div>
     </footer>
 
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        if (!window.Calendly) {
+          return;
+        }
+
+        window.Calendly.initBadgeWidget({
+          url: "https://calendly.com/austria-projectaccess/dein-call-mit-project-access",
+          text: "Buche hier deinen Call mit uns!",
+          color: "#26262b",
+          textColor: "#fffdf7",
+          branding: true
+        });
+      });
+    </script>
   </body>
 </html>

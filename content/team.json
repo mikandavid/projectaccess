@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": {
-      "de": "Team — Project Access Austria",
-      "en": "Team — Project Access Austria"
+      "de": "Team | Project Access Austria",
+      "en": "Team | Project Access Austria"
     },
     "description": {
-      "de": "Das Team von Project Access Austria: Studierende und Alumni, die Schüler:innen und Studierende kostenlos bei Bewerbungen an internationale Universitäten unterstützen.",
-      "en": "The Project Access Austria team: students and alumni who support applicants to international universities free of charge."
+      "de": "Das Team von Project Access Austria: Studierende und Alumni, die Bewerber:innen kostenlos auf dem Weg an internationale Universitäten unterstützen.",
+      "en": "The Project Access Austria team: students and alumni who support applicants on their way to international universities, free of charge."
     }
   },
   "header_cta": {
@@ -16,12 +16,12 @@
   "hero": {
     "eyebrow": { "de": "Team", "en": "Team" },
     "title": {
-      "de": "Studierende und Alumni aus **Österreich** und Südtirol.",
-      "en": "Students and alumni from **Austria** and South Tyrol."
+      "de": "Das Team hinter **PA Austria**.",
+      "en": "The team behind **PA Austria**."
     },
     "lead": {
-      "de": "Ein ehrenamtliches Team aus 16 Studierenden und Absolvent:innen organisiert Mentoring, Schulbesuche, Bootcamps, Programme, Tech und Kommunikation.",
-      "en": "A volunteer team of 16 students and graduates runs mentoring, school visits, bootcamps, programmes, tech and communications."
+      "de": "Wir sind 16 Studierende und Absolvent:innen, die ehrenamtlich Mentoring, Schulbesuche, Bootcamp, Tech und Kommunikation organisieren.",
+      "en": "We are 16 students and graduates volunteering our time to run mentoring, school visits, the bootcamp, tech and communications."
     },
     "primary_cta": {
       "page": "involvement",

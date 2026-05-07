@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="{{ asset('styles.css') }}" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
     <link rel="alternate" hreflang="de" href="{{ alt_lang_href if lang == 'en' else self_href }}" />
     <link rel="alternate" hreflang="en" href="{{ alt_lang_href if lang == 'de' else self_href }}" />
   </head>
@@ -22,5 +23,21 @@
       {% block content %}{% endblock %}
     </main>
     {% include "_partials/footer.html.j2" %}
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        if (!window.Calendly) {
+          return;
+        }
+
+        window.Calendly.initBadgeWidget({
+          url: {{ site.calendly_badge.url|tojson }},
+          text: {{ site.calendly_badge.text[lang]|tojson }},
+          color: {{ site.calendly_badge.color|tojson }},
+          textColor: {{ site.calendly_badge.text_color|tojson }},
+          branding: {{ site.calendly_badge.branding|tojson }}
+        });
+      });
+    </script>
   </body>
 </html>

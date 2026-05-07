@@ -31,6 +31,20 @@
       "label": { "de": "Team", "en": "Team" }
     }
   ],
+  "menu_toggle": {
+    "open_label": {
+      "de": "Menü öffnen",
+      "en": "Open menu"
+    },
+    "close_label": {
+      "de": "Menü schließen",
+      "en": "Close menu"
+    },
+    "text": {
+      "de": "Menü",
+      "en": "Menu"
+    }
+  },
   "language_switch": {
     "label": {
       "de": "Sprache",
@@ -46,6 +60,16 @@
       "de": "Englische Version anzeigen",
       "en": "Show English version"
     }
+  },
+  "calendly_badge": {
+    "url": "https://calendly.com/austria-projectaccess/dein-call-mit-project-access",
+    "text": {
+      "de": "Buche hier deinen Call mit uns!",
+      "en": "Book a call with us!"
+    },
+    "color": "#26262b",
+    "text_color": "#fffdf7",
+    "branding": true
   },
   "footer": {
     "name": "Project Access Austria",
@@ -79,27 +103,27 @@
     "items": [
       {
         "url": "https://www.diepresse.com/5494575/oxford-cambridge-und-co-top-unis-fur-alle",
-        "label": "Die Presse — Oxford, Cambridge und Co.: Top-Unis für alle"
+        "label": "Die Presse: Oxford, Cambridge und Co.: Top-Unis für alle"
       },
       {
         "url": "https://kurier.at/kiku/trotz-corona-covid19-und-brexit-wie-gehts-hier-zu-oxbridge/400849982",
-        "label": "Kurier — Trotz Corona und Brexit: Wie geht's nach Oxbridge?"
+        "label": "Kurier: Trotz Corona und Brexit: Wie geht's nach Oxbridge?"
       },
       {
         "url": "https://www.noen.at/moedling/moedling-neue-herausforderung-unistudium-im-ausland-moedling-auslandsstudium-studium-217793508",
-        "label": "NÖN — Neue Herausforderung Unistudium im Ausland"
+        "label": "NÖN: Neue Herausforderung Unistudium im Ausland"
       },
       {
         "url": "https://www.pressreader.com/austria/der-standard/20190720/282011853953461",
-        "label": "Der Standard — über Project Access"
+        "label": "Der Standard: über Project Access"
       },
       {
         "url": "https://weltweitestars.com/lifestyle/so-klappts-mit-dem-studium-im-ausland/",
-        "label": "Weltweite Stars — So klappt's mit dem Studium im Ausland"
+        "label": "Weltweite Stars: So klappt's mit dem Studium im Ausland"
       },
       {
         "url": "https://www.meinbezirk.at/klosterneuburg/c-lokales/brg-maturantin-auf-bestem-weg-nach-grossbritannien_a2915174",
-        "label": "MeinBezirk — BRG-Maturantin auf bestem Weg nach Großbritannien"
+        "label": "MeinBezirk: BRG-Maturantin auf bestem Weg nach Großbritannien"
       }
     ]
   }

@@ -5,8 +5,8 @@
       "en": "Project Access Austria"
     },
     "description": {
-      "de": "Project Access Austria bietet Schüler:innen und Studierenden aus Österreich und Südtirol kostenloses 1:1-Mentoring und ein jährliches Bewerbungs-Bootcamp für internationale Universitäten.",
-      "en": "Project Access Austria offers free one-to-one mentoring and an annual application bootcamp for students from Austria and South Tyrol applying to international universities."
+      "de": "Project Access Austria unterstützt Schüler:innen und Studierende aus Österreich und Südtirol kostenlos bei Bewerbungen an internationale Universitäten.",
+      "en": "Project Access Austria helps students from Austria and South Tyrol apply to international universities, free of charge."
     }
   },
   "header_cta": {
@@ -30,12 +30,12 @@
       "en": "Project Access Austria"
     },
     "title": {
-      "de": "Internationale Universitäten — unabhängig vom **Hintergrund**.",
-      "en": "International universities — regardless of **background**."
+      "de": "Dein Weg an internationale Top-Unis",
+      "en": "Your route to top universities"
     },
     "lead": {
-      "de": "Project Access Austria bietet Schüler:innen und Studierenden aus Österreich und Südtirol kostenloses 1:1-Mentoring und ein jährliches Bewerbungs-Bootcamp. Mentor:innen sind Studierende und Alumni internationaler Universitäten.",
-      "en": "Project Access Austria offers students from Austria and South Tyrol free one-to-one mentoring and an annual application bootcamp. Mentors are students and alumni of international universities."
+      "de": "Wir unterstützen Schüler:innen und Studierende aus Österreich und Südtirol kostenlos bei Bewerbungen an internationale Universitäten: mit 1:1-Mentoring, Bootcamp und ehrlichem Feedback von Menschen, die den Prozess selbst kennen.",
+      "en": "We help students from Austria and South Tyrol apply to international universities, for free: through one-to-one mentoring, the bootcamp and honest feedback from people who have been through it."
     },
     "primary_cta": {
       "url": "https://projectaccess.org/join-our-program",
@@ -48,12 +48,12 @@
     "image": {
       "src": "assets/hero-bootcamp-group.jpg",
       "alt": {
-        "de": "Gruppenfoto vom Project Access Austria Bootcamp – Teilnehmende und Mentor:innen jubeln gemeinsam",
-        "en": "Group photo from the Project Access Austria bootcamp — participants and mentors celebrating together"
+        "de": "Gruppenfoto vom Project Access Austria Bootcamp mit Teilnehmenden und Mentor:innen",
+        "en": "Group photo from the Project Access Austria bootcamp with participants and mentors"
       },
       "caption": {
-        "de": "Eindrücke vom Project Access Austria Bootcamp",
-        "en": "Impressions from the Project Access Austria bootcamp"
+        "de": "Beim Project Access Austria Bootcamp",
+        "en": "At the Project Access Austria bootcamp"
       }
     }
   },
@@ -90,26 +90,26 @@
   "intro": {
     "eyebrow": { "de": "Über Project Access", "en": "About Project Access" },
     "title": {
-      "de": "Ein internationales Mentoring-Netzwerk.",
-      "en": "An international mentoring network."
+      "de": "Mentoring von Menschen, die den Weg kennen.",
+      "en": "Mentoring from people who know the process."
     },
     "body": {
-      "de": "Project Access ist eine internationale Non-Profit mit über 5.000 Mentor:innen weltweit. Project Access Austria verbindet motivierte junge Menschen aus Österreich und Südtirol mit Studierenden und Alumni an Oxford, Cambridge, Harvard, ETH Zürich, Sciences Po, Bocconi und weiteren Universitäten.",
-      "en": "Project Access is an international non-profit with more than 5,000 mentors worldwide. Project Access Austria connects motivated young people from Austria and South Tyrol with students and alumni at Oxford, Cambridge, Harvard, ETH Zürich, Sciences Po, Bocconi and other universities."
+      "de": "Project Access ist eine internationale Non-Profit mit über 5.000 Mentor:innen weltweit. In Österreich bringen wir junge Menschen mit Studierenden und Alumni von Oxford, Cambridge, Harvard, ETH Zürich, Sciences Po, Bocconi und vielen weiteren Universitäten zusammen.",
+      "en": "Project Access is an international non-profit with more than 5,000 mentors worldwide. In Austria, we connect applicants with students and alumni from Oxford, Cambridge, Harvard, ETH Zürich, Sciences Po, Bocconi and many other universities."
     }
   },
   "programme": {
     "eyebrow": { "de": "Programm", "en": "Programme" },
     "title": {
-      "de": "Das Programm im Überblick.",
-      "en": "Programme overview."
+      "de": "So unterstützen wir dich.",
+      "en": "How we help."
     },
     "items": [
       {
         "title": { "de": "1:1 Mentoring", "en": "One-to-one mentoring" },
         "body": {
-          "de": "Eine persönliche Ansprechperson für Feedback, Erfahrungsaustausch und konkrete nächste Schritte.",
-          "en": "A personal mentor for feedback, shared experience and concrete next steps."
+          "de": "Eine persönliche Ansprechperson für Fragen, Feedback und nächste Schritte in deiner Bewerbung.",
+          "en": "A personal mentor for questions, feedback and the next steps in your application."
         }
       },
       {
@@ -118,8 +118,8 @@
           "en": "Application bootcamp"
         },
         "body": {
-          "de": "Vier Tage Admissions-Wissen, Essay-Coaching, Interviewtraining und Austausch.",
-          "en": "Four days of admissions knowledge, essay coaching, interview training and exchange."
+          "de": "Vier Tage für Studienwahl, Essays, Interviews, Finanzierung und Austausch mit anderen Bewerber:innen.",
+          "en": "Four days for course choices, essays, interviews, funding and conversations with other applicants."
         }
       },
       {
@@ -128,8 +128,8 @@
           "en": "Courses & resources"
         },
         "body": {
-          "de": "Studienwahl, Finanzierung, Essays, Interviews — strukturierte Vor- und Nachbereitung.",
-          "en": "Course choice, funding, essays, interviews — structured preparation and follow-up."
+          "de": "Klar erklärte Inhalte zu Studienwahl, Finanzierung, Essays und Interviews, vor und nach dem Bootcamp.",
+          "en": "Clear resources on course choice, funding, essays and interviews, before and after the bootcamp."
         }
       },
       {
@@ -138,24 +138,24 @@
           "en": "Community & network"
         },
         "body": {
-          "de": "Andere motivierte Bewerber:innen aus Österreich und Südtirol mit ähnlichen Zielen.",
-          "en": "Other motivated applicants from Austria and South Tyrol with similar goals."
+          "de": "Kontakt zu anderen Bewerber:innen aus Österreich und Südtirol, die gerade vor ähnlichen Entscheidungen stehen.",
+          "en": "A network of applicants from Austria and South Tyrol who are working through similar decisions."
         }
       }
     ]
   },
   "bootcamp": {
     "eyebrow": {
-      "de": "Bootcamp 2026 — Anmeldung offen",
-      "en": "Bootcamp 2026 — applications open"
+      "de": "Bootcamp 2026 · Anmeldung offen",
+      "en": "Bootcamp 2026 · applications open"
     },
     "title": {
       "de": "Bootcamp 2026 in Horn.",
       "en": "Bootcamp 2026 in Horn."
     },
     "body": {
-      "de": "Rund 40 Schüler:innen und Studierende arbeiten in kleinen Gruppen mit Admissions Officers, Studierenden und Alumni internationaler Universitäten. Themen: Studienwahl, Essay, Interview, Finanzierung. Bachelor, Master und PhD willkommen.",
-      "en": "Around 40 students work in small groups with admissions officers, students and alumni of international universities. Topics: course choice, essays, interviews and funding. Bachelor, master and PhD welcome."
+      "de": "Rund 40 Schüler:innen und Studierende arbeiten in kleinen Gruppen an ihren Bewerbungen. Dabei geht es um Studienwahl, Essays, Interviews und Finanzierung. Bewerbungen für Bachelor, Master und PhD sind willkommen.",
+      "en": "Around 40 students work on their applications in small groups. We cover course choice, essays, interviews and funding. Bachelor, master and PhD applicants are welcome."
     },
     "details": [
       {
@@ -175,7 +175,7 @@
       {
         "term": { "de": "Kosten", "en": "Cost" },
         "definition": {
-          "de": "Gratis inkl. Unterkunft & Verpflegung",
+          "de": "Gratis, inklusive Unterkunft und Verpflegung",
           "en": "Free, including accommodation and meals"
         }
       },
@@ -212,8 +212,8 @@
   "engagement": {
     "eyebrow": { "de": "Mitmachen", "en": "Get involved" },
     "title": {
-      "de": "**PA Austria** unterstützen.",
-      "en": "Support **PA Austria**."
+      "de": "Bei **PA Austria** mitmachen.",
+      "en": "Get involved with **PA Austria**."
     },
     "tiles": [
       {
@@ -224,12 +224,12 @@
         },
         "eyebrow_inverted": true,
         "title": {
-          "de": "Studierende und Alumni internationaler Universitäten.",
-          "en": "Students and alumni of international universities."
+          "de": "Für Studierende und Alumni internationaler Universitäten.",
+          "en": "For students and alumni of international universities."
         },
         "body": {
-          "de": "Begleite Bewerber:innen mit Erfahrung und Feedback durch Essay, Interview und Auswahl.",
-          "en": "Support applicants with experience and feedback on essays, interviews and selection."
+          "de": "Begleite Bewerber:innen mit deiner Erfahrung durch Essays, Interviews und Auswahlprozesse.",
+          "en": "Use your experience to support applicants through essays, interviews and selection processes."
         },
         "link": {
           "page": "involvement",
@@ -243,8 +243,8 @@
         "classes": "w-2 accent-yellow",
         "eyebrow": { "de": "PA Austria Team", "en": "PA Austria team" },
         "title": {
-          "de": "Programme und Outreach mitgestalten.",
-          "en": "Help shape programmes and outreach."
+          "de": "Bootcamp, Schulbesuche und Outreach mitgestalten.",
+          "en": "Help run the bootcamp, school visits and outreach."
         },
         "link": {
           "page": "involvement",
@@ -277,12 +277,12 @@
           "en": "Sponsoring & partnerships"
         },
         "title": {
-          "de": "Räume, Expertise und Förderung.",
-          "en": "Spaces, expertise and funding."
+          "de": "Räume, Expertise oder Förderung beisteuern.",
+          "en": "Contribute space, expertise or funding."
         },
         "body": {
-          "de": "Unternehmen, Stiftungen und private Unterstützer:innen ermöglichen kostenlose Programme, Bootcamps und individuelle Beratung.",
-          "en": "Companies, foundations and private supporters make our free programmes, bootcamps and one-to-one guidance possible."
+          "de": "Unternehmen, Stiftungen und private Unterstützer:innen helfen, Bootcamp, Mentoring und Beratung kostenlos zu halten.",
+          "en": "Companies, foundations and private supporters help us keep the bootcamp, mentoring and guidance free."
         },
         "link": {
           "page": "partners",
@@ -297,17 +297,17 @@
   "partner_quote": {
     "eyebrow": { "de": "Partnerstimme", "en": "Partner quote" },
     "title": {
-      "de": "Bildung zugänglich machen.",
-      "en": "Making education accessible."
+      "de": "Talent sollte mehr zählen als Herkunft.",
+      "en": "Talent should matter more than background."
     },
     "quote": {
-      "de": "Sozioökonomischer Hintergrund ist eine zentrale Dimension von Vielfalt. Project Access sorgt dafür, dass Talent und Leidenschaft den Bildungsweg bestimmen — nicht die Herkunft.",
-      "en": "Socioeconomic background is a central dimension of diversity. Project Access ensures that talent and passion shape the educational path — not background."
+      "de": "Wir bei McKinsey sind fest davon überzeugt, dass vielfältigere Teams bessere Ergebnisse erzielen. Es ist uns eine Freude, Project Access zu unterstützen, damit Talent und Leidenschaft den Bildungsweg bestimmen, nicht der sozioökonomische Hintergrund.",
+      "en": "We at McKinsey are deeply convinced that more diverse teams perform better. It is our pleasure to support Project Access, where talent and passion determine someone's path in education, rather than socio-economic background."
     },
     "attribution": "Dr. Patrick Guggenberger · Associate Partner, McKinsey",
     "cta_text": {
-      "de": "Räume, Expertise oder Sponsoring beisteuern?",
-      "en": "Contributing space, expertise or sponsoring?"
+      "de": "Möchten Sie Räume, Expertise oder Sponsoring beisteuern?",
+      "en": "Can you contribute space, expertise or sponsorship?"
     },
     "cta_link": {
       "page": "partners",
@@ -317,16 +317,16 @@
   "team_preview": {
     "eyebrow": { "de": "Team", "en": "Team" },
     "title": {
-      "de": "Studierende und Alumni aus Österreich und Südtirol.",
-      "en": "Students and alumni from Austria and South Tyrol."
+      "de": "Das Team hinter PA Austria.",
+      "en": "The team behind PA Austria."
     },
     "members_keys": ["diana", "katrin_outreach", "yoan", "emmely"],
     "cta": {
       "page": "team",
       "label_h3": { "de": "Alle 16 ansehen", "en": "See all 16" },
       "label_body": {
-        "de": "Rollen, Universitäten und Fotos auf der Team-Seite.",
-        "en": "Roles, universities and photos on the team page."
+        "de": "",
+        "en": ""
       },
       "label_link": { "de": "Zur Team-Seite →", "en": "Team page →" },
       "aria": {
@@ -343,7 +343,7 @@
         "en": "Upcoming dates."
       },
       "body": {
-        "de": "Webinare, Schulbesuche und Bewerbungsfristen kündigen wir auf Instagram und per Mail an.",
+        "de": "Webinare, Schulbesuche und Bewerbungsfristen kündigen wir auf Instagram und per E-Mail an.",
         "en": "We announce webinars, school visits and application deadlines on Instagram and by email."
       },
       "cta": {

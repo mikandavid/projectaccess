@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Das Team von Project Access Austria: Studierende und Alumni, die Schüler:innen und Studierende kostenlos bei Bewerbungen an internationale Universitäten unterstützen." />
-    <title>Team — Project Access Austria</title>
+    <meta name="description" content="Das Team von Project Access Austria: Studierende und Alumni, die Bewerber:innen kostenlos auf dem Weg an internationale Universitäten unterstützen." />
+    <title>Team | Project Access Austria</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
     <link rel="alternate" hreflang="de" href="team.html" />
     <link rel="alternate" hreflang="en" href="en/team.html" />
   </head>
@@ -21,32 +22,33 @@
         <span class="brand-mark" aria-hidden="true">PA</span>
         <span class="brand-text">Project Access Austria</span>
       </a>
-      <nav class="nav" aria-label="Hauptnavigation">
-        <a href="index.html#programm">Programm</a>
-        <a href="bootcamp.html">Bootcamp</a>
-        <a href="mitmachen.html">Mitmachen</a>
-        <a href="partners.html">Partner</a>
-        <a href="team.html">Team</a>
-      </nav>
       <div class="header-actions">
-        <div class="lang-switch" role="group" aria-label="Sprache">
-          <a
-            href="team.html"
-            class="lang-switch-link is-active"
-            aria-label="Deutsche Version anzeigen"
-            aria-current="true"
-          >DE</a>
+        <a class="lang-switch" href="en/team.html" aria-label="Sprache">
+          <span class="lang-switch-link is-active" aria-current="true">DE</span>
           <span class="lang-switch-sep" aria-hidden="true">·</span>
-          <a
-            href="en/team.html"
-            class="lang-switch-link"
-            aria-label="Englische Version anzeigen"
-            
-          >EN</a>
-        </div>
+          <span class="lang-switch-link" >EN</span>
+        </a>
         
         <a class="button button-small" href="https://projectaccess.org/join-our-program">Kostenlos starten</a>
         
+      </div>
+      <input
+        id="site-nav-toggle"
+        class="nav-toggle-input"
+        type="checkbox"
+        aria-label="Menü öffnen"
+      />
+      <label for="site-nav-toggle" class="nav-toggle" aria-hidden="true">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </label>
+      <div class="nav-shell-panel">
+        <nav class="nav" aria-label="Hauptnavigation">
+          <a href="index.html#programm">Programm</a>
+          <a href="bootcamp.html">Bootcamp</a>
+          <a href="mitmachen.html">Mitmachen</a>
+          <a href="partners.html">Partner</a>
+          <a href="team.html">Team</a>
+        </nav>
       </div>
     </header>
 
@@ -54,8 +56,8 @@
       
       <section class="page-hero section-shell">
         <p class="eyebrow">Team</p>
-        <h1>Studierende und Alumni aus <span class="mark">Österreich</span> und Südtirol.</h1>
-        <p class="lead">Ein ehrenamtliches Team aus 16 Studierenden und Absolvent:innen organisiert Mentoring, Schulbesuche, Bootcamps, Programme, Tech und Kommunikation.</p>
+        <h1>Das Team hinter <span class="mark">PA Austria</span>.</h1>
+        <p class="lead">Wir sind 16 Studierende und Absolvent:innen, die ehrenamtlich Mentoring, Schulbesuche, Bootcamp, Tech und Kommunikation organisieren.</p>
         <div class="hero-actions">
           <a class="button" href="mitmachen.html">Mitmachen</a>
           <a class="button button-secondary" href="mailto:austria@projectaccess.org?subject=Mitmachen%20bei%20PA%20Austria">Kontakt</a>
@@ -164,5 +166,21 @@
       </div>
     </footer>
 
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        if (!window.Calendly) {
+          return;
+        }
+
+        window.Calendly.initBadgeWidget({
+          url: "https://calendly.com/austria-projectaccess/dein-call-mit-project-access",
+          text: "Buche hier deinen Call mit uns!",
+          color: "#26262b",
+          textColor: "#fffdf7",
+          branding: true
+        });
+      });
+    </script>
   </body>
 </html>

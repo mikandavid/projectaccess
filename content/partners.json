@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": {
-      "de": "Partner:innen — Project Access Austria",
-      "en": "Partners — Project Access Austria"
+      "de": "Partner:innen | Project Access Austria",
+      "en": "Partners | Project Access Austria"
     },
     "description": {
-      "de": "Schulen, Unternehmen, Stiftungen und private Unterstützer:innen helfen Project Access Austria, kostenlose Programme, Bootcamps und Schulpartnerschaften möglich zu machen.",
-      "en": "Schools, companies, foundations and private supporters help Project Access Austria run free programmes, bootcamps and school partnerships."
+      "de": "Schulen, Unternehmen, Stiftungen und private Unterstützer:innen helfen Project Access Austria, Mentoring, Bootcamp und Schulbesuche kostenlos anzubieten.",
+      "en": "Schools, companies, foundations and private supporters help Project Access Austria offer mentoring, the bootcamp and school visits free of charge."
     }
   },
   "header_cta": {
@@ -19,12 +19,12 @@
   "hero": {
     "eyebrow": { "de": "Partner:innen", "en": "Partners" },
     "title": {
-      "de": "**Partner:innen** ermöglichen kostenlose Programme.",
-      "en": "**Partners** make our free programmes possible."
+      "de": "**Partner:innen** halten unsere Angebote kostenlos.",
+      "en": "**Partners** help keep our work free."
     },
     "lead": {
-      "de": "Schulen, Unternehmen, Stiftungen und private Unterstützer:innen ermöglichen kostenlose Beratung, Bootcamps und Schulprogramme — vor allem für junge Menschen mit weniger Zugang zu internationalen Bildungsnetzwerken.",
-      "en": "Schools, companies, foundations and private supporters enable free guidance, bootcamps and school programmes — especially for young people with less access to international education networks."
+      "de": "Mit Schulen, Unternehmen, Stiftungen und privaten Unterstützer:innen erreichen wir junge Menschen, die sonst oft später von internationalen Studienmöglichkeiten erfahren. Beiträge können Räume, Finanzierung, Expertise oder Kontakte sein.",
+      "en": "With schools, companies, foundations and private supporters, we reach young people who often hear about international study options too late. Partners can contribute space, funding, expertise or contacts."
     },
     "primary_cta": {
       "url": {
@@ -51,44 +51,44 @@
       "en": "Forms of support"
     },
     "title": {
-      "de": "Vier Formen, mit denen Partner:innen helfen.",
-      "en": "Four ways partners help."
+      "de": "So können Partner:innen helfen.",
+      "en": "How partners can help."
     },
     "tiles": [
       {
         "classes": "w-3 h-2 accent-yellow",
         "eyebrow": { "de": "Förderung", "en": "Funding" },
         "title": {
-          "de": "Bootcamp und Programme tragen.",
-          "en": "Fund the bootcamp and programmes."
+          "de": "Bootcamp und Mentoring finanzieren.",
+          "en": "Fund the bootcamp and mentoring."
         },
         "body": {
-          "de": "Sponsoring für Bootcamp, Unterkunft, Verpflegung, Materialien oder Reisekosten — und damit Zugang für Bewerber:innen, die diese Kosten sonst nicht stemmen könnten.",
-          "en": "Sponsoring for the bootcamp, accommodation, meals, materials or travel costs — and access for applicants who could not otherwise afford them."
+          "de": "Sponsoring hilft bei Unterkunft, Verpflegung, Materialien und Reisekosten. So können auch Bewerber:innen teilnehmen, für die diese Kosten sonst zu hoch wären.",
+          "en": "Sponsorship helps cover accommodation, meals, materials and travel costs. That means applicants can take part even if these costs would otherwise be too high."
         }
       },
       {
         "classes": "w-3 accent-cream",
         "eyebrow": { "de": "Räume", "en": "Spaces" },
         "title": {
-          "de": "Workshops, Trainings, Infoabende.",
-          "en": "Workshops, trainings, info evenings."
+          "de": "Räume für Workshops und Infoabende.",
+          "en": "Spaces for workshops and information evenings."
         }
       },
       {
         "classes": "w-3",
         "eyebrow": { "de": "Expertise", "en": "Expertise" },
         "title": {
-          "de": "Workshops, Mentoring, Interviewtraining.",
-          "en": "Workshops, mentoring, interview training."
+          "de": "Know-how für Workshops und Interviews.",
+          "en": "Know-how for workshops and interviews."
         }
       },
       {
         "classes": "w-3 accent-green",
         "eyebrow": { "de": "Netzwerk", "en": "Network" },
         "title": {
-          "de": "Schulen, Alumni, Förder:innen, Stiftungen.",
-          "en": "Schools, alumni, funders, foundations."
+          "de": "Kontakte zu Schulen, Alumni und Förder:innen.",
+          "en": "Connections to schools, alumni and funders."
         }
       }
     ]
@@ -99,8 +99,8 @@
       "en": "Funding in numbers"
     },
     "title": {
-      "de": "Was Förderung möglich macht.",
-      "en": "What funding enables."
+      "de": "Was Partner:innen möglich machen.",
+      "en": "What partners make possible."
     },
     "items": [
       {
@@ -129,20 +129,20 @@
   "partner_quote": {
     "eyebrow": { "de": "Partnerstimme", "en": "Partner quote" },
     "quote": {
-      "de": "Sozioökonomischer Hintergrund ist eine zentrale Dimension von Vielfalt. Project Access sorgt dafür, dass Talent und Leidenschaft den Bildungsweg bestimmen — nicht die Herkunft.",
-      "en": "Socioeconomic background is a central dimension of diversity. Project Access ensures that talent and passion shape the educational path — not background."
+      "de": "Wir bei McKinsey sind fest davon überzeugt, dass vielfältigere Teams bessere Ergebnisse erzielen. Neben Geschlecht und ethnischer Herkunft ist der sozioökonomische Hintergrund eine zentrale Dimension, entlang derer wir als Unternehmen jeden Tag daran arbeiten, vielfältiger und inklusiver zu werden. Es ist uns eine Freude, eine Organisation wie Project Access zu unterstützen, die sicherstellt, dass nur Talent und Leidenschaft den Bildungsweg eines Menschen bestimmen, nicht der sozioökonomische Hintergrund.",
+      "en": "We at McKinsey are deeply convinced that more diverse teams perform better. Besides gender and ethnicity, socio-economic background is a key dimension along which we as a firm work hard every day to become more diverse and inclusive. It's our pleasure to support an organisation like Project Access, which makes sure that only talent and passion determine someone's path in education, rather than the socio-economic background."
     },
     "attribution": "Dr. Patrick Guggenberger · Associate Partner, McKinsey"
   },
   "schools": {
     "eyebrow": { "de": "Schulpartnerschaften", "en": "School partnerships" },
     "title": {
-      "de": "Kostenlose Programme für **Schulen**.",
-      "en": "Free programmes for **schools**."
+      "de": "Kostenlose Sessions für **Schulen**.",
+      "en": "Free sessions for **schools**."
     },
     "body": {
-      "de": "Viele Talente erfahren zu spät, was möglich ist. Project Access Austria bringt Studierende und Alumni internationaler Universitäten direkt an österreichische Schulen — kostenlos und auf die Schule zugeschnitten.",
-      "en": "Many students learn too late what is possible. Project Access Austria brings students and alumni of international universities directly to Austrian schools — free of charge and tailored to each school."
+      "de": "Viele Schüler:innen erfahren erst spät, welche Studienwege im Ausland offenstehen und wie Bewerbungen funktionieren. Project Access Austria bringt Studierende und Alumni internationaler Universitäten direkt an österreichische Schulen, kostenlos und passend zum Bedarf der Schule.",
+      "en": "Many students only hear late about study options abroad and how the applications work. Project Access Austria brings students and alumni of international universities directly to Austrian schools, free of charge and tailored to what each school needs."
     },
     "cta": {
       "url": {
@@ -165,15 +165,15 @@
   "schools_offer": {
     "eyebrow": { "de": "Was wir anbieten", "en": "What we offer" },
     "title": {
-      "de": "Was Schulen erhalten.",
-      "en": "What schools receive."
+      "de": "Was Schulen bekommen.",
+      "en": "What schools get."
     },
     "items": [
       {
         "label": { "de": "Schulbesuche", "en": "School visits" },
         "body": {
-          "de": "durch Studierende und Alumni internationaler Universitäten.",
-          "en": "by students and alumni of international universities."
+          "de": "mit Studierenden und Alumni internationaler Universitäten.",
+          "en": "with students and alumni of international universities."
         }
       },
       {
@@ -196,15 +196,15 @@
           "en": "A personal contact"
         },
         "body": {
-          "de": "aus dem PA Austria Team.",
-          "en": "in the PA Austria team."
+          "de": "aus unserem PA Austria Team.",
+          "en": "from our PA Austria team."
         }
       },
       {
         "label": { "de": "Sessionplanung", "en": "Session planning" },
         "body": {
-          "de": "nach Zielgruppe, Format und Schwerpunkt.",
-          "en": "by audience, format and focus."
+          "de": "abgestimmt auf Zielgruppe, Format und Schwerpunkt.",
+          "en": "adapted to the audience, format and focus."
         }
       }
     ]
@@ -219,8 +219,8 @@
     },
     "eyebrow": { "de": "Mögliche Themen", "en": "Possible topics" },
     "title": {
-      "de": "Themen für Schulsessions.",
-      "en": "Topics for school sessions."
+      "de": "Mögliche Themen für Schulsessions.",
+      "en": "Possible topics for school sessions."
     },
     "items": [
       {
@@ -252,8 +252,8 @@
       "en": "Enquiries and contact."
     },
     "body": {
-      "de": "Schreiben Sie uns mit dem passenden Betreff — wir antworten innerhalb weniger Tage.",
-      "en": "Write to us with the relevant subject line — we reply within a few days."
+      "de": "Schreiben Sie uns mit dem passenden Betreff. Wir melden uns innerhalb weniger Tage.",
+      "en": "Write to us with the relevant subject line. We usually reply within a few days."
     },
     "primary_cta": {
       "url": {
