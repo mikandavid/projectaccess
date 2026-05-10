@@ -18,7 +18,7 @@
         <div class="full-team-grid">
           {%- for member in team_members %}
           <article class="team-card">
-            <img src="{{ asset(member.image) }}" alt="{{ member.name }}" />
+            <img src="{{ asset(member.image) }}" alt="{{ member.name }} – {{ member.role[lang] }}" loading="lazy" decoding="async" />
             <h3>{{ member.name }}</h3>
             <p>{{ member.role[lang] }}</p>
           </article>

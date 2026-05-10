@@ -1,20 +1,30 @@
 {
   "meta": {
     "title": {
-      "de": "Events & Webinare | Project Access Austria",
-      "en": "Events & webinars | Project Access Austria"
+      "de": "Events, Webinare & Schulbesuche in Österreich | PA Austria",
+      "en": "Events, webinars & school visits in Austria | PA Austria"
     },
     "description": {
-      "de": "Aktuelle Termine, Webinare, Schulbesuche und vergangene Veranstaltungen von Project Access Austria.",
-      "en": "Upcoming dates, webinars, school visits and past Project Access Austria events."
+      "de": "Termine zu Auslandsstudium-Webinaren, Schulbesuchen, Studienmessen und dem PA Austria Bootcamp. Project Access Austria bringt Bewerbungsberatung kostenlos an Schulen in ganz Österreich.",
+      "en": "Dates for studying-abroad webinars, school visits, education fairs and the PA Austria bootcamp. Project Access Austria brings free application guidance to schools across Austria."
+    },
+    "keywords": {
+      "de": "Webinar Auslandsstudium Österreich, Schulvortrag Studium Ausland, BeSt Messe Wien, Studienberatung Schule Österreich, Bewerbungsberatung Wien",
+      "en": "studying abroad webinar Austria, school talk on studying abroad, BeSt fair Vienna, study guidance Austria schools, application advice Vienna"
     }
   },
   "header_cta": {
     "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
-    "label": { "de": "Zum Bootcamp anmelden", "en": "Apply to the bootcamp" }
+    "label": {
+      "de": "Zum Bootcamp anmelden",
+      "en": "Apply to the bootcamp"
+    }
   },
   "hero": {
-    "eyebrow": { "de": "Events & Webinare", "en": "Events & webinars" },
+    "eyebrow": {
+      "de": "Events & Webinare",
+      "en": "Events & webinars"
+    },
     "title": {
       "de": "Termine, Webinare und **Schulbesuche**",
       "en": "Events, webinars and **school visits**"
@@ -25,17 +35,23 @@
     },
     "primary_cta": {
       "url": "https://www.instagram.com/projectaccess.at/",
-      "label": { "de": "Auf Instagram folgen", "en": "Follow on Instagram" }
+      "label": {
+        "de": "Auf Instagram folgen",
+        "en": "Follow on Instagram"
+      }
     },
     "secondary_cta": {
       "url": {
         "de": "mailto:austria@projectaccess.org?subject=Event%20mit%20PA%20Austria",
         "en": "mailto:austria@projectaccess.org?subject=Event%20with%20PA%20Austria"
       },
-      "label": { "de": "Event anfragen", "en": "Request an event" }
+      "label": {
+        "de": "Event anfragen",
+        "en": "Request an event"
+      }
     },
     "image": {
-      "src": "assets/events-bootcamp-talk.jpg",
+      "src": "assets/events-bootcamp-talk.webp",
       "alt": {
         "de": "Vortrag beim Project Access Austria Bootcamp",
         "en": "Talk at the Project Access Austria bootcamp"
@@ -43,7 +59,10 @@
     }
   },
   "current": {
-    "eyebrow": { "de": "Aktuelle Termine", "en": "Upcoming dates" },
+    "eyebrow": {
+      "de": "Aktuelle Termine",
+      "en": "Upcoming dates"
+    },
     "title": {
       "de": "Aktuelle Termine.",
       "en": "Upcoming dates."
@@ -54,7 +73,10 @@
     },
     "primary_cta": {
       "url": "https://www.instagram.com/projectaccess.at/",
-      "label": { "de": "@projectaccess.at", "en": "@projectaccess.at" }
+      "label": {
+        "de": "@projectaccess.at",
+        "en": "@projectaccess.at"
+      }
     },
     "secondary_cta": {
       "url": "mailto:austria@projectaccess.org",
@@ -66,35 +88,53 @@
   },
   "next_event": {
     "image": {
-      "src": "assets/DSC07622.jpg",
+      "src": "assets/DSC07622.webp",
       "alt": {
         "de": "Project Access Austria Bootcamp Workshop",
         "en": "Project Access Austria bootcamp workshop"
       }
     },
-    "eyebrow": { "de": "Nächster Termin", "en": "Next event" },
+    "eyebrow": {
+      "de": "Nächster Termin",
+      "en": "Next event"
+    },
     "title": "PA Austria Bootcamp 2026",
     "details": [
       {
-        "term": { "de": "Datum", "en": "Date" },
-        "definition": { "de": "23.–26. Juli 2026", "en": "23–26 July 2026" }
+        "term": {
+          "de": "Datum",
+          "en": "Date"
+        },
+        "definition": {
+          "de": "23.–26. Juli 2026",
+          "en": "23–26 July 2026"
+        }
       },
       {
-        "term": { "de": "Ort", "en": "Location" },
+        "term": {
+          "de": "Ort",
+          "en": "Location"
+        },
         "definition": {
           "de": "Horn, Niederösterreich",
           "en": "Horn, Lower Austria"
         }
       },
       {
-        "term": { "de": "Für wen", "en": "Audience" },
+        "term": {
+          "de": "Für wen",
+          "en": "Audience"
+        },
         "definition": {
           "de": "Schüler:innen und Studierende aus Österreich und Südtirol",
           "en": "Students from Austria and South Tyrol"
         }
       },
       {
-        "term": { "de": "Kosten", "en": "Cost" },
+        "term": {
+          "de": "Kosten",
+          "en": "Cost"
+        },
         "definition": {
           "de": "Gratis, inklusive Unterkunft und Verpflegung",
           "en": "Free, including accommodation and meals"
@@ -103,18 +143,27 @@
     ],
     "cta": {
       "page": "bootcamp",
-      "label": { "de": "Bootcamp ansehen", "en": "Bootcamp details" }
+      "label": {
+        "de": "Bootcamp ansehen",
+        "en": "Bootcamp details"
+      }
     }
   },
   "archive": {
-    "eyebrow": { "de": "Archiv", "en": "Archive" },
+    "eyebrow": {
+      "de": "Archiv",
+      "en": "Archive"
+    },
     "title": {
       "de": "Was zuletzt stattgefunden hat.",
       "en": "Recent events."
     },
     "items": [
       {
-        "tag": { "de": "Vergangen", "en": "Past" },
+        "tag": {
+          "de": "Vergangen",
+          "en": "Past"
+        },
         "title": "BeSt-Messe Wien 2026",
         "body": {
           "de": "12.–15. März 2026, Messe Wien, Stand A37. Wir haben mit Schüler:innen, Eltern und Lehrkräften über Bewerbungen an internationalen Universitäten, Finanzierung und das Bootcamp gesprochen.",
@@ -122,7 +171,10 @@
         }
       },
       {
-        "tag": { "de": "Vergangen", "en": "Past" },
+        "tag": {
+          "de": "Vergangen",
+          "en": "Past"
+        },
         "title": "Bootcamp 2025",
         "body": {
           "de": "31. Juli bis 3. August 2025 in Horn. Vier Tage zu Studienwahl, Essays, Interviews und Finanzierung mit Bewerber:innen aus Österreich.",

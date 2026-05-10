@@ -1,4 +1,81 @@
 {
+  "site_url": "https://projectaccess.at",
+  "site_name": "Project Access Austria",
+  "default_locale": {
+    "de": "de_AT",
+    "en": "en_GB"
+  },
+  "default_og_image": {
+    "src": "assets/DSC07622.webp",
+    "width": 2048,
+    "height": 1365,
+    "alt": {
+      "de": "Teilnehmende und Mentor:innen beim Project Access Austria Bootcamp",
+      "en": "Participants and mentors at the Project Access Austria bootcamp"
+    }
+  },
+  "favicon": {
+    "ico": "assets/pa-austria-logo.png",
+    "png_192": "assets/pa-austria-logo.png",
+    "apple_touch": "assets/pa-austria-logo.png"
+  },
+  "theme_color": "#26262b",
+  "organization": {
+    "legal_name": "Projekt Hochschulzugang",
+    "alternate_name": [
+      "PA Austria",
+      "Project Access Österreich",
+      "Projekt Hochschulzugang"
+    ],
+    "founding_year": 2018,
+    "registration_label": {
+      "de": "ZVR-Zahl",
+      "en": "Austrian register number (ZVR)"
+    },
+    "registration_value": "1037731270",
+    "telephone": null,
+    "address": {
+      "street": "Neustiftgasse 4",
+      "postal_code": "2193",
+      "locality": "Wilfersdorf",
+      "region": "Niederösterreich",
+      "country": "AT"
+    },
+    "area_served": [
+      "AT",
+      "IT-32-BZ"
+    ],
+    "knows_about": {
+      "de": [
+        "Bewerbung an internationalen Universitäten",
+        "Studium in den USA",
+        "Studium in Großbritannien",
+        "Oxford und Cambridge Bewerbungen",
+        "Personal Statement und Essays",
+        "Stipendien und Studienfinanzierung",
+        "Mentoring für Schüler:innen",
+        "Auslandsstudium für Schüler:innen aus Österreich und Südtirol"
+      ],
+      "en": [
+        "Applications to international universities",
+        "Studying in the United States",
+        "Studying in the United Kingdom",
+        "Oxford and Cambridge applications",
+        "Personal statements and admissions essays",
+        "Scholarships and university funding",
+        "Mentoring for students",
+        "Studying abroad for students from Austria and South Tyrol"
+      ]
+    },
+    "description": {
+      "de": "Project Access Austria ist die österreichische Sektion des internationalen Project-Access-Netzwerks. Wir unterstützen Schüler:innen und Studierende aus Österreich und Südtirol kostenlos bei Bewerbungen an selektive internationale Universitäten – mit 1:1-Mentoring, einem jährlichen Bewerbungs-Bootcamp, Schulbesuchen und Webinaren.",
+      "en": "Project Access Austria is the Austrian chapter of the international Project Access network. We support students from Austria and South Tyrol with free one-to-one mentoring, an annual application bootcamp, school visits and webinars to help them apply to selective international universities."
+    },
+    "same_as": [
+      "https://projectaccess.org",
+      "https://www.instagram.com/projectaccess.at/"
+    ]
+  },
   "brand_logo_src": "https://projectaccess.org/wp-content/uploads/2025/05/Frame-5.svg",
   "brand_aria": {
     "de": "Project Access Austria Startseite",
@@ -12,19 +89,38 @@
     {
       "page": "index",
       "anchor_key": "programme",
-      "label": { "de": "Programm", "en": "Programme" }
+      "label": {
+        "de": "Programm",
+        "en": "Programme"
+      }
     },
     {
       "page": "bootcamp",
-      "label": { "de": "Bootcamp", "en": "Bootcamp" }
+      "label": {
+        "de": "Bootcamp",
+        "en": "Bootcamp"
+      }
+    },
+    {
+      "page": "events",
+      "label": {
+        "de": "Events",
+        "en": "Events"
+      }
     },
     {
       "page": "partners",
-      "label": { "de": "Partner", "en": "Partners" }
+      "label": {
+        "de": "Partner",
+        "en": "Partners"
+      }
     },
     {
       "page": "team",
-      "label": { "de": "Team & Mitmachen", "en": "Team & join us" }
+      "label": {
+        "de": "Team & Mitmachen",
+        "en": "Team & join us"
+      }
     }
   ],
   "menu_toggle": {
@@ -45,6 +141,10 @@
     "label": {
       "de": "Sprache",
       "en": "Language"
+    },
+    "mobile_label": {
+      "de": "Englische Version",
+      "en": "Deutsche Version"
     },
     "de_label": "DE",
     "en_label": "EN",

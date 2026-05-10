@@ -9,7 +9,14 @@
           <span class="lang-switch-link{% if lang == 'en' %} is-active{% endif %}" {% if lang == 'en' %}aria-current="true"{% endif %}>{{ site.language_switch.en_label }}</span>
         </a>
         {% if page.header_cta %}
-        <a class="button button-small" href="{{ t(page.header_cta.url) }}">{{ page.header_cta.label[lang] }}</a>
+        <a class="button button-small header-cta{% if lang == 'de' %} header-cta-shortenable{% endif %}" href="{{ t(page.header_cta.url) }}">
+          {% if lang == 'de' %}
+          <span class="header-cta-label header-cta-label-full">{{ page.header_cta.label[lang] }}</span>
+          <span class="header-cta-label header-cta-label-short">Anmelden</span>
+          {% else %}
+          <span class="header-cta-label header-cta-label-full">{{ page.header_cta.label[lang] }}</span>
+          {% endif %}
+        </a>
         {% endif %}
       </div>
       <input
@@ -27,5 +34,6 @@
           <a href="{{ page_href(item.page, anchor_key=item.get('anchor_key')) }}">{{ item.label[lang] }}</a>
           {%- endfor %}
         </nav>
+        <a class="mobile-lang-link" href="{{ alt_lang_href }}">{{ site.language_switch.mobile_label[lang] }}</a>
       </div>
     </header>

@@ -1,0 +1,111 @@
+{#-
+  Sitewide JSON-LD: NGO Organization (with NAP, area served, expertise) and a
+  matching WebSite entity. Both nodes share an @id so per-page schemas can
+  reference them cleanly via "@id" rather than redefining the org each time.
+-#}
+{%- set org = site.organization -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["NGO", "EducationalOrganization"],
+      "@id": "{{ site.site_url }}/#organization",
+      "name": "{{ site.site_name }}",
+      "legalName": {{ org.legal_name|tojson }},
+      "alternateName": {{ org.alternate_name|tojson }},
+      "url": "{{ site.site_url }}/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ absolute_asset_url(site.favicon.png_192) }}",
+        "width": 2500,
+        "height": 1000
+      },
+      "image": "{{ absolute_asset_url(site.default_og_image.src) }}",
+      "description": {{ org.description[lang]|tojson }},
+      "foundingDate": "{{ org.founding_year }}",
+      "email": "{{ site.footer.email }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": {{ org.address.street|tojson }},
+        "postalCode": {{ org.address.postal_code|tojson }},
+        "addressLocality": {{ org.address.locality|tojson }},
+        "addressRegion": {{ org.address.region|tojson }},
+        "addressCountry": {{ org.address.country|tojson }}
+      },
+      "areaServed": [
+        {%- for code in org.area_served %}
+        {"@type": "Country", "name": {{ code|tojson }} }{% if not loop.last %},{% endif %}
+        {%- endfor %}
+      ],
+      "knowsAbout": {{ org.knows_about[lang]|tojson }},
+      "knowsLanguage": ["de", "en"],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": {{ org.registration_label[lang]|tojson }},
+        "value": {{ org.registration_value|tojson }}
+      },
+      "parentOrganization": {
+        "@type": "NGO",
+        "name": "Project Access",
+        "url": "https://projectaccess.org"
+      },
+      "sameAs": {{ org.same_as|tojson }},
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "general inquiries",
+          "email": "{{ site.footer.email }}",
+          "availableLanguage": ["German", "English"],
+          "areaServed": ["AT", "IT-32-BZ"]
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.site_url }}/#website",
+      "url": "{{ site.site_url }}/",
+      "name": "{{ site.site_name }}",
+      "inLanguage": ["de-AT", "en"],
+      "publisher": {"@id": "{{ site.site_url }}/#organization"},
+      "description": {{ org.description[lang]|tojson }}
+    },
+    {
+      "@type": "WebPage",
+      "@id": "{{ canonical_url }}#webpage",
+      "url": "{{ canonical_url }}",
+      "name": {{ page.meta.title[lang]|tojson }},
+      "description": {{ page.meta.description[lang]|tojson }},
+      "inLanguage": "{{ 'de-AT' if lang == 'de' else 'en' }}",
+      "isPartOf": {"@id": "{{ site.site_url }}/#website"},
+      "about": {"@id": "{{ site.site_url }}/#organization"},
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "{{ og_image_url }}"
+      }
+      {%- if page_key != 'index' %},
+      "breadcrumb": {"@id": "{{ canonical_url }}#breadcrumb"}
+      {%- endif %}
+    }{% if page_key != 'index' %},
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ canonical_url }}#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "{{ site.site_name }}",
+          "item": "{{ site.site_url }}/{{ 'en/' if lang == 'en' else '' }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.meta.title[lang]|tojson }},
+          "item": "{{ canonical_url }}"
+        }
+      ]
+    }
+    {%- endif %}
+  ]
+}
+</script>

@@ -1,4 +1,77 @@
 {% extends "base.html.j2" %}
+{% block og_type %}event{% endblock %}
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationEvent",
+  "@id": "{{ canonical_url }}#bootcamp-2026",
+  "name": {{ ("Project Access Austria Bootcamp 2026")|tojson }},
+  "description": {{ page.meta.description[lang]|tojson }},
+  "url": "{{ canonical_url }}",
+  "image": "{{ og_image_url }}",
+  "inLanguage": ["de-AT", "en"],
+  "startDate": "2026-07-23",
+  "endDate": "2026-07-26",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "isAccessibleForFree": true,
+  "educationalLevel": "Secondary and tertiary applicants",
+  "teaches": [
+    "University course choice",
+    "Personal statement and admissions essays",
+    "CV and recommendation letters",
+    "Standardised admissions tests",
+    "Mock interviews (e.g. Cambridge style)",
+    "Funding, scholarships and living costs abroad"
+  ],
+  "location": {
+    "@type": "Place",
+    "name": "Horn, Niederösterreich",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Horn",
+      "addressRegion": "Niederösterreich",
+      "addressCountry": "AT"
+    }
+  },
+  "organizer": {"@id": "{{ site.site_url }}/#organization"},
+  "performer": {"@id": "{{ site.site_url }}/#organization"},
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "Prospective applicants from Austria and South Tyrol"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2025-09-01",
+    "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+    "category": "Free, including accommodation and meals"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{ canonical_url }}#faq",
+  "mainEntity": [
+    {%- for item in page.faq['items'] %}
+    {
+      "@type": "Question",
+      "name": {{ item.question[lang]|tojson }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.answer[lang]|tojson }}
+      }
+    }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>
+{% endblock %}
 {% block content %}
       <section class="page-hero page-hero-split section-shell">
         <div>
@@ -10,7 +83,7 @@
             <a class="button button-secondary" href="{{ t(page.hero.secondary_cta.url) }}">{{ page.hero.secondary_cta.label[lang] }}</a>
           </div>
         </div>
-        <img class="page-hero-image" src="{{ asset(page.hero.image.src) }}" alt="{{ page.hero.image.alt[lang] }}" />
+        <img class="page-hero-image" src="{{ asset(page.hero.image.src) }}" alt="{{ page.hero.image.alt[lang] }}" fetchpriority="high" decoding="async" />
       </section>
 
       <section class="section-shell compact-section">
@@ -51,7 +124,7 @@
 
       <section class="section-shell image-band" aria-label="{{ page.image_band.aria[lang] }}">
         {%- for img in page.image_band.images %}
-        <img src="{{ asset(img.src) }}" alt="{{ img.alt[lang] }}" />
+        <img src="{{ asset(img.src) }}" alt="{{ img.alt[lang] }}" loading="lazy" decoding="async" />
         {%- endfor %}
       </section>
 

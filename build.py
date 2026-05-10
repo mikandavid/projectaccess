@@ -11,6 +11,7 @@ Reads:
 Writes:
     German pages at the repository root, English pages under en/.
     The set of pages and their per-language slugs is defined in PAGES below.
+    Also writes sitemap.xml, robots.txt and llms.txt for SEO/AI discovery.
 """
 
 from __future__ import annotations
@@ -20,6 +21,7 @@ import json
 import re
 import shutil
 import sys
+from datetime import date
 from pathlib import Path
 
 try:
@@ -37,6 +39,29 @@ CONTENT_DIR = ROOT / "content"
 TEMPLATES_DIR = ROOT / "templates"
 
 LANGUAGES: list[str] = ["de", "en"]
+
+# Public site origin used for canonical, hreflang, sitemap and Open Graph URLs.
+# Read once from content/_site.json so the value lives next to the rest of the
+# bilingual site chrome.
+SITE_URL = "https://projectaccess.at"
+
+# Per-page sitemap weighting. Higher priority pages get crawled/refreshed more
+# eagerly. Values stay between 0.0 and 1.0; the home page outranks the rest.
+SITEMAP_PRIORITY: dict[str, float] = {
+    "index":    1.0,
+    "bootcamp": 0.9,
+    "events":   0.7,
+    "team":     0.7,
+    "partners": 0.6,
+}
+
+SITEMAP_CHANGEFREQ: dict[str, str] = {
+    "index":    "weekly",
+    "bootcamp": "weekly",
+    "events":   "monthly",
+    "team":     "monthly",
+    "partners": "monthly",
+}
 
 # Maps logical page key -> per-language output path relative to ROOT.
 # German pages live at the root, English pages under en/ with English slugs.
@@ -95,6 +120,27 @@ def relative_url(target_path: str, current_dir: str) -> str:
     return "../" + target_path
 
 
+def public_url(rel_path: str) -> str:
+    """Convert a repo-root-relative output path to its public absolute URL.
+
+    The home pages map to clean directory URLs ("/" and "/en/") so search
+    engines and social platforms see a single canonical form. Every other page
+    keeps its filename so existing inbound links keep working.
+    """
+    if rel_path == "index.html":
+        return f"{SITE_URL}/"
+    if rel_path == "en/index.html":
+        return f"{SITE_URL}/en/"
+    return f"{SITE_URL}/{rel_path}"
+
+
+def absolute_asset_url(rel_path: str) -> str:
+    """Public URL for an asset path (e.g. assets/foo.jpg) that lives at root."""
+    if rel_path.startswith(("http://", "https://")):
+        return rel_path
+    return f"{SITE_URL}/{rel_path.lstrip('/')}"
+
+
 def build_env() -> Environment:
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATES_DIR)),
@@ -123,6 +169,16 @@ def render_page(
     other_lang = "en" if lang == "de" else "de"
     self_href = relative_url(output_rel, current_dir)
     alt_lang_href = relative_url(PAGES[page_key][other_lang], current_dir)
+
+    canonical_url = public_url(output_rel)
+    canonical_url_alt = public_url(PAGES[page_key][other_lang])
+    canonical_de = canonical_url if lang == "de" else canonical_url_alt
+    canonical_en = canonical_url if lang == "en" else canonical_url_alt
+
+    # Open Graph / Twitter card image. Pages can override via meta.og_image.
+    og_image_meta = page_content.get("meta", {}).get("og_image") or site["default_og_image"]
+    og_image_url = absolute_asset_url(og_image_meta["src"])
+    og_image_alt = og_image_meta.get("alt", {}).get(lang) if isinstance(og_image_meta.get("alt"), dict) else og_image_meta.get("alt")
 
     asset_prefix = compute_asset_prefix(current_dir)
 
@@ -157,6 +213,13 @@ def render_page(
         "anchor": anchor,
         "page_href": page_href,
         "t": t,
+        "canonical_url": canonical_url,
+        "canonical_de": canonical_de,
+        "canonical_en": canonical_en,
+        "og_image_url": og_image_url,
+        "og_image_alt": og_image_alt,
+        "absolute_asset_url": absolute_asset_url,
+        "site_url": SITE_URL,
     }
 
     if page_key == "index":
@@ -186,15 +249,103 @@ def write_file(rel_path: str, content: str) -> None:
     print(f"  wrote {rel_path}")
 
 
+SEO_OUTPUTS = ("sitemap.xml", "robots.txt", "llms.txt")
+
+
 def clean_outputs() -> None:
     for variants in PAGES.values():
         for rel in variants.values():
             target = ROOT / rel
             if target.exists():
                 target.unlink()
+    for name in SEO_OUTPUTS:
+        target = ROOT / name
+        if target.exists():
+            target.unlink()
     en_dir = ROOT / "en"
     if en_dir.exists() and not any(en_dir.iterdir()):
         shutil.rmtree(en_dir)
+
+
+def render_sitemap() -> str:
+    """Generate an XML sitemap with hreflang alternates for every page."""
+    today = date.today().isoformat()
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+        '        xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+    ]
+    for page_key, variants in PAGES.items():
+        priority = SITEMAP_PRIORITY.get(page_key, 0.5)
+        changefreq = SITEMAP_CHANGEFREQ.get(page_key, "monthly")
+        for lang in LANGUAGES:
+            loc = public_url(variants[lang])
+            lines.append("  <url>")
+            lines.append(f"    <loc>{loc}</loc>")
+            lines.append(f"    <lastmod>{today}</lastmod>")
+            lines.append(f"    <changefreq>{changefreq}</changefreq>")
+            lines.append(f"    <priority>{priority:.1f}</priority>")
+            for alt_lang in LANGUAGES:
+                alt_loc = public_url(variants[alt_lang])
+                lines.append(
+                    f'    <xhtml:link rel="alternate" hreflang="{alt_lang}" href="{alt_loc}" />'
+                )
+            lines.append(
+                f'    <xhtml:link rel="alternate" hreflang="x-default" href="{public_url(variants["en"])}" />'
+            )
+            lines.append("  </url>")
+    lines.append("</urlset>")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def render_robots() -> str:
+    """robots.txt: allow everything, point at the sitemap, block known noisy paths."""
+    return (
+        "User-agent: *\n"
+        "Allow: /\n"
+        "Disallow: /mitmachen.html\n"
+        "Disallow: /en/get-involved.html\n"
+        "\n"
+        f"Sitemap: {SITE_URL}/sitemap.xml\n"
+    )
+
+
+def render_llms_txt(site: dict) -> str:
+    """Curated map of priority pages for AI assistants that honour llms.txt."""
+    org = site["organization"]
+    description = org["description"]["en"]
+    sections = [
+        f"# {site['site_name']}",
+        "",
+        f"> {description}",
+        "",
+        "Project Access Austria (legal name: Projekt Hochschulzugang) is the Austrian "
+        "chapter of the international Project Access network. We help students from "
+        "Austria and South Tyrol apply to selective international universities such as "
+        "Oxford, Cambridge, Harvard, ETH Zürich and Sciences Po. All support is free.",
+        "",
+        "## Core pages",
+        "",
+        f"- [Home (Deutsch)]({public_url('index.html')}): mission, programme overview, bootcamp summary, team, contact.",
+        f"- [Home (English)]({public_url('en/index.html')}): mission, programme overview, bootcamp summary, team, contact.",
+        f"- [Bootcamp 2026 (Deutsch)]({public_url('bootcamp.html')}): dates (23–26 July 2026, Horn, Lower Austria), agenda, eligibility, FAQs.",
+        f"- [Bootcamp 2026 (English)]({public_url('en/bootcamp.html')}): dates, agenda, eligibility, FAQs.",
+        f"- [Team & join us (Deutsch)]({public_url('team.html')}): team list and ways to volunteer or mentor.",
+        f"- [Team & join us (English)]({public_url('en/team.html')}): team list and ways to volunteer or mentor.",
+        f"- [Partners (Deutsch)]({public_url('partners.html')}): supporters, school partnerships, sponsorship.",
+        f"- [Partners (English)]({public_url('en/partners.html')}): supporters, school partnerships, sponsorship.",
+        f"- [Events (Deutsch)]({public_url('events.html')}): upcoming and recent events.",
+        f"- [Events (English)]({public_url('en/events.html')}): upcoming and recent events.",
+        "",
+        "## Optional",
+        "",
+        "- [Project Access International](https://projectaccess.org): the wider network we are part of.",
+        "- [Instagram](https://www.instagram.com/projectaccess.at/): announcements and news.",
+        "- Contact: austria@projectaccess.org",
+        "",
+    ]
+    return "\n".join(sections)
 
 
 def main() -> None:
@@ -219,6 +370,11 @@ def main() -> None:
         for lang in LANGUAGES:
             html = render_page(env, page_key, lang, site, page_content)
             write_file(PAGES[page_key][lang], html)
+
+    print("Writing SEO + AI discovery files…")
+    write_file("sitemap.xml", render_sitemap())
+    write_file("robots.txt", render_robots())
+    write_file("llms.txt", render_llms_txt(site))
 
     print("Done.")
 

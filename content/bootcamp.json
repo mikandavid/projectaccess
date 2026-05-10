@@ -1,20 +1,37 @@
 {
   "meta": {
     "title": {
-      "de": "Bootcamp 2026 | Project Access Austria",
-      "en": "Bootcamp 2026 | Project Access Austria"
+      "de": "Bootcamp 2026 – Bewerbungstraining für Auslandsstudium | PA Austria",
+      "en": "Bootcamp 2026 – application training for studying abroad | PA Austria"
     },
     "description": {
-      "de": "Termine, Inhalte, Teilnahme, Kosten und FAQs zum kostenlosen Project Access Austria Bootcamp 2026 in Horn.",
-      "en": "Dates, topics, eligibility, costs and FAQs for the free Project Access Austria bootcamp 2026 in Horn."
+      "de": "23.–26. Juli 2026 in Horn: Vier Tage kostenloses Bewerbungstraining für Schüler:innen und Studierende aus Österreich und Südtirol. Studienwahl, Personal Statement, Essays, Mock Interviews und Finanzierung – inklusive Unterkunft und Verpflegung.",
+      "en": "23–26 July 2026 in Horn, Austria: four days of free application training for students from Austria and South Tyrol. Course choice, personal statements, essays, mock interviews and funding – including accommodation and meals."
+    },
+    "keywords": {
+      "de": "Bewerbungs Bootcamp Österreich, Auslandsstudium Bootcamp, Personal Statement Coaching Österreich, Mock Interview Cambridge, Studium Ausland Vorbereitung, kostenlos Bewerben Top Uni",
+      "en": "application bootcamp Austria, studying abroad bootcamp, personal statement coaching Austria, Cambridge mock interview, prepare to apply abroad, free top university application support"
+    },
+    "og_image": {
+      "src": "assets/Website_1.webp",
+      "alt": {
+        "de": "Workshop beim Project Access Austria Bewerbungs-Bootcamp",
+        "en": "Workshop at the Project Access Austria application bootcamp"
+      }
     }
   },
   "header_cta": {
     "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
-    "label": { "de": "Zum Bootcamp anmelden", "en": "Apply to the bootcamp" }
+    "label": {
+      "de": "Zum Bootcamp anmelden",
+      "en": "Apply to the bootcamp"
+    }
   },
   "hero": {
-    "eyebrow": { "de": "Bootcamp 2026", "en": "Bootcamp 2026" },
+    "eyebrow": {
+      "de": "Bootcamp 2026",
+      "en": "Bootcamp 2026"
+    },
     "title": {
       "de": "Vier Tage für deine internationale **Bewerbung**.",
       "en": "Four days for your international **application**."
@@ -25,17 +42,23 @@
     },
     "primary_cta": {
       "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
-      "label": { "de": "Zur Anmeldung", "en": "Apply" }
+      "label": {
+        "de": "Zur Anmeldung",
+        "en": "Apply"
+      }
     },
     "secondary_cta": {
       "url": {
         "de": "mailto:austria@projectaccess.org?subject=Frage%20zum%20Bootcamp",
         "en": "mailto:austria@projectaccess.org?subject=Bootcamp%20question"
       },
-      "label": { "de": "Fragen stellen", "en": "Ask a question" }
+      "label": {
+        "de": "Fragen stellen",
+        "en": "Ask a question"
+      }
     },
     "image": {
-      "src": "assets/DSC_6695.jpg",
+      "src": "assets/DSC_6695.webp",
       "alt": {
         "de": "Teilnehmende beim Project Access Austria Bootcamp 2025",
         "en": "Participants at the Project Access Austria bootcamp 2025"
@@ -44,22 +67,40 @@
   },
   "details": [
     {
-      "term": { "de": "Datum", "en": "Date" },
-      "definition": { "de": "23.–26. Juli 2026", "en": "23–26 July 2026" }
+      "term": {
+        "de": "Datum",
+        "en": "Date"
+      },
+      "definition": {
+        "de": "23.–26. Juli 2026",
+        "en": "23–26 July 2026"
+      }
     },
     {
-      "term": { "de": "Ort", "en": "Location" },
-      "definition": { "de": "Horn, Niederösterreich", "en": "Horn, Lower Austria" }
+      "term": {
+        "de": "Ort",
+        "en": "Location"
+      },
+      "definition": {
+        "de": "Horn, Niederösterreich",
+        "en": "Horn, Lower Austria"
+      }
     },
     {
-      "term": { "de": "Kosten", "en": "Cost" },
+      "term": {
+        "de": "Kosten",
+        "en": "Cost"
+      },
       "definition": {
         "de": "Gratis, inklusive Unterkunft und Verpflegung",
         "en": "Free, including accommodation and meals"
       }
     },
     {
-      "term": { "de": "Teilnahme", "en": "Participation" },
+      "term": {
+        "de": "Teilnahme",
+        "en": "Participation"
+      },
       "definition": {
         "de": "Bachelor, Master und PhD willkommen",
         "en": "Bachelor, master and PhD applicants welcome"
@@ -67,7 +108,10 @@
     }
   ],
   "about": {
-    "eyebrow": { "de": "Worum es geht", "en": "About the bootcamp" },
+    "eyebrow": {
+      "de": "Worum es geht",
+      "en": "About the bootcamp"
+    },
     "title": {
       "de": "Was dich erwartet.",
       "en": "What to expect."
@@ -78,7 +122,10 @@
     }
   },
   "topics": {
-    "eyebrow": { "de": "Inhalte", "en": "Topics" },
+    "eyebrow": {
+      "de": "Inhalte",
+      "en": "Topics"
+    },
     "title": {
       "de": "Daran arbeiten wir.",
       "en": "What we work on."
@@ -121,21 +168,21 @@
     },
     "images": [
       {
-        "src": "assets/Website_1.jpg",
+        "src": "assets/Website_1.webp",
         "alt": {
           "de": "Workshop beim Project Access Austria Bootcamp",
           "en": "Workshop at the Project Access Austria bootcamp"
         }
       },
       {
-        "src": "assets/DSC07694.jpg",
+        "src": "assets/DSC07694.webp",
         "alt": {
           "de": "Teilnehmende bei einer Gruppenarbeit",
           "en": "Participants during group work"
         }
       },
       {
-        "src": "assets/DSC07819.jpg",
+        "src": "assets/DSC07819.webp",
         "alt": {
           "de": "Bootcamp-Teilnehmende bei einer Gruppenaktivität im Freien",
           "en": "Bootcamp participants during an outdoor group activity"
@@ -144,7 +191,10 @@
     ]
   },
   "audience": {
-    "eyebrow": { "de": "Zielgruppe", "en": "Who can apply" },
+    "eyebrow": {
+      "de": "Zielgruppe",
+      "en": "Who can apply"
+    },
     "title": {
       "de": "Für wen das Bootcamp gedacht ist.",
       "en": "Who the bootcamp is for."
@@ -155,7 +205,10 @@
     }
   },
   "video": {
-    "eyebrow": { "de": "Kurz erklärt", "en": "Short introduction" },
+    "eyebrow": {
+      "de": "Kurz erklärt",
+      "en": "Short introduction"
+    },
     "title": {
       "de": "Lerne Project Access Austria kennen.",
       "en": "Get to know Project Access Austria."
@@ -171,7 +224,10 @@
     }
   },
   "faq": {
-    "eyebrow": { "de": "FAQ", "en": "FAQ" },
+    "eyebrow": {
+      "de": "FAQ",
+      "en": "FAQ"
+    },
     "title": {
       "de": "Häufige Fragen.",
       "en": "Frequently asked questions."
@@ -179,62 +235,82 @@
     "items": [
       {
         "question": {
-          "de": "Muss ich schon wissen, wo ich mich bewerben will?",
-          "en": "Do I need to know where I want to apply?"
+          "de": "Muss ich schon wissen, an welcher Universität ich mich bewerben will?",
+          "en": "Do I need to know which university I want to apply to?"
         },
         "answer": {
-          "de": "Nein. Das Bootcamp hilft dir auch bei Orientierung und Studienwahl.",
-          "en": "No. The bootcamp also helps you with orientation and course choice."
+          "de": "Nein. Viele Bewerber:innen kommen ohne fertige Liste zum Bootcamp. Wir arbeiten gemeinsam an Studienwahl und Universitätsauswahl, schauen uns Programme in Großbritannien, den USA und Europa an und finden eine realistische Bewerbungsstrategie für deinen Hintergrund.",
+          "en": "No. Many applicants come to the bootcamp without a finished list. We work together on course choice and university selection, look at programmes in the UK, the US and Europe, and build a realistic application strategy for your background."
         }
       },
       {
         "question": {
-          "de": "Kostet die Teilnahme etwas?",
-          "en": "Is there a participation fee?"
+          "de": "Kostet die Teilnahme am PA Austria Bootcamp etwas?",
+          "en": "How much does the PA Austria bootcamp cost?"
         },
         "answer": {
-          "de": "Nein. Unterkunft und Verpflegung sind frei. Bei Reisekosten können wir auf Anfrage unterstützen.",
-          "en": "No. Accommodation and meals are free. We can help with travel costs on request."
+          "de": "Die Teilnahme ist komplett kostenlos. Unterkunft und Verpflegung in Horn sind in der Teilnahme inkludiert. Wenn die Anreise aus Österreich oder Südtirol für dich finanziell schwierig ist, können wir Reisekosten auf Anfrage übernehmen, damit Geld kein Hindernis ist.",
+          "en": "Participation is completely free of charge. Accommodation and meals in Horn are included. If travelling from Austria or South Tyrol is a financial barrier, we can cover travel costs on request so that money doesn't get in the way."
         }
       },
       {
         "question": {
-          "de": "Auch für Master oder PhD?",
-          "en": "Master or PhD?"
+          "de": "Eignet sich das Bootcamp auch für Master- oder PhD-Bewerbungen?",
+          "en": "Is the bootcamp also suitable for master's or PhD applications?"
         },
         "answer": {
-          "de": "Ja. Bachelor-, Master- und PhD-Interessierte sind willkommen.",
-          "en": "Yes. Bachelor, master and PhD applicants are welcome."
+          "de": "Ja. Bachelor-, Master- und PhD-Interessierte sind beim PA Austria Bootcamp willkommen. Wir teilen Teilnehmende in passende Kleingruppen auf, damit Themen wie Forschungsexposé, Statement of Purpose oder Postgrad-Finanzierung gezielt behandelt werden.",
+          "en": "Yes. Bachelor, master and PhD applicants are all welcome at the PA Austria bootcamp. We split participants into appropriate small groups so that topics like research proposals, statement of purpose and postgraduate funding can be addressed in depth."
         }
       },
       {
         "question": {
-          "de": "Bekomme ich automatisch eine:n Mentor:in?",
-          "en": "Do I automatically get a mentor?"
+          "de": "Bekomme ich nach dem Bootcamp eine:n Mentor:in zugeteilt?",
+          "en": "Do I get a mentor assigned after the bootcamp?"
         },
         "answer": {
-          "de": "Ja. Wenn du am Bootcamp teilnimmst, bekommst du garantiert eine:n internationale:n Mentor:in zugewiesen. Wenn möglich bringen wir dich mit jemandem von der Universität oder aus dem Studienbereich zusammen, für die oder den du dich interessierst.",
-          "en": "Yes. If you take part in the bootcamp, you are guaranteed an international mentor. Where possible, we match you with someone at the university or in the field you are interested in."
+          "de": "Ja. Mit der Teilnahme am Bootcamp bekommst du garantiert eine:n internationale:n Mentor:in aus dem weltweiten Project-Access-Netzwerk mit über 5.000 Mentor:innen. Wo möglich matchen wir dich mit jemandem an deiner Wunschuniversität oder in deinem Studienbereich, damit Feedback zu Essays, Auswahlverfahren und Interviews aus erster Hand kommt.",
+          "en": "Yes. By taking part in the bootcamp you are guaranteed an international mentor from the global Project Access network of over 5,000 mentors. Where possible, we match you with someone at your target university or in your field of study, so that feedback on essays, selection processes and interviews comes from someone who has been through it."
         }
       },
       {
         "question": {
-          "de": "Auslandssemester?",
-          "en": "Exchange semester?"
+          "de": "Hilft Project Access Austria auch bei Auslandssemestern oder Erasmus?",
+          "en": "Does Project Access Austria help with exchange semesters or Erasmus?"
         },
         "answer": {
-          "de": "Nein. Das Bootcamp ist für reguläre Studiengänge im Ausland gedacht, nicht für Austauschsemester.",
-          "en": "No. The bootcamp is for full degree programmes abroad, not exchange semesters."
+          "de": "Nein. Wir konzentrieren uns auf vollständige Bachelor-, Master- und PhD-Studiengänge an internationalen Universitäten. Für Auslandssemester und Erasmus-Aufenthalte sind die jeweiligen International Offices der Heimuniversität oder OeAD die richtigen Anlaufstellen.",
+          "en": "No. We focus on full bachelor's, master's and PhD degree programmes at international universities. For exchange semesters and Erasmus stays, the international office of your home university or OeAD are the right contact points."
         }
       },
       {
         "question": {
-          "de": "Wann soll ich mich bewerben?",
-          "en": "When should I apply?"
+          "de": "Wann sollte ich mich für das Bootcamp bewerben?",
+          "en": "When should I apply for the bootcamp?"
         },
         "answer": {
-          "de": "So früh wie möglich. Plätze sind begrenzt und werden laufend vergeben.",
-          "en": "As early as possible. Places are limited and assigned on a rolling basis."
+          "de": "So früh wie möglich. Plätze sind begrenzt und werden laufend ausgewählt. Vorrang haben Bewerber:innen aus Österreich und Südtirol mit weniger Zugang zu privater Beratung, internationalen Schulnetzwerken oder familiärer Erfahrung mit Auslandsstudien.",
+          "en": "As early as possible. Places are limited and selected on a rolling basis. We give priority to applicants from Austria and South Tyrol with less access to private guidance, international school networks or family experience with studying abroad."
+        }
+      },
+      {
+        "question": {
+          "de": "Hilft Project Access Austria bei Bewerbungen in den USA, Großbritannien und Europa?",
+          "en": "Does Project Access Austria help with applications in the US, UK and Europe?"
+        },
+        "answer": {
+          "de": "Ja. Unser Mentoring und Bootcamp decken Bewerbungen für UK-Unis (Oxford, Cambridge, LSE, UCL u.a.), US-Unis (Harvard, Stanford, MIT, Yale, Columbia u.a.) und kontinentaleuropäische Programme (ETH Zürich, Sciences Po, Bocconi, Trinity Dublin u.a.) ab. Mentor:innen kommen direkt aus diesen Universitäten.",
+          "en": "Yes. Our mentoring and bootcamp cover applications to UK universities (Oxford, Cambridge, LSE, UCL and others), US universities (Harvard, Stanford, MIT, Yale, Columbia and others) and continental European programmes (ETH Zurich, Sciences Po, Bocconi, Trinity Dublin and others). Mentors come directly from those universities."
+        }
+      },
+      {
+        "question": {
+          "de": "Wie kann ich mich auf eine Bewerbung an Harvard, Oxford oder Cambridge aus Österreich vorbereiten?",
+          "en": "How can I prepare for an application to Harvard, Oxford or Cambridge from Austria?"
+        },
+        "answer": {
+          "de": "Plane mindestens 12–18 Monate vor Studienbeginn. Konkret heißt das: Universitäten und Studiengänge recherchieren, standardisierte Tests (SAT, TOEFL, IELTS, BMAT, LNAT je nach Ziel) ablegen, mehrere Drafts deines Personal Statement bzw. der Common-App-Essays schreiben, Empfehlungsschreiben rechtzeitig anfragen und Mock Interviews üben. Das Bootcamp und das 1:1-Mentoring von Project Access Austria begleiten dich durch genau diese Schritte – kostenlos.",
+          "en": "Plan at least 12–18 months ahead of your intended start. Concretely: research universities and courses, take any required standardised tests (SAT, TOEFL, IELTS, BMAT, LNAT depending on your target), write multiple drafts of your personal statement or Common App essays, request recommendation letters in good time, and practise mock interviews. The Project Access Austria bootcamp and one-to-one mentoring guide you through exactly these steps – free of charge."
         }
       }
     ]

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /mitmachen.html
+Disallow: /en/get-involved.html
+
+Sitemap: https://projectaccess.at/sitemap.xml

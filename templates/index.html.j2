@@ -1,5 +1,34 @@
 {% extends "base.html.j2" %}
 {% set main_id = "top" %}
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "@id": "{{ canonical_url }}#programme",
+  "name": {{ page.programme.title[lang]|tojson }},
+  "url": "{{ canonical_url }}#{{ anchor('programme') }}",
+  "provider": {"@id": "{{ site.site_url }}/#organization"},
+  "itemListElement": [
+    {%- for item in page.programme['items'] %}
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": {{ item.title[lang]|tojson }},
+        "description": {{ item.body[lang]|tojson }},
+        "provider": {"@id": "{{ site.site_url }}/#organization"},
+        "areaServed": [{"@type": "Country", "name": "AT"}, {"@type": "Country", "name": "IT-32-BZ"}]
+      },
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>
+{% endblock %}
 {% block content %}
       <section class="hero section-shell">
         <div class="hero-copy">
@@ -30,7 +59,7 @@
         </div>
 
         <div class="hero-media" aria-label="{{ page.hero.image.caption[lang] }}">
-          <img src="{{ asset(page.hero.image.src) }}" alt="{{ page.hero.image.alt[lang] }}" />
+          <img src="{{ asset(page.hero.image.src) }}" alt="{{ page.hero.image.alt[lang] }}" fetchpriority="high" decoding="async" />
         </div>
       </section>
 
@@ -82,7 +111,7 @@
 
       <section class="bootcamp section-shell" id="{{ anchor('bootcamp') }}">
         <div class="image-collage">
-          <img src="{{ asset(page.bootcamp.image_small.src) }}" alt="{{ page.bootcamp.image_small.alt[lang] }}" />
+          <img src="{{ asset(page.bootcamp.image_small.src) }}" alt="{{ page.bootcamp.image_small.alt[lang] }}" loading="lazy" decoding="async" />
         </div>
         <div class="bootcamp-copy">
           <p class="eyebrow">{{ page.bootcamp.eyebrow[lang] }}</p>
@@ -146,7 +175,7 @@
         <div class="team-grid">
           {%- for member in team_preview_members %}
           <article class="team-card">
-            <img src="{{ asset(member.image) }}" alt="{{ member.name }}" />
+            <img src="{{ asset(member.image) }}" alt="{{ member.name }} – {{ member.role[lang] }}" loading="lazy" decoding="async" />
             <h3>{{ member.name }}</h3>
             <p>{{ member.role[lang] }}</p>
           </article>

@@ -1,20 +1,30 @@
 {
   "meta": {
     "title": {
-      "de": "Partner:innen | Project Access Austria",
-      "en": "Partners | Project Access Austria"
+      "de": "Partner:innen & Schulen | Project Access Austria",
+      "en": "Partners & schools | Project Access Austria"
     },
     "description": {
-      "de": "Schulen, Unternehmen, Stiftungen und private Unterstützer:innen helfen Project Access Austria, Mentoring, Bootcamp und Schulbesuche kostenlos anzubieten.",
-      "en": "Schools, companies, foundations and private supporters help Project Access Austria offer mentoring, the bootcamp and school visits free of charge."
+      "de": "Schulen, Unternehmen, Stiftungen und private Unterstützer:innen halten das kostenlose Mentoring, Bootcamp und die Schulbesuche von Project Access Austria am Laufen. Jetzt Schulpartnerschaft oder Sponsoring anfragen.",
+      "en": "Schools, companies, foundations and private supporters keep Project Access Austria's free mentoring, bootcamp and school visits running. Enquire about a school partnership or sponsorship."
+    },
+    "keywords": {
+      "de": "Schulpartnerschaft Österreich, Sponsoring Bildungs NGO, Studienberatung Schule kostenlos, Stipendien Auslandsstudium Partner",
+      "en": "school partnership Austria, education NGO sponsorship, free school guidance Austria, study abroad scholarship partners"
     }
   },
   "header_cta": {
     "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
-    "label": { "de": "Zum Bootcamp anmelden", "en": "Apply to the bootcamp" }
+    "label": {
+      "de": "Zum Bootcamp anmelden",
+      "en": "Apply to the bootcamp"
+    }
   },
   "hero": {
-    "eyebrow": { "de": "Partner:innen", "en": "Partners" },
+    "eyebrow": {
+      "de": "Partner:innen",
+      "en": "Partners"
+    },
     "title": {
       "de": "**Partner:innen** halten unsere Angebote kostenlos.",
       "en": "**Partners** help keep our work free."
@@ -28,14 +38,20 @@
         "de": "mailto:austria@projectaccess.org?subject=Partnerschaft%20mit%20PA%20Austria",
         "en": "mailto:austria@projectaccess.org?subject=Partnership%20with%20PA%20Austria"
       },
-      "label": { "de": "Partnerschaft anfragen", "en": "Enquire about partnership" }
+      "label": {
+        "de": "Partnerschaft anfragen",
+        "en": "Enquire about partnership"
+      }
     },
     "secondary_cta": {
       "anchor_key": "schools",
-      "label": { "de": "Für Schulen", "en": "For schools" }
+      "label": {
+        "de": "Für Schulen",
+        "en": "For schools"
+      }
     },
     "image": {
-      "src": "assets/DSC_7234.jpg",
+      "src": "assets/DSC_7234.webp",
       "alt": {
         "de": "Mentor:innen und Teilnehmende in einer Kleingruppen-Session im Freien",
         "en": "Mentors and participants in a small-group session outdoors"
@@ -54,7 +70,10 @@
     "tiles": [
       {
         "classes": "w-3 accent-yellow",
-        "eyebrow": { "de": "Förderung", "en": "Funding" },
+        "eyebrow": {
+          "de": "Förderung",
+          "en": "Funding"
+        },
         "title": {
           "de": "Bootcamp und Mentoring finanzieren.",
           "en": "Fund the bootcamp and mentoring."
@@ -66,7 +85,10 @@
       },
       {
         "classes": "w-3 accent-cream",
-        "eyebrow": { "de": "Räume", "en": "Spaces" },
+        "eyebrow": {
+          "de": "Räume",
+          "en": "Spaces"
+        },
         "title": {
           "de": "Räume für Workshops und Infoabende.",
           "en": "Spaces for workshops and information evenings."
@@ -78,7 +100,10 @@
       },
       {
         "classes": "w-3",
-        "eyebrow": { "de": "Expertise", "en": "Expertise" },
+        "eyebrow": {
+          "de": "Expertise",
+          "en": "Expertise"
+        },
         "title": {
           "de": "Know-how für Workshops und Interviews.",
           "en": "Know-how for workshops and interviews."
@@ -90,7 +115,10 @@
       },
       {
         "classes": "w-3 accent-green",
-        "eyebrow": { "de": "Netzwerk", "en": "Network" },
+        "eyebrow": {
+          "de": "Netzwerk",
+          "en": "Network"
+        },
         "title": {
           "de": "Kontakte zu Schulen, Alumni und Förder:innen.",
           "en": "Connections to schools, alumni and funders."
@@ -111,7 +139,10 @@
       "de": "Konkrete Unterstützung, nicht nur Logos.",
       "en": "Concrete support, not just logos."
     },
-    "items": ["McKinsey & Company", "Schwarzman Scholars"]
+    "items": [
+      "McKinsey & Company",
+      "Schwarzman Scholars"
+    ]
   },
   "impact": {
     "eyebrow": {
@@ -124,7 +155,10 @@
     },
     "items": [
       {
-        "value": { "de": "jährlich*", "en": "annual*" },
+        "value": {
+          "de": "jährlich*",
+          "en": "annual*"
+        },
         "label": {
           "de": "erreichte Personen über Events, Schulbesuche und Bootcamp",
           "en": "people reached through events, school visits and the bootcamp"
@@ -158,7 +192,10 @@
     }
   },
   "partner_quote": {
-    "eyebrow": { "de": "Partnerstimme", "en": "Partner quote" },
+    "eyebrow": {
+      "de": "Partnerstimme",
+      "en": "Partner quote"
+    },
     "quote": {
       "de": "Wir bei McKinsey sind fest davon überzeugt, dass vielfältigere Teams bessere Ergebnisse erzielen. Neben Geschlecht und ethnischer Herkunft ist der sozioökonomische Hintergrund eine zentrale Dimension, entlang derer wir als Unternehmen jeden Tag daran arbeiten, vielfältiger und inklusiver zu werden. Es ist uns eine Freude, eine Organisation wie Project Access zu unterstützen, die sicherstellt, dass nur Talent und Leidenschaft den Bildungsweg eines Menschen bestimmen, nicht der sozioökonomische Hintergrund.",
       "en": "We at McKinsey are deeply convinced that more diverse teams perform better. Besides gender and ethnicity, socio-economic background is a key dimension along which we as a firm work hard every day to become more diverse and inclusive. It's our pleasure to support an organisation like Project Access, which makes sure that only talent and passion determine someone's path in education, rather than the socio-economic background."
@@ -166,7 +203,10 @@
     "attribution": "Dr. Patrick Guggenberger · Associate Partner, McKinsey"
   },
   "schools": {
-    "eyebrow": { "de": "Schulpartnerschaften", "en": "School partnerships" },
+    "eyebrow": {
+      "de": "Schulpartnerschaften",
+      "en": "School partnerships"
+    },
     "title": {
       "de": "Kostenlose Sessions für **Schulen**.",
       "en": "Free sessions for **schools**."
@@ -186,7 +226,7 @@
       }
     },
     "image": {
-      "src": "assets/Website_1.jpg",
+      "src": "assets/Website_1.webp",
       "alt": {
         "de": "Teilnehmende arbeiten bei einem Project Access Austria Workshop",
         "en": "Participants working in a Project Access Austria workshop"
@@ -194,28 +234,40 @@
     }
   },
   "schools_offer": {
-    "eyebrow": { "de": "Was wir anbieten", "en": "What we offer" },
+    "eyebrow": {
+      "de": "Was wir anbieten",
+      "en": "What we offer"
+    },
     "title": {
       "de": "Was Schulen bekommen.",
       "en": "What schools get."
     },
     "items": [
       {
-        "label": { "de": "Schulbesuche", "en": "School visits" },
+        "label": {
+          "de": "Schulbesuche",
+          "en": "School visits"
+        },
         "body": {
           "de": "mit Studierenden und Alumni internationaler Universitäten.",
           "en": "with students and alumni of international universities."
         }
       },
       {
-        "label": { "de": "Webinare", "en": "Webinars" },
+        "label": {
+          "de": "Webinare",
+          "en": "Webinars"
+        },
         "body": {
           "de": "für Abschlussklassen oder interessierte Jahrgänge.",
           "en": "for final-year classes or interested year groups."
         }
       },
       {
-        "label": { "de": "Materialien", "en": "Materials" },
+        "label": {
+          "de": "Materialien",
+          "en": "Materials"
+        },
         "body": {
           "de": "zu Studium im Ausland, Bewerbungen und Finanzierung.",
           "en": "on studying abroad, applications and funding."
@@ -232,7 +284,10 @@
         }
       },
       {
-        "label": { "de": "Sessionplanung", "en": "Session planning" },
+        "label": {
+          "de": "Sessionplanung",
+          "en": "Session planning"
+        },
         "body": {
           "de": "abgestimmt auf Zielgruppe, Format und Schwerpunkt.",
           "en": "adapted to the audience, format and focus."
@@ -242,13 +297,16 @@
   },
   "schools_topics": {
     "image": {
-      "src": "assets/DSC07694.jpg",
+      "src": "assets/DSC07694.webp",
       "alt": {
         "de": "Workshop-Situation mit Project Access Austria",
         "en": "Workshop with Project Access Austria"
       }
     },
-    "eyebrow": { "de": "Mögliche Themen", "en": "Possible topics" },
+    "eyebrow": {
+      "de": "Mögliche Themen",
+      "en": "Possible topics"
+    },
     "title": {
       "de": "Mögliche Themen für Schulsessions.",
       "en": "Possible topics for school sessions."
@@ -277,7 +335,10 @@
     ]
   },
   "cta_panel": {
-    "eyebrow": { "de": "Kontakt", "en": "Contact" },
+    "eyebrow": {
+      "de": "Kontakt",
+      "en": "Contact"
+    },
     "title": {
       "de": "Anfragen und Kontakt.",
       "en": "Enquiries and contact."

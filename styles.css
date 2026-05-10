@@ -373,6 +373,12 @@ h3 {
   border-color: #d98a00;
 }
 
+.header-cta-label-short,
+.mobile-lang-link,
+.footer-lang-link {
+  display: none;
+}
+
 /* SHELL */
 .section-shell {
   width: min(calc(100% - 2rem), var(--max));
@@ -564,10 +570,11 @@ h3 {
 
   .save-the-date-date {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 0.75rem;
     padding: 0.7rem 1rem 0.55rem;
-    text-align: left;
+    text-align: center;
   }
 
   .save-the-date-kicker {
@@ -599,7 +606,9 @@ h3 {
   }
 
   .save-the-date-body {
+    align-items: center;
     padding: 0.7rem 1rem 0.85rem;
+    text-align: center;
   }
 }
 
@@ -1875,6 +1884,36 @@ h3 {
     gap: 0.55rem;
   }
 
+  .header-actions .lang-switch {
+    display: none;
+  }
+
+  .header-cta-shortenable .header-cta-label-full {
+    display: none;
+  }
+
+  .header-cta-shortenable .header-cta-label-short {
+    display: inline;
+  }
+
+  .mobile-lang-link {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 0.15rem;
+    padding: 0.55rem 0.8rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+
+  .footer-lang-link {
+    display: block;
+  }
+
   /* Tablet grid relaxations */
   .bento {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1924,6 +1963,13 @@ h3 {
 
   .hero {
     padding-top: clamp(1.4rem, 5vw, 2.2rem);
+  }
+
+  /* Center the save-the-date ticket once the hero column stacks. */
+  .hero-copy > .save-the-date {
+    display: grid;
+    margin-inline: auto;
+    transform-origin: top center;
   }
 
   /* Constrain stacked hero/page-hero images so they don't dominate the fold. */

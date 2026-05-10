@@ -1,22 +1,66 @@
 {%- set main_id = main_id|default(none) -%}
+{%- set page_title = page.meta.title[lang] -%}
+{%- set page_description = page.meta.description[lang] -%}
+{%- set page_keywords = page.meta.get('keywords', {}).get(lang) if page.meta.get('keywords') else none -%}
 <!doctype html>
 <html lang="{{ lang }}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="{{ page.meta.description[lang] }}" />
+
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ page_description }}" />
+    {%- if page_keywords %}
+    <meta name="keywords" content="{{ page_keywords }}" />
+    {%- endif %}
+    <meta name="author" content="{{ site.site_name }}" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <title>{{ page.meta.title[lang] }}</title>
+    <meta name="theme-color" content="{{ site.theme_color }}" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="generator" content="Jinja2 + build.py" />
+
+    <link rel="canonical" href="{{ canonical_url }}" />
+    <link rel="alternate" hreflang="de" href="{{ canonical_de }}" />
+    <link rel="alternate" hreflang="de-AT" href="{{ canonical_de }}" />
+    <link rel="alternate" hreflang="en" href="{{ canonical_en }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ canonical_en }}" />
+
+    <meta property="og:type" content="{% block og_type %}website{% endblock %}" />
+    <meta property="og:site_name" content="{{ site.site_name }}" />
+    <meta property="og:locale" content="{{ site.default_locale[lang] }}" />
+    <meta property="og:locale:alternate" content="{{ site.default_locale['en' if lang == 'de' else 'de'] }}" />
+    <meta property="og:title" content="{{ page_title }}" />
+    <meta property="og:description" content="{{ page_description }}" />
+    <meta property="og:url" content="{{ canonical_url }}" />
+    <meta property="og:image" content="{{ og_image_url }}" />
+    {%- if og_image_alt %}
+    <meta property="og:image:alt" content="{{ og_image_alt }}" />
+    {%- endif %}
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ page_title }}" />
+    <meta name="twitter:description" content="{{ page_description }}" />
+    <meta name="twitter:image" content="{{ og_image_url }}" />
+    {%- if og_image_alt %}
+    <meta name="twitter:image:alt" content="{{ og_image_alt }}" />
+    {%- endif %}
+
+    <link rel="icon" type="image/png" href="{{ asset(site.favicon.png_192) }}" />
+    <link rel="apple-touch-icon" href="{{ asset(site.favicon.apple_touch) }}" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://assets.calendly.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="{{ asset('styles.css') }}" />
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-    <link rel="alternate" hreflang="de" href="{{ alt_lang_href if lang == 'en' else self_href }}" />
-    <link rel="alternate" hreflang="en" href="{{ alt_lang_href if lang == 'de' else self_href }}" />
+
+    {% include "_partials/structured_data.html.j2" %}
+    {% block structured_data %}{% endblock %}
   </head>
   <body>
     {% include "_partials/header.html.j2" %}

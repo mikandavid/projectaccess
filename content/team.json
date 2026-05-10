@@ -1,20 +1,30 @@
 {
   "meta": {
     "title": {
-      "de": "Team & Mitmachen | Project Access Austria",
-      "en": "Team & join us | Project Access Austria"
+      "de": "Team & Mitmachen – Mentor:in werden | Project Access Austria",
+      "en": "Team & join us – become a mentor | Project Access Austria"
     },
     "description": {
-      "de": "Das Team hinter Project Access Austria – und wie du als Mentor:in oder im ehrenamtlichen Team mitmachen kannst.",
-      "en": "The team behind Project Access Austria – and how to join as a mentor or volunteer."
+      "de": "Das Team hinter Project Access Austria sowie offene Rollen für Mentor:innen und ehrenamtliche Teammitglieder mit Erfahrung an internationalen Universitäten.",
+      "en": "The team behind Project Access Austria, plus open roles for mentors and volunteers with experience at international universities."
+    },
+    "keywords": {
+      "de": "Mentor werden Auslandsstudium, ehrenamtlich PA Austria, Project Access Austria Team, Volunteer Bildung Österreich",
+      "en": "become a mentor for international university applicants, volunteer with PA Austria, Project Access Austria team, education volunteering Austria"
     }
   },
   "header_cta": {
     "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
-    "label": { "de": "Zum Bootcamp anmelden", "en": "Apply to the bootcamp" }
+    "label": {
+      "de": "Zum Bootcamp anmelden",
+      "en": "Apply to the bootcamp"
+    }
   },
   "hero": {
-    "eyebrow": { "de": "Team & Mitmachen", "en": "Team & join us" },
+    "eyebrow": {
+      "de": "Team & Mitmachen",
+      "en": "Team & join us"
+    },
     "title": {
       "de": "Das Team hinter **PA Austria** – und vielleicht bald du.",
       "en": "The team behind **PA Austria** – and maybe you next."
@@ -25,15 +35,24 @@
     },
     "primary_cta": {
       "url": "https://projectaccess.org/become-a-mentor",
-      "label": { "de": "Mentor:in werden", "en": "Become a mentor" }
+      "label": {
+        "de": "Mentor:in werden",
+        "en": "Become a mentor"
+      }
     },
     "secondary_cta": {
       "url": "https://projectaccess.org/austria-various-roles",
-      "label": { "de": "Teil des Teams werden", "en": "Join the team" }
+      "label": {
+        "de": "Teil des Teams werden",
+        "en": "Join the team"
+      }
     }
   },
   "team_section": {
-    "eyebrow": { "de": "Wer wir sind", "en": "Who we are" },
+    "eyebrow": {
+      "de": "Wer wir sind",
+      "en": "Who we are"
+    },
     "title": {
       "de": "Das aktuelle Team.",
       "en": "Meet the team."
@@ -42,8 +61,8 @@
   "members": [
     {
       "key": "yoan",
-      "image": "assets/DSC0130.jpg",
-      "name": "Johan",
+      "image": "assets/DSC0130.webp",
+      "name": "Yoan",
       "role": {
         "de": "President & Head of Product · WU Wien / QUT",
         "en": "President & Head of Product · WU Vienna / QUT"
@@ -51,7 +70,7 @@
     },
     {
       "key": "katrin_outreach",
-      "image": "assets/Katrin_Outreach.jpg",
+      "image": "assets/Katrin_Outreach.webp",
       "name": "Catherine",
       "role": {
         "de": "Country Manager & Head of Outreach · Oxford / Warwick",
@@ -60,7 +79,7 @@
     },
     {
       "key": "diana",
-      "image": "assets/Diana.jpeg",
+      "image": "assets/Diana.webp",
       "name": "Deanna",
       "role": {
         "de": "Head of Postgrad · LSE",
@@ -69,8 +88,8 @@
     },
     {
       "key": "yan",
-      "image": "assets/Yan.jpg",
-      "name": "Jan",
+      "image": "assets/Yan.webp",
+      "name": "Yan",
       "role": {
         "de": "Kassier · Sciences Po",
         "en": "Treasurer · Sciences Po"
@@ -78,7 +97,7 @@
     },
     {
       "key": "melanie",
-      "image": "assets/Melanie.jpeg",
+      "image": "assets/Melanie.webp",
       "name": "Melanie",
       "role": {
         "de": "Product Team · ESCP",
@@ -87,7 +106,7 @@
     },
     {
       "key": "nicholas",
-      "image": "assets/Nicholas.jpg",
+      "image": "assets/Nicholas.webp",
       "name": "Nicholas",
       "role": {
         "de": "Product Team · WU Wien",
@@ -96,7 +115,7 @@
     },
     {
       "key": "sarah",
-      "image": "assets/Sarah.jpg",
+      "image": "assets/Sarah.webp",
       "name": "Sarah",
       "role": {
         "de": "Product Team · Oxford / American University of Paris",
@@ -105,7 +124,7 @@
     },
     {
       "key": "david_amsterdam",
-      "image": "assets/David.jpeg",
+      "image": "assets/David.webp",
       "name": "David",
       "role": {
         "de": "Product Team · VU Amsterdam",
@@ -114,7 +133,7 @@
     },
     {
       "key": "emmely",
-      "image": "assets/IMG_2870.png",
+      "image": "assets/IMG_2870.webp",
       "name": "Emmely",
       "role": {
         "de": "Outreach & Social Media · IMC FH Krems",
@@ -123,7 +142,7 @@
     },
     {
       "key": "zeno",
-      "image": "assets/Zeno.jpg",
+      "image": "assets/Zeno.webp",
       "name": "Zeno",
       "role": {
         "de": "Outreach · Georgia Tech",
@@ -132,7 +151,7 @@
     },
     {
       "key": "katrin_tum",
-      "image": "assets/Katrin2.jpg",
+      "image": "assets/Katrin2.webp",
       "name": "Katrin",
       "role": {
         "de": "Outreach · TUM",
@@ -141,7 +160,7 @@
     },
     {
       "key": "theo",
-      "image": "assets/Foto_Haselbauer_Theodor.jpg",
+      "image": "assets/Foto_Haselbauer_Theodor.webp",
       "name": "Theo",
       "role": {
         "de": "Outreach · WU Wien",
@@ -150,7 +169,7 @@
     },
     {
       "key": "valentin",
-      "image": "assets/Screenshot_2026-03-04.png",
+      "image": "assets/Screenshot_2026-03-04.webp",
       "name": "Valentin",
       "role": {
         "de": "Outreach",
@@ -159,7 +178,7 @@
     },
     {
       "key": "daniel",
-      "image": "assets/Daniel.jpg",
+      "image": "assets/Daniel.webp",
       "name": "Daniel",
       "role": {
         "de": "Postgrad · MedUni Innsbruck",
@@ -168,7 +187,7 @@
     },
     {
       "key": "sonu",
-      "image": "assets/Sonu_Maramangalam.jpg",
+      "image": "assets/Sonu_Maramangalam.webp",
       "name": "Sonu",
       "role": {
         "de": "Postgrad · Oxford",
@@ -177,7 +196,7 @@
     },
     {
       "key": "david_tu",
-      "image": "assets/IMG_7820.jpeg",
+      "image": "assets/IMG_7820.webp",
       "name": "David",
       "role": {
         "de": "IT · TU Wien",
@@ -187,28 +206,67 @@
   ],
   "groups": [
     {
-      "title": { "de": "Leadership", "en": "Leadership" },
-      "member_keys": ["yoan", "katrin_outreach", "diana", "yan"]
+      "title": {
+        "de": "Leadership",
+        "en": "Leadership"
+      },
+      "member_keys": [
+        "yoan",
+        "katrin_outreach",
+        "diana",
+        "yan"
+      ]
     },
     {
-      "title": { "de": "Product Team", "en": "Product team" },
-      "member_keys": ["melanie", "nicholas", "sarah", "david_amsterdam"]
+      "title": {
+        "de": "Product Team",
+        "en": "Product team"
+      },
+      "member_keys": [
+        "melanie",
+        "nicholas",
+        "sarah",
+        "david_amsterdam"
+      ]
     },
     {
-      "title": { "de": "Outreach", "en": "Outreach" },
-      "member_keys": ["emmely", "zeno", "katrin_tum", "theo", "valentin"]
+      "title": {
+        "de": "Outreach",
+        "en": "Outreach"
+      },
+      "member_keys": [
+        "emmely",
+        "zeno",
+        "katrin_tum",
+        "theo",
+        "valentin"
+      ]
     },
     {
-      "title": { "de": "Postgrad", "en": "Postgrad" },
-      "member_keys": ["daniel", "sonu"]
+      "title": {
+        "de": "Postgrad",
+        "en": "Postgrad"
+      },
+      "member_keys": [
+        "daniel",
+        "sonu"
+      ]
     },
     {
-      "title": { "de": "IT", "en": "IT" },
-      "member_keys": ["david_tu"]
+      "title": {
+        "de": "IT",
+        "en": "IT"
+      },
+      "member_keys": [
+        "david_tu"
+      ]
     }
   ],
   "mentor_intro": {
-    "eyebrow": { "de": "Mentor:in werden", "en": "Become a mentor" },
+    "eyebrow": {
+      "de": "Mentor:in werden",
+      "en": "Become a mentor"
+    },
     "title": {
       "de": "1:1-Mentoring im internationalen Project Access Programm.",
       "en": "1:1 mentoring in the international Project Access programme."
@@ -219,7 +277,10 @@
     }
   },
   "fit": {
-    "eyebrow": { "de": "Voraussetzungen", "en": "Requirements" },
+    "eyebrow": {
+      "de": "Voraussetzungen",
+      "en": "Requirements"
+    },
     "title": {
       "de": "Mentoring passt, wenn du",
       "en": "Mentoring fits if you"
@@ -244,7 +305,10 @@
     ]
   },
   "team_intro": {
-    "eyebrow": { "de": "Im PA Austria Team", "en": "In the PA Austria team" },
+    "eyebrow": {
+      "de": "Im PA Austria Team",
+      "en": "In the PA Austria team"
+    },
     "title": {
       "de": "Im Team Verantwortung übernehmen.",
       "en": "Take on a role in the team."
@@ -255,7 +319,10 @@
     }
   },
   "areas": {
-    "eyebrow": { "de": "Arbeitsbereiche", "en": "Areas of work" },
+    "eyebrow": {
+      "de": "Arbeitsbereiche",
+      "en": "Areas of work"
+    },
     "title": {
       "de": "Woran du mitarbeiten kannst.",
       "en": "Where you can contribute."
@@ -263,7 +330,10 @@
     "tiles": [
       {
         "classes": "w-3 accent-cream",
-        "eyebrow": { "de": "Programme & Bootcamp", "en": "Programmes & bootcamp" },
+        "eyebrow": {
+          "de": "Programme & Bootcamp",
+          "en": "Programmes & bootcamp"
+        },
         "title": {
           "de": "Inhalte, Trainer:innen und Ablauf.",
           "en": "Content, trainers and structure."
@@ -275,7 +345,10 @@
       },
       {
         "classes": "w-3",
-        "eyebrow": { "de": "Schulen & Outreach", "en": "Schools & outreach" },
+        "eyebrow": {
+          "de": "Schulen & Outreach",
+          "en": "Schools & outreach"
+        },
         "title": {
           "de": "Schulbesuche, Webinare, Messen.",
           "en": "School visits, webinars, fairs."
@@ -287,7 +360,10 @@
       },
       {
         "classes": "w-3",
-        "eyebrow": { "de": "Partnerschaften", "en": "Partnerships" },
+        "eyebrow": {
+          "de": "Partnerschaften",
+          "en": "Partnerships"
+        },
         "title": {
           "de": "Sponsoring und Netzwerk pflegen.",
           "en": "Build sponsorships and networks."
@@ -299,7 +375,10 @@
       },
       {
         "classes": "w-3 accent-green",
-        "eyebrow": { "de": "Kommunikation & Tech", "en": "Communications & tech" },
+        "eyebrow": {
+          "de": "Kommunikation & Tech",
+          "en": "Communications & tech"
+        },
         "title": {
           "de": "Social Media, Web, Tools.",
           "en": "Social media, web, tools."
@@ -312,14 +391,20 @@
     ]
   },
   "cta_panel": {
-    "eyebrow": { "de": "Kontakt", "en": "Get in touch" },
+    "eyebrow": {
+      "de": "Kontakt",
+      "en": "Get in touch"
+    },
     "title": {
       "de": "Interesse? Schreib uns.",
       "en": "Interested? Get in touch."
     },
     "primary_cta": {
       "url": "https://projectaccess.org/become-a-mentor",
-      "label": { "de": "Mentor:in werden", "en": "Become a mentor" }
+      "label": {
+        "de": "Mentor:in werden",
+        "en": "Become a mentor"
+      }
     },
     "secondary_cta": {
       "url": "https://projectaccess.org/austria-various-roles",

@@ -1,4 +1,39 @@
 {% extends "base.html.j2" %}
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationEvent",
+  "@id": "{{ site.site_url }}/{{ 'en/' if lang == 'en' else '' }}bootcamp.html#bootcamp-2026",
+  "name": "Project Access Austria Bootcamp 2026",
+  "description": {{ ("Vier Tage kostenloses Bewerbungstraining vom 23.-26. Juli 2026 in Horn, Niederösterreich, für Schüler:innen und Studierende aus Österreich und Südtirol, die sich an internationalen Top-Universitäten bewerben." if lang == "de" else "Four days of free application training from 23-26 July 2026 in Horn, Lower Austria, for students from Austria and South Tyrol applying to top international universities.")|tojson }},
+  "url": "{{ site.site_url }}/{{ 'en/' if lang == 'en' else '' }}bootcamp.html",
+  "startDate": "2026-07-23",
+  "endDate": "2026-07-26",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "isAccessibleForFree": true,
+  "location": {
+    "@type": "Place",
+    "name": "Horn, Niederösterreich",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Horn",
+      "addressRegion": "Niederösterreich",
+      "addressCountry": "AT"
+    }
+  },
+  "organizer": {"@id": "{{ site.site_url }}/#organization"},
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE"
+  }
+}
+</script>
+{% endblock %}
 {% block content %}
       <section class="page-hero page-hero-split section-shell">
         <div>
@@ -10,7 +45,7 @@
             <a class="button button-secondary" href="{{ t(page.hero.secondary_cta.url) }}">{{ page.hero.secondary_cta.label[lang] }}</a>
           </div>
         </div>
-        <img class="page-hero-image" src="{{ asset(page.hero.image.src) }}" alt="{{ page.hero.image.alt[lang] }}" />
+        <img class="page-hero-image" src="{{ asset(page.hero.image.src) }}" alt="{{ page.hero.image.alt[lang] }}" fetchpriority="high" decoding="async" />
       </section>
 
       <section class="section-shell cta-panel">
@@ -24,7 +59,7 @@
       </section>
 
       <section class="section-shell image-text-card">
-        <img src="{{ asset(page.next_event.image.src) }}" alt="{{ page.next_event.image.alt[lang] }}" />
+        <img src="{{ asset(page.next_event.image.src) }}" alt="{{ page.next_event.image.alt[lang] }}" loading="lazy" decoding="async" />
         <div>
           <p class="eyebrow">{{ page.next_event.eyebrow[lang] }}</p>
           <h2>{{ page.next_event.title }}</h2>

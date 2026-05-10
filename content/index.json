@@ -1,12 +1,16 @@
 {
   "meta": {
     "title": {
-      "de": "Project Access Austria",
-      "en": "Project Access Austria"
+      "de": "Project Access Austria – kostenloses Mentoring für Top-Unis",
+      "en": "Project Access Austria – free mentoring for top universities"
     },
     "description": {
-      "de": "Project Access Austria unterstützt Student:innen aus Österreich und Südtirol kostenlos bei Bewerbungen an internationale Universitäten.",
-      "en": "Project Access Austria helps students from Austria and South Tyrol apply to international universities, free of charge."
+      "de": "Project Access Austria unterstützt Schüler:innen und Studierende aus Österreich und Südtirol kostenlos bei Bewerbungen an Oxford, Cambridge, Harvard, ETH und weitere Top-Unis: 1:1-Mentoring, Bewerbungs-Bootcamp und ehrliches Feedback.",
+      "en": "Project Access Austria helps students from Austria and South Tyrol apply to Oxford, Cambridge, Harvard, ETH and other top universities – with free one-to-one mentoring, an application bootcamp and honest feedback."
+    },
+    "keywords": {
+      "de": "Bewerbung internationale Universität Österreich, Studium Ausland Österreich, Oxford Bewerbung Österreich, Cambridge Bewerbung Österreich, Harvard Bewerbung Österreich, Mentoring Auslandsstudium, Project Access Austria, Bewerbungs Bootcamp Österreich",
+      "en": "applying to international universities from Austria, studying abroad Austria, Oxford application Austria, Cambridge application Austria, Harvard application Austria, free university mentoring Austria, Project Access Austria, application bootcamp Austria"
     }
   },
   "header_cta": {
@@ -18,18 +22,36 @@
   },
   "hero": {
     "banner": {
-      "status": { "de": "Anmeldung offen", "en": "Applications open" },
-      "kicker": { "de": "Save the Date", "en": "Save the date" },
-      "date": {
-        "day": { "de": "23.–26.", "en": "23–26" },
-        "month": { "de": "Juli 2026", "en": "Jul 2026" }
+      "status": {
+        "de": "Anmeldung offen",
+        "en": "Applications open"
       },
-      "event": { "de": "Bootcamp", "en": "Bootcamp" },
+      "kicker": {
+        "de": "Save the Date",
+        "en": "Save the date"
+      },
+      "date": {
+        "day": {
+          "de": "23.–26.",
+          "en": "23–26"
+        },
+        "month": {
+          "de": "Juli 2026",
+          "en": "Jul 2026"
+        }
+      },
+      "event": {
+        "de": "Bootcamp",
+        "en": "Bootcamp"
+      },
       "location": {
         "de": "Horn, Niederösterreich",
         "en": "Horn, Lower Austria"
       },
-      "link_text": { "de": "Mehr erfahren →", "en": "Read more →" }
+      "link_text": {
+        "de": "Mehr erfahren →",
+        "en": "Read more →"
+      }
     },
     "eyebrow": {
       "de": "Project Access Austria",
@@ -45,14 +67,20 @@
     },
     "primary_cta": {
       "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
-      "label": { "de": "Zum Bootcamp anmelden", "en": "Apply to the bootcamp" }
+      "label": {
+        "de": "Zum Bootcamp anmelden",
+        "en": "Apply to the bootcamp"
+      }
     },
     "secondary_cta": {
       "url": "https://projectaccess.org/austria-various-roles",
-      "label": { "de": "Teil des Teams werden", "en": "Join the team" }
+      "label": {
+        "de": "Teil des Teams werden",
+        "en": "Join the team"
+      }
     },
     "image": {
-      "src": "assets/DSC07622.jpg",
+      "src": "assets/DSC07622.webp",
       "alt": {
         "de": "Gruppenfoto vom Project Access Austria Bootcamp mit Teilnehmenden und Mentor:innen",
         "en": "Group photo from the Project Access Austria bootcamp with participants and mentors"
@@ -71,7 +99,10 @@
     "items": [
       {
         "value": "185",
-        "label": { "de": "Jugendliche im Mentoring", "en": "students mentored" }
+        "label": {
+          "de": "Jugendliche im Mentoring",
+          "en": "students mentored"
+        }
       },
       {
         "value": "120",
@@ -89,7 +120,10 @@
       },
       {
         "value": "5.000+",
-        "label": { "de": "Mentor:innen im internationalen Netzwerk", "en": "mentors in the international network" }
+        "label": {
+          "de": "Mentor:innen im internationalen Netzwerk",
+          "en": "mentors in the international network"
+        }
       }
     ],
     "note": {
@@ -98,7 +132,10 @@
     }
   },
   "intro": {
-    "eyebrow": { "de": "Über Project Access", "en": "About Project Access" },
+    "eyebrow": {
+      "de": "Über Project Access",
+      "en": "About Project Access"
+    },
     "title": {
       "de": "Mentoring von Menschen, die den Weg kennen.",
       "en": "Mentoring from people who know the process."
@@ -160,14 +197,20 @@
     ]
   },
   "programme": {
-    "eyebrow": { "de": "Programm", "en": "Programme" },
+    "eyebrow": {
+      "de": "Programm",
+      "en": "Programme"
+    },
     "title": {
       "de": "So unterstützen wir dich.",
       "en": "How we help."
     },
     "items": [
       {
-        "title": { "de": "1:1 Mentoring", "en": "One-to-one mentoring" },
+        "title": {
+          "de": "1:1 Mentoring",
+          "en": "One-to-one mentoring"
+        },
         "body": {
           "de": "Eine persönliche Ansprechperson für Fragen, Feedback und nächste Schritte in deiner Bewerbung.",
           "en": "A personal mentor for questions, feedback and the next steps in your application."
@@ -220,28 +263,40 @@
     },
     "details": [
       {
-        "term": { "de": "Datum", "en": "Date" },
+        "term": {
+          "de": "Datum",
+          "en": "Date"
+        },
         "definition": {
           "de": "23.–26. Juli 2026",
           "en": "23–26 July 2026"
         }
       },
       {
-        "term": { "de": "Ort", "en": "Location" },
+        "term": {
+          "de": "Ort",
+          "en": "Location"
+        },
         "definition": {
           "de": "Horn, Niederösterreich",
           "en": "Horn, Lower Austria"
         }
       },
       {
-        "term": { "de": "Kosten", "en": "Cost" },
+        "term": {
+          "de": "Kosten",
+          "en": "Cost"
+        },
         "definition": {
           "de": "Gratis, inklusive Unterkunft und Verpflegung",
           "en": "Free, including accommodation and meals"
         }
       },
       {
-        "term": { "de": "Auswahl", "en": "Selection" },
+        "term": {
+          "de": "Auswahl",
+          "en": "Selection"
+        },
         "definition": {
           "de": "Vorrang für Bewerber:innen mit weniger Zugang zu privater Beratung",
           "en": "Priority for applicants with less access to private guidance"
@@ -256,14 +311,14 @@
       }
     },
     "image_large": {
-      "src": "assets/Website_1.jpg",
+      "src": "assets/Website_1.webp",
       "alt": {
         "de": "Workshop-Situation beim PA Austria Bootcamp",
         "en": "Workshop at the PA Austria bootcamp"
       }
     },
     "image_small": {
-      "src": "assets/DSC07694.jpg",
+      "src": "assets/DSC07694.webp",
       "alt": {
         "de": "Teilnehmende bei einem PA Austria Workshop",
         "en": "Participants at a PA Austria workshop"
@@ -271,7 +326,10 @@
     }
   },
   "engagement": {
-    "eyebrow": { "de": "Teil des Teams werden", "en": "Join the team" },
+    "eyebrow": {
+      "de": "Teil des Teams werden",
+      "en": "Join the team"
+    },
     "title": {
       "de": "Werde Teil des **PA Austria Teams**.",
       "en": "Join the **PA Austria team**."
@@ -302,7 +360,10 @@
       },
       {
         "classes": "w-3 accent-yellow",
-        "eyebrow": { "de": "PA Austria Team", "en": "PA Austria team" },
+        "eyebrow": {
+          "de": "PA Austria Team",
+          "en": "PA Austria team"
+        },
         "title": {
           "de": "Bootcamp, Schulbesuche und Outreach mitgestalten.",
           "en": "Help run the bootcamp, school visits and outreach."
@@ -317,7 +378,10 @@
       },
       {
         "classes": "w-3",
-        "eyebrow": { "de": "Schulen", "en": "Schools" },
+        "eyebrow": {
+          "de": "Schulen",
+          "en": "Schools"
+        },
         "title": {
           "de": "Schulpartnerschaften.",
           "en": "School partnerships."
@@ -356,7 +420,10 @@
     ]
   },
   "partner_quote": {
-    "eyebrow": { "de": "Partnerstimme", "en": "Partner quote" },
+    "eyebrow": {
+      "de": "Partnerstimme",
+      "en": "Partner quote"
+    },
     "title": {
       "de": "Talent sollte mehr zählen als Herkunft.",
       "en": "Talent should matter more than background."
@@ -372,24 +439,41 @@
     },
     "cta_link": {
       "page": "partners",
-      "label": { "de": "Mehr zu Partnerschaften", "en": "More about partnerships" }
+      "label": {
+        "de": "Mehr zu Partnerschaften",
+        "en": "More about partnerships"
+      }
     }
   },
   "team_preview": {
-    "eyebrow": { "de": "Team", "en": "Team" },
+    "eyebrow": {
+      "de": "Team",
+      "en": "Team"
+    },
     "title": {
       "de": "Das Team hinter PA Austria.",
       "en": "The team behind PA Austria."
     },
-    "members_keys": ["yoan", "katrin_outreach", "diana", "yan"],
+    "members_keys": [
+      "yoan",
+      "katrin_outreach",
+      "diana",
+      "yan"
+    ],
     "cta": {
       "page": "team",
-      "label_h3": { "de": "Alle 16 ansehen", "en": "See all 16" },
+      "label_h3": {
+        "de": "Alle 16 ansehen",
+        "en": "See all 16"
+      },
       "label_body": {
         "de": "",
         "en": ""
       },
-      "label_link": { "de": "Zur Team-Seite →", "en": "Team page →" },
+      "label_link": {
+        "de": "Zur Team-Seite →",
+        "en": "Team page →"
+      },
       "aria": {
         "de": "Alle 16 Teammitglieder ansehen",
         "en": "View all 16 team members"
@@ -398,7 +482,10 @@
   },
   "news_contact": {
     "news": {
-      "eyebrow": { "de": "Aktuelle Updates", "en": "Current updates" },
+      "eyebrow": {
+        "de": "Aktuelle Updates",
+        "en": "Current updates"
+      },
       "title": {
         "de": "Aktuelle Termine.",
         "en": "Upcoming dates."
@@ -416,7 +503,10 @@
       }
     },
     "contact": {
-      "eyebrow": { "de": "Kontakt", "en": "Contact" },
+      "eyebrow": {
+        "de": "Kontakt",
+        "en": "Contact"
+      },
       "title": {
         "de": "Schreib uns.",
         "en": "Get in touch."

@@ -10,7 +10,7 @@
             <a class="button button-secondary" href="#{{ anchor(page.hero.secondary_cta.anchor_key) }}">{{ page.hero.secondary_cta.label[lang] }}</a>
           </div>
         </div>
-        <img class="page-hero-image" src="{{ asset(page.hero.image.src) }}" alt="{{ page.hero.image.alt[lang] }}" />
+        <img class="page-hero-image" src="{{ asset(page.hero.image.src) }}" alt="{{ page.hero.image.alt[lang] }}" fetchpriority="high" decoding="async" />
       </section>
 
       <section class="section-shell">
@@ -80,7 +80,7 @@
             <a class="button" href="{{ t(page.schools.cta.url) }}">{{ page.schools.cta.label[lang] }}</a>
           </div>
         </div>
-        <img class="page-hero-image" src="{{ asset(page.schools.image.src) }}" alt="{{ page.schools.image.alt[lang] }}" />
+        <img class="page-hero-image" src="{{ asset(page.schools.image.src) }}" alt="{{ page.schools.image.alt[lang] }}" loading="lazy" decoding="async" />
       </section>
 
       <section class="section-shell two-column-section">
@@ -96,7 +96,7 @@
       </section>
 
       <section class="section-shell image-text-card">
-        <img src="{{ asset(page.schools_topics.image.src) }}" alt="{{ page.schools_topics.image.alt[lang] }}" />
+        <img src="{{ asset(page.schools_topics.image.src) }}" alt="{{ page.schools_topics.image.alt[lang] }}" loading="lazy" decoding="async" />
         <div>
           <p class="eyebrow">{{ page.schools_topics.eyebrow[lang] }}</p>
           <h2>{{ page.schools_topics.title[lang] }}</h2>
