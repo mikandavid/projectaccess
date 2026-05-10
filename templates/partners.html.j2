@@ -18,7 +18,7 @@
           <p class="eyebrow">{{ page.support_forms.eyebrow[lang] }}</p>
           <h2>{{ page.support_forms.title[lang] }}</h2>
         </div>
-        <div class="bento">
+        <div class="bento support-bento">
           {%- for tile in page.support_forms.tiles %}
           <article class="bento-tile {{ tile.classes }}">
             <div>
@@ -33,17 +33,32 @@
         </div>
       </section>
 
+      <section class="section-shell partner-examples">
+        <div>
+          <p class="eyebrow">{{ page.partner_examples.eyebrow[lang] }}</p>
+          <h2>{{ page.partner_examples.title[lang] }}</h2>
+        </div>
+        <div class="partner-mark-list">
+          {%- for item in page.partner_examples['items'] %}
+          <span>{{ item }}</span>
+          {%- endfor %}
+        </div>
+      </section>
+
       <section class="section-shell impact-panel">
         <p class="eyebrow">{{ page.impact.eyebrow[lang] }}</p>
         <h2>{{ page.impact.title[lang] }}</h2>
         <div class="impact-grid">
           {%- for item in page.impact['items'] %}
           <article>
-            <strong>{{ item.value }}</strong>
+            <strong>{{ t(item.value) }}</strong>
             <span>{{ item.label[lang] }}</span>
           </article>
           {%- endfor %}
         </div>
+        {%- if page.impact.get('note') %}
+        <p class="impact-note">{{ page.impact.note[lang] }}</p>
+        {%- endif %}
       </section>
 
       <section class="section-shell partners">

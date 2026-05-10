@@ -34,12 +34,15 @@
         </div>
       </section>
 
-      <section class="section-shell">
+      <section class="section-shell topics-section">
         <div class="section-heading">
           <p class="eyebrow">{{ page.topics.eyebrow[lang] }}</p>
           <h2>{{ page.topics.title[lang] }}</h2>
+          {%- if page.topics.get('body') %}
+          <p>{{ page.topics.body[lang] }}</p>
+          {%- endif %}
         </div>
-        <ul class="feature-list">
+        <ul class="feature-list feature-list-prominent">
           {%- for item in page.topics['items'] %}
           <li>{{ item[lang] }}</li>
           {%- endfor %}
@@ -59,6 +62,24 @@
         </div>
         <div class="text-stack">
           <p>{{ page.audience.body[lang] }}</p>
+        </div>
+      </section>
+
+      <section class="section-shell video-section" aria-labelledby="bootcamp-video-heading">
+        <div class="section-heading">
+          <p class="eyebrow">{{ page.video.eyebrow[lang] }}</p>
+          <h2 id="bootcamp-video-heading">{{ page.video.title[lang] }}</h2>
+          <p>{{ page.video.body[lang] }}</p>
+        </div>
+        <div class="video-embed">
+          <iframe
+            src="{{ page.video.src }}"
+            title="{{ page.video.iframe_title[lang] }}"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
         </div>
       </section>
 

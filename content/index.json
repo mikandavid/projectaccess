@@ -5,23 +5,29 @@
       "en": "Project Access Austria"
     },
     "description": {
-      "de": "Project Access Austria unterstützt Schüler:innen und Studierende aus Österreich und Südtirol kostenlos bei Bewerbungen an internationale Universitäten.",
+      "de": "Project Access Austria unterstützt Student:innen aus Österreich und Südtirol kostenlos bei Bewerbungen an internationale Universitäten.",
       "en": "Project Access Austria helps students from Austria and South Tyrol apply to international universities, free of charge."
     }
   },
   "header_cta": {
-    "url": "https://projectaccess.org/join-our-program",
+    "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
     "label": {
-      "de": "Kostenlos starten",
-      "en": "Apply for free"
+      "de": "Zum Bootcamp anmelden",
+      "en": "Apply to the bootcamp"
     }
   },
   "hero": {
     "banner": {
-      "label": { "de": "Anmeldung offen", "en": "Applications open" },
-      "text": {
-        "de": "Bootcamp 23.–26. Juli 2026 · Horn",
-        "en": "Bootcamp 23–26 July 2026 · Horn"
+      "status": { "de": "Anmeldung offen", "en": "Applications open" },
+      "kicker": { "de": "Save the Date", "en": "Save the date" },
+      "date": {
+        "day": { "de": "23.–26.", "en": "23–26" },
+        "month": { "de": "Juli 2026", "en": "Jul 2026" }
+      },
+      "event": { "de": "Bootcamp", "en": "Bootcamp" },
+      "location": {
+        "de": "Horn, Niederösterreich",
+        "en": "Horn, Lower Austria"
       },
       "link_text": { "de": "Mehr erfahren →", "en": "Read more →" }
     },
@@ -34,19 +40,19 @@
       "en": "Your route to top universities"
     },
     "lead": {
-      "de": "Wir unterstützen Schüler:innen und Studierende aus Österreich und Südtirol kostenlos bei Bewerbungen an internationale Universitäten: mit 1:1-Mentoring, Bootcamp und ehrlichem Feedback von Menschen, die den Prozess selbst kennen.",
-      "en": "We help students from Austria and South Tyrol apply to international universities, for free: through one-to-one mentoring, the bootcamp and honest feedback from people who have been through it."
+      "de": "Wir unterstützen Student:innen in Österreich kostenlos bei Bewerbungen an internationale Universitäten: mit 1:1-Mentoring, Bootcamp und ehrlichem Feedback von Menschen, die den Prozess selbst kennen.",
+      "en": "We help students in Austria apply to international universities, for free: through one-to-one mentoring, the bootcamp and honest feedback from people who have been through it."
     },
     "primary_cta": {
-      "url": "https://projectaccess.org/join-our-program",
-      "label": { "de": "Als Schüler:in starten", "en": "Apply as a student" }
+      "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+      "label": { "de": "Zum Bootcamp anmelden", "en": "Apply to the bootcamp" }
     },
     "secondary_cta": {
-      "page": "involvement",
-      "label": { "de": "Mitmachen", "en": "Get involved" }
+      "url": "https://projectaccess.org/austria-various-roles",
+      "label": { "de": "Teil des Teams werden", "en": "Join the team" }
     },
     "image": {
-      "src": "assets/hero-bootcamp-group.jpg",
+      "src": "assets/DSC07622.jpg",
       "alt": {
         "de": "Gruppenfoto vom Project Access Austria Bootcamp mit Teilnehmenden und Mentor:innen",
         "en": "Group photo from the Project Access Austria bootcamp with participants and mentors"
@@ -70,22 +76,26 @@
       {
         "value": "120",
         "label": {
-          "de": "Bootcamp-Teilnehmende seit 2023",
-          "en": "bootcamp participants since 2023"
+          "de": "Bootcamp-Teilnehmende seit 2018",
+          "en": "bootcamp participants since 2018"
         }
       },
       {
-        "value": "77–84%",
+        "value": "77–84%*",
         "label": {
-          "de": "Zusagen an Top-3-Wunschunis",
-          "en": "offers from top three universities of choice"
+          "de": "Zusagen an Top-3-Wunschunis je nach Jahrgang",
+          "en": "offers from top-three universities of choice, depending on cohort"
         }
       },
       {
-        "value": "139",
-        "label": { "de": "aktive Mentor:innen", "en": "active mentors" }
+        "value": "5.000+",
+        "label": { "de": "Mentor:innen im internationalen Netzwerk", "en": "mentors in the international network" }
       }
-    ]
+    ],
+    "note": {
+      "de": "* Basis: interne PA Austria Auswertung der Bewerbungsjahrgänge und Angaben von Project Access International.",
+      "en": "* Based on internal PA Austria cohort tracking and Project Access International figures."
+    }
   },
   "intro": {
     "eyebrow": { "de": "Über Project Access", "en": "About Project Access" },
@@ -94,9 +104,60 @@
       "en": "Mentoring from people who know the process."
     },
     "body": {
-      "de": "Project Access ist eine internationale Non-Profit mit über 5.000 Mentor:innen weltweit. In Österreich bringen wir junge Menschen mit Studierenden und Alumni von Oxford, Cambridge, Harvard, ETH Zürich, Sciences Po, Bocconi und vielen weiteren Universitäten zusammen.",
-      "en": "Project Access is an international non-profit with more than 5,000 mentors worldwide. In Austria, we connect applicants with students and alumni from Oxford, Cambridge, Harvard, ETH Zürich, Sciences Po, Bocconi and many other universities."
+      "de": "Project Access Austria unterstützt junge Menschen aus Österreich und Südtirol bei Bewerbungen an selektive internationale Universitäten. Dafür vermitteln wir Mentoring von Studierenden und Alumni, die den Prozess selbst durchlaufen haben, und sind Teil des weltweiten Project-Access-Netzwerks.",
+      "en": "Project Access Austria supports students from Austria and South Tyrol who are applying to selective international universities. We connect them with students and alumni who have been through the process themselves, while also being part of the wider Project Access network."
+    },
+    "cta": {
+      "url": "https://projectaccess.org",
+      "label": {
+        "de": "Mehr über Project Access International →",
+        "en": "Learn about Project Access International →"
+      }
     }
+  },
+  "universities": {
+    "aria": {
+      "de": "Universitäten im Project Access Netzwerk",
+      "en": "Universities in the Project Access network"
+    },
+    "label": {
+      "de": "Studierende in unserem Netzwerk bewerben sich unter anderem an",
+      "en": "Students in our network apply to universities including"
+    },
+    "items": [
+      {
+        "name": "University of Oxford",
+        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/file-14-1-1.svg"
+      },
+      {
+        "name": "University of Cambridge",
+        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/Group-18-1.svg"
+      },
+      {
+        "name": "Harvard University",
+        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/file-15-1-1.svg"
+      },
+      {
+        "name": "Stanford University",
+        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/Stanford_wordmark_2012-1-2.svg"
+      },
+      {
+        "name": "Columbia University",
+        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/file-9-1-1.svg"
+      },
+      {
+        "name": "ETH Zurich",
+        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/file-5-1-1.svg"
+      },
+      {
+        "name": "Sciences Po",
+        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/file-4-1-1.svg"
+      },
+      {
+        "name": "Bocconi University",
+        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/file-3-1-1.svg"
+      }
+    ]
   },
   "programme": {
     "eyebrow": { "de": "Programm", "en": "Programme" },
@@ -154,8 +215,8 @@
       "en": "Bootcamp 2026 in Horn."
     },
     "body": {
-      "de": "Rund 40 Schüler:innen und Studierende arbeiten in kleinen Gruppen an ihren Bewerbungen. Dabei geht es um Studienwahl, Essays, Interviews und Finanzierung. Bewerbungen für Bachelor, Master und PhD sind willkommen.",
-      "en": "Around 40 students work on their applications in small groups. We cover course choice, essays, interviews and funding. Bachelor, master and PhD applicants are welcome."
+      "de": "Beim Bootcamp arbeiten Schüler:innen und Studierende in kleinen Gruppen an ihren Bewerbungen. Dabei geht es um Studienwahl, Essays, Interviews und Finanzierung. Bewerbungen für Bachelor, Master und PhD sind willkommen.",
+      "en": "At the bootcamp, students work on their applications in small groups. We cover course choice, essays, interviews and funding. Bachelor, master and PhD applicants are welcome."
     },
     "details": [
       {
@@ -210,14 +271,14 @@
     }
   },
   "engagement": {
-    "eyebrow": { "de": "Mitmachen", "en": "Get involved" },
+    "eyebrow": { "de": "Teil des Teams werden", "en": "Join the team" },
     "title": {
-      "de": "Bei **PA Austria** mitmachen.",
-      "en": "Get involved with **PA Austria**."
+      "de": "Werde Teil des **PA Austria Teams**.",
+      "en": "Join the **PA Austria team**."
     },
     "tiles": [
       {
-        "classes": "w-4 h-2 accent-ink",
+        "classes": "w-3 accent-ink",
         "eyebrow": {
           "de": "Mentor:in werden",
           "en": "Become a mentor"
@@ -232,7 +293,7 @@
           "en": "Use your experience to support applicants through essays, interviews and selection processes."
         },
         "link": {
-          "page": "involvement",
+          "page": "team",
           "label": {
             "de": "Mentor:in werden →",
             "en": "Become a mentor →"
@@ -240,14 +301,14 @@
         }
       },
       {
-        "classes": "w-2 accent-yellow",
+        "classes": "w-3 accent-yellow",
         "eyebrow": { "de": "PA Austria Team", "en": "PA Austria team" },
         "title": {
           "de": "Bootcamp, Schulbesuche und Outreach mitgestalten.",
           "en": "Help run the bootcamp, school visits and outreach."
         },
         "link": {
-          "page": "involvement",
+          "page": "team",
           "label": {
             "de": "Im Team mitwirken →",
             "en": "Join the team →"
@@ -255,7 +316,7 @@
         }
       },
       {
-        "classes": "w-2",
+        "classes": "w-3",
         "eyebrow": { "de": "Schulen", "en": "Schools" },
         "title": {
           "de": "Schulpartnerschaften.",
@@ -271,7 +332,7 @@
         }
       },
       {
-        "classes": "w-4 accent-cream",
+        "classes": "w-3 accent-cream",
         "eyebrow": {
           "de": "Sponsoring & Partnerschaft",
           "en": "Sponsoring & partnerships"
@@ -320,7 +381,7 @@
       "de": "Das Team hinter PA Austria.",
       "en": "The team behind PA Austria."
     },
-    "members_keys": ["diana", "katrin_outreach", "yoan", "emmely"],
+    "members_keys": ["yoan", "katrin_outreach", "diana", "yan"],
     "cta": {
       "page": "team",
       "label_h3": { "de": "Alle 16 ansehen", "en": "See all 16" },

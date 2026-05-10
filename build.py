@@ -41,12 +41,11 @@ LANGUAGES: list[str] = ["de", "en"]
 # Maps logical page key -> per-language output path relative to ROOT.
 # German pages live at the root, English pages under en/ with English slugs.
 PAGES: dict[str, dict[str, str]] = {
-    "index":       {"de": "index.html",     "en": "en/index.html"},
-    "bootcamp":    {"de": "bootcamp.html",  "en": "en/bootcamp.html"},
-    "events":      {"de": "events.html",    "en": "en/events.html"},
-    "involvement": {"de": "mitmachen.html", "en": "en/get-involved.html"},
-    "partners":    {"de": "partners.html",  "en": "en/partners.html"},
-    "team":        {"de": "team.html",      "en": "en/team.html"},
+    "index":    {"de": "index.html",    "en": "en/index.html"},
+    "bootcamp": {"de": "bootcamp.html", "en": "en/bootcamp.html"},
+    "events":   {"de": "events.html",   "en": "en/events.html"},
+    "partners": {"de": "partners.html", "en": "en/partners.html"},
+    "team":     {"de": "team.html",     "en": "en/team.html"},
 }
 
 # Localised section anchors. Use anchor("programme") in templates to render the
@@ -165,6 +164,16 @@ def render_page(
         members_by_key = {m["key"]: m for m in team_data["members"]}
         preview_keys = page_content["team_preview"]["members_keys"]
         context["team_preview_members"] = [members_by_key[k] for k in preview_keys]
+    elif page_key == "team":
+        members_by_key = {m["key"]: m for m in page_content["members"]}
+        context["team_members"] = page_content["members"]
+        context["team_groups"] = [
+            {
+                "title": group["title"],
+                "members": [members_by_key[k] for k in group["member_keys"]],
+            }
+            for group in page_content.get("groups", [])
+        ]
 
     template = env.get_template(f"{page_key}.html.j2")
     return template.render(**context)

@@ -10,11 +10,8 @@
     }
   },
   "header_cta": {
-    "url": {
-      "de": "mailto:austria@projectaccess.org?subject=Partnerschaft%20mit%20PA%20Austria",
-      "en": "mailto:austria@projectaccess.org?subject=Partnership%20with%20PA%20Austria"
-    },
-    "label": { "de": "Partner:in werden", "en": "Become a partner" }
+    "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+    "label": { "de": "Zum Bootcamp anmelden", "en": "Apply to the bootcamp" }
   },
   "hero": {
     "eyebrow": { "de": "Partner:innen", "en": "Partners" },
@@ -38,10 +35,10 @@
       "label": { "de": "Für Schulen", "en": "For schools" }
     },
     "image": {
-      "src": "assets/partner-event.jpg",
+      "src": "assets/DSC_7234.jpg",
       "alt": {
-        "de": "Project Access Austria Veranstaltung mit Partner:innen",
-        "en": "Project Access Austria event with partners"
+        "de": "Mentor:innen und Teilnehmende in einer Kleingruppen-Session im Freien",
+        "en": "Mentors and participants in a small-group session outdoors"
       }
     }
   },
@@ -56,7 +53,7 @@
     },
     "tiles": [
       {
-        "classes": "w-3 h-2 accent-yellow",
+        "classes": "w-3 accent-yellow",
         "eyebrow": { "de": "Förderung", "en": "Funding" },
         "title": {
           "de": "Bootcamp und Mentoring finanzieren.",
@@ -73,6 +70,10 @@
         "title": {
           "de": "Räume für Workshops und Infoabende.",
           "en": "Spaces for workshops and information evenings."
+        },
+        "body": {
+          "de": "Schulen, Universitäten und Unternehmen helfen uns, kostenlose Sessions dort anzubieten, wo sie gebraucht werden.",
+          "en": "Schools, universities and companies help us run free sessions where they are needed."
         }
       },
       {
@@ -81,6 +82,10 @@
         "title": {
           "de": "Know-how für Workshops und Interviews.",
           "en": "Know-how for workshops and interviews."
+        },
+        "body": {
+          "de": "Partner bringen Praxiswissen ein, etwa in Workshops mit McKinsey oder Schwarzman Scholars.",
+          "en": "Partners contribute practical expertise, for example in workshops with McKinsey or Schwarzman Scholars."
         }
       },
       {
@@ -89,9 +94,24 @@
         "title": {
           "de": "Kontakte zu Schulen, Alumni und Förder:innen.",
           "en": "Connections to schools, alumni and funders."
+        },
+        "body": {
+          "de": "Ein stärkeres Netzwerk bringt unsere kostenlosen Angebote schneller zu passenden Bewerber:innen.",
+          "en": "A stronger network helps our free support reach relevant applicants faster."
         }
       }
     ]
+  },
+  "partner_examples": {
+    "eyebrow": {
+      "de": "Partner in Workshops",
+      "en": "Workshop partners"
+    },
+    "title": {
+      "de": "Konkrete Unterstützung, nicht nur Logos.",
+      "en": "Concrete support, not just logos."
+    },
+    "items": ["McKinsey & Company", "Schwarzman Scholars"]
   },
   "impact": {
     "eyebrow": {
@@ -104,27 +124,38 @@
     },
     "items": [
       {
-        "value": "40",
+        "value": { "de": "jährlich*", "en": "annual*" },
         "label": {
-          "de": "Bootcamp-Plätze pro Jahr",
-          "en": "bootcamp places per year"
+          "de": "erreichte Personen über Events, Schulbesuche und Bootcamp",
+          "en": "people reached through events, school visits and the bootcamp"
         }
       },
       {
         "value": "120",
         "label": {
-          "de": "Teilnehmende in drei Jahren",
-          "en": "participants in three years"
+          "de": "Bootcamp-Teilnehmende seit 2018",
+          "en": "bootcamp participants since 2018"
         }
       },
       {
         "value": "185",
         "label": {
-          "de": "Jugendliche im Mentoring",
-          "en": "students mentored"
+          "de": "Bewerber:innen im Mentoring",
+          "en": "applicants in mentoring"
+        }
+      },
+      {
+        "value": "0 EUR",
+        "label": {
+          "de": "Kosten für Teilnehmende",
+          "en": "cost for participants"
         }
       }
-    ]
+    ],
+    "note": {
+      "de": "* Jahreswert aus Events, Schulbesuchen und Bootcamp; Auswertung nach Abschluss des jeweiligen Programmjahres.",
+      "en": "* Annual figure from events, school visits and the bootcamp; reviewed after each programme year."
+    }
   },
   "partner_quote": {
     "eyebrow": { "de": "Partnerstimme", "en": "Partner quote" },
@@ -155,10 +186,10 @@
       }
     },
     "image": {
-      "src": "assets/school-session.jpg",
+      "src": "assets/Website_1.jpg",
       "alt": {
-        "de": "Project Access Austria Session mit Schüler:innen",
-        "en": "Project Access Austria session with students"
+        "de": "Teilnehmende arbeiten bei einem Project Access Austria Workshop",
+        "en": "Participants working in a Project Access Austria workshop"
       }
     }
   },
@@ -211,7 +242,7 @@
   },
   "schools_topics": {
     "image": {
-      "src": "assets/school-workshop.jpg",
+      "src": "assets/DSC07694.jpg",
       "alt": {
         "de": "Workshop-Situation mit Project Access Austria",
         "en": "Workshop with Project Access Austria"

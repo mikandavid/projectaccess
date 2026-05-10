@@ -1,129 +1,79 @@
 {
   "meta": {
     "title": {
-      "de": "Team | Project Access Austria",
-      "en": "Team | Project Access Austria"
+      "de": "Team & Mitmachen | Project Access Austria",
+      "en": "Team & join us | Project Access Austria"
     },
     "description": {
-      "de": "Das Team von Project Access Austria: Studierende und Alumni, die Bewerber:innen kostenlos auf dem Weg an internationale Universitäten unterstützen.",
-      "en": "The Project Access Austria team: students and alumni who support applicants on their way to international universities, free of charge."
+      "de": "Das Team hinter Project Access Austria – und wie du als Mentor:in oder im ehrenamtlichen Team mitmachen kannst.",
+      "en": "The team behind Project Access Austria – and how to join as a mentor or volunteer."
     }
   },
   "header_cta": {
-    "url": "https://projectaccess.org/join-our-program",
-    "label": { "de": "Kostenlos starten", "en": "Apply for free" }
+    "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+    "label": { "de": "Zum Bootcamp anmelden", "en": "Apply to the bootcamp" }
   },
   "hero": {
-    "eyebrow": { "de": "Team", "en": "Team" },
+    "eyebrow": { "de": "Team & Mitmachen", "en": "Team & join us" },
     "title": {
-      "de": "Das Team hinter **PA Austria**.",
-      "en": "The team behind **PA Austria**."
+      "de": "Das Team hinter **PA Austria** – und vielleicht bald du.",
+      "en": "The team behind **PA Austria** – and maybe you next."
     },
     "lead": {
-      "de": "Wir sind 16 Studierende und Absolvent:innen, die ehrenamtlich Mentoring, Schulbesuche, Bootcamp, Tech und Kommunikation organisieren.",
-      "en": "We are 16 students and graduates volunteering our time to run mentoring, school visits, the bootcamp, tech and communications."
+      "de": "Wir sind 16 Studierende und Absolvent:innen, die ehrenamtlich Mentoring, Schulbesuche, Bootcamp, Tech und Kommunikation organisieren. Du studierst im Ausland oder hast an einer internationalen Universität studiert? Dann begleite Bewerber:innen direkt als Mentor:in oder hilf uns im PA Austria Team.",
+      "en": "We are 16 students and graduates running mentoring, school visits, the bootcamp, tech and communications in our spare time. Studying abroad, or studied at an international university? You can mentor applicants directly or help us in the PA Austria team."
     },
     "primary_cta": {
-      "page": "involvement",
-      "label": { "de": "Mitmachen", "en": "Get involved" }
+      "url": "https://projectaccess.org/become-a-mentor",
+      "label": { "de": "Mentor:in werden", "en": "Become a mentor" }
     },
     "secondary_cta": {
-      "url": {
-        "de": "mailto:austria@projectaccess.org?subject=Mitmachen%20bei%20PA%20Austria",
-        "en": "mailto:austria@projectaccess.org?subject=Volunteering%20with%20PA%20Austria"
-      },
-      "label": { "de": "Kontakt", "en": "Contact" }
+      "url": "https://projectaccess.org/austria-various-roles",
+      "label": { "de": "Teil des Teams werden", "en": "Join the team" }
+    }
+  },
+  "team_section": {
+    "eyebrow": { "de": "Wer wir sind", "en": "Who we are" },
+    "title": {
+      "de": "Das aktuelle Team.",
+      "en": "Meet the team."
     }
   },
   "members": [
     {
-      "key": "diana",
-      "image": "assets/Diana.jpeg",
-      "name": "Diana",
+      "key": "yoan",
+      "image": "assets/DSC0130.jpg",
+      "name": "Johan",
       "role": {
-        "de": "Leitung Master & Doktorat · LSE",
-        "en": "Lead, master & PhD · LSE"
+        "de": "President & Head of Product · WU Wien / QUT",
+        "en": "President & Head of Product · WU Vienna / QUT"
       }
     },
     {
       "key": "katrin_outreach",
       "image": "assets/Katrin_Outreach.jpg",
-      "name": "Katrin",
+      "name": "Catherine",
       "role": {
-        "de": "Leitung Schul- & Öffentlichkeitsarbeit · Oxford / Warwick",
-        "en": "Lead, schools & outreach · Oxford / Warwick"
+        "de": "Country Manager & Head of Outreach · Oxford / Warwick",
+        "en": "Country Manager & Head of Outreach · Oxford / Warwick"
       }
     },
     {
-      "key": "yoan",
-      "image": "assets/DSC0130.jpg",
-      "name": "Yoan",
+      "key": "diana",
+      "image": "assets/Diana.jpeg",
+      "name": "Deanna",
       "role": {
-        "de": "Leitung Programme · WU Wien / QUT",
-        "en": "Lead, programmes · WU Vienna / QUT"
+        "de": "Head of Postgrad · LSE",
+        "en": "Head of Postgrad · LSE"
       }
     },
     {
-      "key": "emmely",
-      "image": "assets/IMG_2870.png",
-      "name": "Emmely",
+      "key": "yan",
+      "image": "assets/Yan.jpg",
+      "name": "Jan",
       "role": {
-        "de": "Soziale Medien · IMC FH Krems",
-        "en": "Social media · IMC FH Krems"
-      }
-    },
-    {
-      "key": "daniel",
-      "image": "assets/Daniel.jpg",
-      "name": "Daniel",
-      "role": {
-        "de": "Master & Doktorat · MedUni Innsbruck",
-        "en": "Master & PhD · MedUni Innsbruck"
-      }
-    },
-    {
-      "key": "sonu",
-      "image": "assets/Sonu_Maramangalam.jpg",
-      "name": "Sonu",
-      "role": {
-        "de": "Master & Doktorat · Oxford",
-        "en": "Master & PhD · Oxford"
-      }
-    },
-    {
-      "key": "zeno",
-      "image": "assets/Zeno.jpg",
-      "name": "Zeno",
-      "role": {
-        "de": "Schul- & Öffentlichkeitsarbeit · Georgia Tech",
-        "en": "Schools & outreach · Georgia Tech"
-      }
-    },
-    {
-      "key": "katrin_tum",
-      "image": "assets/Katrin2.jpg",
-      "name": "Katrin",
-      "role": {
-        "de": "Schul- & Öffentlichkeitsarbeit · TUM",
-        "en": "Schools & outreach · TUM"
-      }
-    },
-    {
-      "key": "theo",
-      "image": "assets/Foto_Haselbauer_Theodor.jpg",
-      "name": "Theo",
-      "role": {
-        "de": "Schul- & Öffentlichkeitsarbeit · WU Wien",
-        "en": "Schools & outreach · WU Vienna"
-      }
-    },
-    {
-      "key": "valentin",
-      "image": "assets/Screenshot_2026-03-04.png",
-      "name": "Valentin",
-      "role": {
-        "de": "Schul- & Öffentlichkeitsarbeit",
-        "en": "Schools & outreach"
+        "de": "Kassier · Sciences Po",
+        "en": "Treasurer · Sciences Po"
       }
     },
     {
@@ -131,8 +81,8 @@
       "image": "assets/Melanie.jpeg",
       "name": "Melanie",
       "role": {
-        "de": "Programme · ESCP",
-        "en": "Programmes · ESCP"
+        "de": "Product Team · ESCP",
+        "en": "Product team · ESCP"
       }
     },
     {
@@ -140,8 +90,8 @@
       "image": "assets/Nicholas.jpg",
       "name": "Nicholas",
       "role": {
-        "de": "Programme · WU Wien",
-        "en": "Programmes · WU Vienna"
+        "de": "Product Team · WU Wien",
+        "en": "Product team · WU Vienna"
       }
     },
     {
@@ -149,17 +99,8 @@
       "image": "assets/Sarah.jpg",
       "name": "Sarah",
       "role": {
-        "de": "Programme · Oxford / American University of Paris",
-        "en": "Programmes · Oxford / American University of Paris"
-      }
-    },
-    {
-      "key": "yan",
-      "image": "assets/Yan.jpg",
-      "name": "Yan",
-      "role": {
-        "de": "Programme · Sciences Po",
-        "en": "Programmes · Sciences Po"
+        "de": "Product Team · Oxford / American University of Paris",
+        "en": "Product team · Oxford / American University of Paris"
       }
     },
     {
@@ -167,8 +108,71 @@
       "image": "assets/David.jpeg",
       "name": "David",
       "role": {
-        "de": "Programme · VU Amsterdam",
-        "en": "Programmes · VU Amsterdam"
+        "de": "Product Team · VU Amsterdam",
+        "en": "Product team · VU Amsterdam"
+      }
+    },
+    {
+      "key": "emmely",
+      "image": "assets/IMG_2870.png",
+      "name": "Emmely",
+      "role": {
+        "de": "Outreach & Social Media · IMC FH Krems",
+        "en": "Outreach & social media · IMC FH Krems"
+      }
+    },
+    {
+      "key": "zeno",
+      "image": "assets/Zeno.jpg",
+      "name": "Zeno",
+      "role": {
+        "de": "Outreach · Georgia Tech",
+        "en": "Outreach · Georgia Tech"
+      }
+    },
+    {
+      "key": "katrin_tum",
+      "image": "assets/Katrin2.jpg",
+      "name": "Katrin",
+      "role": {
+        "de": "Outreach · TUM",
+        "en": "Outreach · TUM"
+      }
+    },
+    {
+      "key": "theo",
+      "image": "assets/Foto_Haselbauer_Theodor.jpg",
+      "name": "Theo",
+      "role": {
+        "de": "Outreach · WU Wien",
+        "en": "Outreach · WU Vienna"
+      }
+    },
+    {
+      "key": "valentin",
+      "image": "assets/Screenshot_2026-03-04.png",
+      "name": "Valentin",
+      "role": {
+        "de": "Outreach",
+        "en": "Outreach"
+      }
+    },
+    {
+      "key": "daniel",
+      "image": "assets/Daniel.jpg",
+      "name": "Daniel",
+      "role": {
+        "de": "Postgrad · MedUni Innsbruck",
+        "en": "Postgrad · MedUni Innsbruck"
+      }
+    },
+    {
+      "key": "sonu",
+      "image": "assets/Sonu_Maramangalam.jpg",
+      "name": "Sonu",
+      "role": {
+        "de": "Postgrad · Oxford",
+        "en": "Postgrad · Oxford"
       }
     },
     {
@@ -176,9 +180,153 @@
       "image": "assets/IMG_7820.jpeg",
       "name": "David",
       "role": {
-        "de": "Technologie · TU Wien",
-        "en": "Technology · TU Vienna"
+        "de": "IT · TU Wien",
+        "en": "IT · TU Vienna"
       }
     }
-  ]
+  ],
+  "groups": [
+    {
+      "title": { "de": "Leadership", "en": "Leadership" },
+      "member_keys": ["yoan", "katrin_outreach", "diana", "yan"]
+    },
+    {
+      "title": { "de": "Product Team", "en": "Product team" },
+      "member_keys": ["melanie", "nicholas", "sarah", "david_amsterdam"]
+    },
+    {
+      "title": { "de": "Outreach", "en": "Outreach" },
+      "member_keys": ["emmely", "zeno", "katrin_tum", "theo", "valentin"]
+    },
+    {
+      "title": { "de": "Postgrad", "en": "Postgrad" },
+      "member_keys": ["daniel", "sonu"]
+    },
+    {
+      "title": { "de": "IT", "en": "IT" },
+      "member_keys": ["david_tu"]
+    }
+  ],
+  "mentor_intro": {
+    "eyebrow": { "de": "Mentor:in werden", "en": "Become a mentor" },
+    "title": {
+      "de": "1:1-Mentoring im internationalen Project Access Programm.",
+      "en": "1:1 mentoring in the international Project Access programme."
+    },
+    "body": {
+      "de": "Mentor:innen begleiten junge Menschen aus Österreich und Südtirol bei Essays, Interviews und Auswahlprozessen. Du brauchst keine perfekten Antworten – Erfahrung, ehrliches Feedback und ein bisschen Zeit reichen oft schon sehr weit.",
+      "en": "Mentors support students from Austria and South Tyrol with essays, interviews and selection processes. You do not need perfect answers – experience, honest feedback and a little time already help a lot."
+    }
+  },
+  "fit": {
+    "eyebrow": { "de": "Voraussetzungen", "en": "Requirements" },
+    "title": {
+      "de": "Mentoring passt, wenn du",
+      "en": "Mentoring fits if you"
+    },
+    "items": [
+      {
+        "de": "aus Österreich oder Südtirol kommst oder den Bildungskontext kennst",
+        "en": "are from Austria or South Tyrol, or are familiar with the educational context"
+      },
+      {
+        "de": "an einer internationalen Universität studierst oder studiert hast",
+        "en": "are studying or have studied at an international university"
+      },
+      {
+        "de": "konstruktives Feedback geben kannst und Zeit investieren möchtest",
+        "en": "can give constructive feedback and want to invest time"
+      },
+      {
+        "de": "dich für fairen Hochschulzugang einsetzen möchtest",
+        "en": "care about fair access to university"
+      }
+    ]
+  },
+  "team_intro": {
+    "eyebrow": { "de": "Im PA Austria Team", "en": "In the PA Austria team" },
+    "title": {
+      "de": "Im Team Verantwortung übernehmen.",
+      "en": "Take on a role in the team."
+    },
+    "body": {
+      "de": "Wir organisieren Bootcamps, Schulbesuche, Studienmessen, Social Media, Kommunikation, Tech und Partnerschaften. Dafür suchen wir Menschen, die mitdenken und Aufgaben übernehmen.",
+      "en": "We organise bootcamps, school visits, study fairs, social media, communications, tech and partnerships. We are looking for people who think along and take ownership."
+    }
+  },
+  "areas": {
+    "eyebrow": { "de": "Arbeitsbereiche", "en": "Areas of work" },
+    "title": {
+      "de": "Woran du mitarbeiten kannst.",
+      "en": "Where you can contribute."
+    },
+    "tiles": [
+      {
+        "classes": "w-3 accent-cream",
+        "eyebrow": { "de": "Programme & Bootcamp", "en": "Programmes & bootcamp" },
+        "title": {
+          "de": "Inhalte, Trainer:innen und Ablauf.",
+          "en": "Content, trainers and structure."
+        },
+        "body": {
+          "de": "Teilnehmende betreuen und das Bootcamp mitorganisieren.",
+          "en": "Support participants and help organise the bootcamp."
+        }
+      },
+      {
+        "classes": "w-3",
+        "eyebrow": { "de": "Schulen & Outreach", "en": "Schools & outreach" },
+        "title": {
+          "de": "Schulbesuche, Webinare, Messen.",
+          "en": "School visits, webinars, fairs."
+        },
+        "body": {
+          "de": "Sessions vorbereiten, Schulen kontaktieren und Materialien erstellen.",
+          "en": "Prepare sessions, contact schools and create materials."
+        }
+      },
+      {
+        "classes": "w-3",
+        "eyebrow": { "de": "Partnerschaften", "en": "Partnerships" },
+        "title": {
+          "de": "Sponsoring und Netzwerk pflegen.",
+          "en": "Build sponsorships and networks."
+        },
+        "body": {
+          "de": "Förder:innen, Räume und Expert:innen für unsere Arbeit gewinnen.",
+          "en": "Bring in funders, spaces and experts for our work."
+        }
+      },
+      {
+        "classes": "w-3 accent-green",
+        "eyebrow": { "de": "Kommunikation & Tech", "en": "Communications & tech" },
+        "title": {
+          "de": "Social Media, Web, Tools.",
+          "en": "Social media, web, tools."
+        },
+        "body": {
+          "de": "Bewerbungsprozesse, Website und laufende Updates betreuen.",
+          "en": "Maintain application processes, the website and regular updates."
+        }
+      }
+    ]
+  },
+  "cta_panel": {
+    "eyebrow": { "de": "Kontakt", "en": "Get in touch" },
+    "title": {
+      "de": "Interesse? Schreib uns.",
+      "en": "Interested? Get in touch."
+    },
+    "primary_cta": {
+      "url": "https://projectaccess.org/become-a-mentor",
+      "label": { "de": "Mentor:in werden", "en": "Become a mentor" }
+    },
+    "secondary_cta": {
+      "url": "https://projectaccess.org/austria-various-roles",
+      "label": {
+        "de": "Teil des Teams werden",
+        "en": "Join the PA Austria team"
+      }
+    }
+  }
 }

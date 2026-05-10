@@ -5,20 +5,85 @@
         <h1>{{ page.hero.title[lang] | mark }}</h1>
         <p class="lead">{{ page.hero.lead[lang] }}</p>
         <div class="hero-actions">
-          <a class="button" href="{{ page_href(page.hero.primary_cta.page) }}">{{ page.hero.primary_cta.label[lang] }}</a>
+          <a class="button" href="{{ t(page.hero.primary_cta.url) }}">{{ page.hero.primary_cta.label[lang] }}</a>
           <a class="button button-secondary" href="{{ t(page.hero.secondary_cta.url) }}">{{ page.hero.secondary_cta.label[lang] }}</a>
         </div>
       </section>
 
-      <section class="team-section section-shell">
+      <section class="team-section section-shell" id="{{ anchor('team') }}">
+        <div class="section-heading">
+          <p class="eyebrow">{{ page.team_section.eyebrow[lang] }}</p>
+          <h2>{{ page.team_section.title[lang] }}</h2>
+        </div>
         <div class="full-team-grid">
-          {%- for member in page.members %}
+          {%- for member in team_members %}
           <article class="team-card">
             <img src="{{ asset(member.image) }}" alt="{{ member.name }}" />
             <h3>{{ member.name }}</h3>
             <p>{{ member.role[lang] }}</p>
           </article>
           {%- endfor %}
+        </div>
+      </section>
+
+      <section class="section-shell two-column-section" id="{{ anchor('engagement') }}">
+        <div>
+          <p class="eyebrow">{{ page.mentor_intro.eyebrow[lang] }}</p>
+          <h2>{{ page.mentor_intro.title[lang] }}</h2>
+        </div>
+        <div class="text-stack">
+          <p>{{ page.mentor_intro.body[lang] }}</p>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">{{ page.fit.eyebrow[lang] }}</p>
+          <h2>{{ page.fit.title[lang] }}</h2>
+        </div>
+        <ul class="feature-list">
+          {%- for item in page.fit['items'] %}
+          <li>{{ item[lang] }}</li>
+          {%- endfor %}
+        </ul>
+      </section>
+
+      <section class="section-shell two-column-section">
+        <div>
+          <p class="eyebrow">{{ page.team_intro.eyebrow[lang] }}</p>
+          <h2>{{ page.team_intro.title[lang] }}</h2>
+        </div>
+        <div class="text-stack">
+          <p>{{ page.team_intro.body[lang] }}</p>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">{{ page.areas.eyebrow[lang] }}</p>
+          <h2>{{ page.areas.title[lang] }}</h2>
+        </div>
+        <div class="bento">
+          {%- for tile in page.areas.tiles %}
+          <article class="bento-tile {{ tile.classes }}">
+            <div>
+              <p class="eyebrow">{{ tile.eyebrow[lang] }}</p>
+              <h3>{{ tile.title[lang] }}</h3>
+              {%- if tile.get('body') %}
+              <p>{{ tile.body[lang] }}</p>
+              {%- endif %}
+            </div>
+          </article>
+          {%- endfor %}
+        </div>
+      </section>
+
+      <section class="section-shell cta-panel" id="{{ anchor('contact') }}">
+        <p class="eyebrow">{{ page.cta_panel.eyebrow[lang] }}</p>
+        <h2>{{ page.cta_panel.title[lang] }}</h2>
+        <div class="hero-actions">
+          <a class="button" href="{{ t(page.cta_panel.primary_cta.url) }}">{{ page.cta_panel.primary_cta.label[lang] }}</a>
+          <a class="button button-secondary" href="{{ t(page.cta_panel.secondary_cta.url) }}">{{ page.cta_panel.secondary_cta.label[lang] }}</a>
         </div>
       </section>
 {% endblock %}

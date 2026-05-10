@@ -1,5 +1,5 @@
 {
-  "brand_text": "Project Access Austria",
+  "brand_logo_src": "https://projectaccess.org/wp-content/uploads/2025/05/Frame-5.svg",
   "brand_aria": {
     "de": "Project Access Austria Startseite",
     "en": "Project Access Austria home"
@@ -19,16 +19,12 @@
       "label": { "de": "Bootcamp", "en": "Bootcamp" }
     },
     {
-      "page": "involvement",
-      "label": { "de": "Mitmachen", "en": "Get involved" }
-    },
-    {
       "page": "partners",
       "label": { "de": "Partner", "en": "Partners" }
     },
     {
       "page": "team",
-      "label": { "de": "Team", "en": "Team" }
+      "label": { "de": "Team & Mitmachen", "en": "Team & join us" }
     }
   ],
   "menu_toggle": {

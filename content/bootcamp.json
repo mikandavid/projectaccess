@@ -10,8 +10,8 @@
     }
   },
   "header_cta": {
-    "url": "https://projectaccess.org/join-our-program",
-    "label": { "de": "Kostenlos starten", "en": "Apply for free" }
+    "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+    "label": { "de": "Zum Bootcamp anmelden", "en": "Apply to the bootcamp" }
   },
   "hero": {
     "eyebrow": { "de": "Bootcamp 2026", "en": "Bootcamp 2026" },
@@ -20,11 +20,11 @@
       "en": "Four days for your international **application**."
     },
     "lead": {
-      "de": "Rund 40 Schüler:innen und Studierende aus Österreich und Südtirol arbeiten an ihren Bewerbungen, gemeinsam mit Admissions Officers, Studierenden und Alumni internationaler Universitäten. Die Teilnahme ist kostenlos.",
-      "en": "Around 40 students from Austria and South Tyrol work on their applications with admissions officers, students and alumni of international universities. Participation is free."
+      "de": "Schüler:innen und Studierende aus Österreich und Südtirol arbeiten an ihren Bewerbungen, gemeinsam mit Admissions Officers, Studierenden und Alumni internationaler Universitäten. Die Teilnahme ist kostenlos.",
+      "en": "Students from Austria and South Tyrol work on their applications with admissions officers, students and alumni of international universities. Participation is free."
     },
     "primary_cta": {
-      "url": "https://projectaccess.org/join-our-program",
+      "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
       "label": { "de": "Zur Anmeldung", "en": "Apply" }
     },
     "secondary_cta": {
@@ -61,8 +61,8 @@
     {
       "term": { "de": "Teilnahme", "en": "Participation" },
       "definition": {
-        "de": "~40 Plätze · Bachelor, Master, PhD",
-        "en": "~40 places · bachelor, master, PhD"
+        "de": "Bachelor, Master und PhD willkommen",
+        "en": "Bachelor, master and PhD applicants welcome"
       }
     }
   ],
@@ -83,30 +83,34 @@
       "de": "Daran arbeiten wir.",
       "en": "What we work on."
     },
+    "body": {
+      "de": "Das Bootcamp ist kein allgemeiner Infotag. Du arbeitest mit konkretem Feedback an deiner Studienwahl, an personal statement, CV, Empfehlungsschreiben, standardisierten Tests, Interviews und Finanzierung.",
+      "en": "The bootcamp is not a generic information day. You work with concrete feedback on course choice, personal statements, CVs, recommendation letters, standardised tests, interviews and funding."
+    },
     "items": [
       {
         "de": "Studienwahl und realistische Bewerbungsstrategie",
         "en": "Course choice and a realistic application strategy"
       },
       {
-        "de": "Personal Statement, Common App Essay, fachspezifische Unterlagen",
-        "en": "Personal statement, Common App essay, subject-specific materials"
+        "de": "personal statement, CV, Empfehlungsschreiben und standardisierte Tests",
+        "en": "personal statements, CVs, recommendation letters and standardised tests"
       },
       {
-        "de": "Interviewvorbereitung mit konkretem Feedback",
-        "en": "Interview preparation with detailed feedback"
+        "de": "Mock Interviews mit einem Cambridge Admissions Officer",
+        "en": "Mock interviews with a Cambridge admissions officer"
+      },
+      {
+        "de": "Workshops mit Partnern wie McKinsey und Schwarzman Scholars",
+        "en": "Workshops with partners such as McKinsey and Schwarzman Scholars"
       },
       {
         "de": "Finanzierung, Stipendien und Lebenshaltungskosten im Ausland",
         "en": "Funding, scholarships and living costs abroad"
       },
       {
-        "de": "Bewerbungsfristen und ein realistischer Zeitplan",
-        "en": "Application deadlines and a realistic timeline"
-      },
-      {
-        "de": "Austausch mit anderen Bewerber:innen aus Österreich und Südtirol",
-        "en": "Conversations with other applicants from Austria and South Tyrol"
+        "de": "Bewerbungsfristen, Zeitplan und Austausch mit anderen Bewerber:innen aus Österreich und Südtirol",
+        "en": "Application deadlines, timeline and exchange with other applicants from Austria and South Tyrol"
       }
     ]
   },
@@ -131,10 +135,10 @@
         }
       },
       {
-        "src": "assets/DSC_7265.jpg",
+        "src": "assets/DSC07819.jpg",
         "alt": {
-          "de": "Bootcamp-Teilnehmende in Horn",
-          "en": "Bootcamp participants in Horn"
+          "de": "Bootcamp-Teilnehmende bei einer Gruppenaktivität im Freien",
+          "en": "Bootcamp participants during an outdoor group activity"
         }
       }
     ]
@@ -148,6 +152,22 @@
     "body": {
       "de": "Das Bootcamp richtet sich an Schüler:innen und Studierende aus Österreich oder Südtirol, die über ein Bachelor-, Master- oder PhD-Studium an einer internationalen Universität nachdenken. Vorrang haben Bewerber:innen, die weniger Zugang zu privater Beratung, internationalen Schulnetzwerken oder familiärer Erfahrung mit Auslandsstudien haben.",
       "en": "The bootcamp is for students from Austria or South Tyrol who are considering a bachelor, master or PhD programme at an international university. We prioritise applicants with less access to private guidance, international school networks or family experience with studying abroad."
+    }
+  },
+  "video": {
+    "eyebrow": { "de": "Kurz erklärt", "en": "Short introduction" },
+    "title": {
+      "de": "Lerne Project Access Austria kennen.",
+      "en": "Get to know Project Access Austria."
+    },
+    "body": {
+      "de": "Im Video bekommst du einen kurzen Eindruck davon, warum es Project Access Austria gibt und wie unser kostenloses Mentoring Bewerber:innen unterstützt.",
+      "en": "The video gives you a quick sense of why Project Access Austria exists and how our free mentoring supports applicants."
+    },
+    "src": "https://www.youtube-nocookie.com/embed/lsg7zi7K1QU",
+    "iframe_title": {
+      "de": "Video: Project Access Austria - Einführung",
+      "en": "Video: Project Access Austria introduction"
     }
   },
   "faq": {
@@ -179,7 +199,7 @@
       },
       {
         "question": {
-          "de": "Master oder PhD?",
+          "de": "Auch für Master oder PhD?",
           "en": "Master or PhD?"
         },
         "answer": {
@@ -193,8 +213,8 @@
           "en": "Do I automatically get a mentor?"
         },
         "answer": {
-          "de": "Nein. Mentoring läuft über das internationale Project Access Programm und ist vom Bootcamp getrennt.",
-          "en": "No. Mentoring runs through the international Project Access programme and is separate from the bootcamp."
+          "de": "Ja. Wenn du am Bootcamp teilnimmst, bekommst du garantiert eine:n internationale:n Mentor:in zugewiesen. Wenn möglich bringen wir dich mit jemandem von der Universität oder aus dem Studienbereich zusammen, für die oder den du dich interessierst.",
+          "en": "Yes. If you take part in the bootcamp, you are guaranteed an international mentor. Where possible, we match you with someone at the university or in the field you are interested in."
         }
       },
       {
