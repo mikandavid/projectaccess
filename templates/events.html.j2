@@ -5,8 +5,8 @@
   "@context": "https://schema.org",
   "@type": "EducationEvent",
   "@id": "{{ site.site_url }}/{{ 'en/' if lang == 'en' else '' }}bootcamp.html#bootcamp-2026",
-  "name": "Project Access Austria Bootcamp 2026",
-  "description": {{ ("Vier Tage kostenloses Bewerbungstraining vom 23.-26. Juli 2026 in Horn, Niederösterreich, für Schüler:innen und Studierende aus Österreich und Südtirol, die sich an internationalen Top-Universitäten bewerben." if lang == "de" else "Four days of free application training from 23-26 July 2026 in Horn, Lower Austria, for students from Austria and South Tyrol applying to top international universities.")|tojson }},
+  "name": {{ ("Project\u00a0Access\u00a0Austria Bootcamp 2026")|tojson }},
+  "description": {{ ("Vier Tage kostenloses Bewerbungstraining vom 23.-26.\u00a0Juli\u00a02026 in Horn,\u00a0Niederösterreich, für Schüler:innen und Studierende aus Österreich und Südtirol, die sich an internationalen Top-Universitäten bewerben." if lang == "de" else "Four days of free application training from 23-26\u00a0July\u00a02026 in Horn,\u00a0Lower Austria, for students from Austria and South Tyrol applying to top international universities.")|tojson }},
   "url": "{{ site.site_url }}/{{ 'en/' if lang == 'en' else '' }}bootcamp.html",
   "startDate": "2026-07-23",
   "endDate": "2026-07-26",
@@ -15,7 +15,7 @@
   "isAccessibleForFree": true,
   "location": {
     "@type": "Place",
-    "name": "Horn, Niederösterreich",
+    "name": "Horn,\u00a0Niederösterreich",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Horn",

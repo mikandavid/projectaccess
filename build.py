@@ -320,8 +320,8 @@ def render_llms_txt(site: dict) -> str:
         "",
         f"> {description}",
         "",
-        "Project Access Austria (legal name: Projekt Hochschulzugang) is the Austrian "
-        "chapter of the international Project Access network. We help students from "
+        "Project\u00a0Access\u00a0Austria (legal name: Projekt Hochschulzugang) is the Austrian "
+        "chapter of the international Project\u00a0Access network. We help students from "
         "Austria and South Tyrol apply to selective international universities such as "
         "Oxford, Cambridge, Harvard, ETH Zürich and Sciences Po. All support is free.",
         "",
@@ -329,10 +329,10 @@ def render_llms_txt(site: dict) -> str:
         "",
         f"- [Home (Deutsch)]({public_url('index.html')}): mission, programme overview, bootcamp summary, team, contact.",
         f"- [Home (English)]({public_url('en/index.html')}): mission, programme overview, bootcamp summary, team, contact.",
-        f"- [Bootcamp 2026 (Deutsch)]({public_url('bootcamp.html')}): dates (23–26 July 2026, Horn, Lower Austria), agenda, eligibility, FAQs.",
+        f"- [Bootcamp 2026 (Deutsch)]({public_url('bootcamp.html')}): dates (23–26\u00a0July\u00a02026, Horn,\u00a0Lower Austria), agenda, eligibility, FAQs.",
         f"- [Bootcamp 2026 (English)]({public_url('en/bootcamp.html')}): dates, agenda, eligibility, FAQs.",
-        f"- [Team & join us (Deutsch)]({public_url('team.html')}): team list and ways to volunteer or mentor.",
-        f"- [Team & join us (English)]({public_url('en/team.html')}): team list and ways to volunteer or mentor.",
+        f"- [Team &\u00a0join us (Deutsch)]({public_url('team.html')}): team list and ways to volunteer or mentor.",
+        f"- [Team &\u00a0join us (English)]({public_url('en/team.html')}): team list and ways to volunteer or mentor.",
         f"- [Partners (Deutsch)]({public_url('partners.html')}): supporters, school partnerships, sponsorship.",
         f"- [Partners (English)]({public_url('en/partners.html')}): supporters, school partnerships, sponsorship.",
         f"- [Events (Deutsch)]({public_url('events.html')}): upcoming and recent events.",

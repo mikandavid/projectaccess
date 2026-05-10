@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": {
-      "de": "Partner:innen & Schulen | Project Access Austria",
-      "en": "Partners & schools | Project Access Austria"
+      "de": "Partner:innen &\u00a0Schulen | Project\u00a0Access\u00a0Austria",
+      "en": "Partners &\u00a0schools | Project\u00a0Access\u00a0Austria"
     },
     "description": {
-      "de": "Schulen, Unternehmen, Stiftungen und private Unterstützer:innen halten das kostenlose Mentoring, Bootcamp und die Schulbesuche von Project Access Austria am Laufen. Jetzt Schulpartnerschaft oder Sponsoring anfragen.",
-      "en": "Schools, companies, foundations and private supporters keep Project Access Austria's free mentoring, bootcamp and school visits running. Enquire about a school partnership or sponsorship."
+      "de": "Schulen, Unternehmen, Stiftungen und private Unterstützer:innen halten das kostenlose Mentoring, Bootcamp und die Schulbesuche von Project\u00a0Access\u00a0Austria am Laufen. Jetzt Schulpartnerschaft oder Sponsoring anfragen.",
+      "en": "Schools, companies, foundations and private supporters keep Project\u00a0Access\u00a0Austria's free mentoring, bootcamp and school visits running. Enquire about a school partnership or sponsorship."
     },
     "keywords": {
       "de": "Schulpartnerschaft Österreich, Sponsoring Bildungs NGO, Studienberatung Schule kostenlos, Stipendien Auslandsstudium Partner",
@@ -140,7 +140,7 @@
       "en": "Concrete support, not just logos."
     },
     "items": [
-      "McKinsey & Company",
+      "McKinsey &\u00a0Company",
       "Schwarzman Scholars"
     ]
   },
@@ -179,7 +179,7 @@
         }
       },
       {
-        "value": "0 EUR",
+        "value": "0\u00a0EUR",
         "label": {
           "de": "Kosten für Teilnehmende",
           "en": "cost for participants"
@@ -197,10 +197,10 @@
       "en": "Partner quote"
     },
     "quote": {
-      "de": "Wir bei McKinsey sind fest davon überzeugt, dass vielfältigere Teams bessere Ergebnisse erzielen. Neben Geschlecht und ethnischer Herkunft ist der sozioökonomische Hintergrund eine zentrale Dimension, entlang derer wir als Unternehmen jeden Tag daran arbeiten, vielfältiger und inklusiver zu werden. Es ist uns eine Freude, eine Organisation wie Project Access zu unterstützen, die sicherstellt, dass nur Talent und Leidenschaft den Bildungsweg eines Menschen bestimmen, nicht der sozioökonomische Hintergrund.",
-      "en": "We at McKinsey are deeply convinced that more diverse teams perform better. Besides gender and ethnicity, socio-economic background is a key dimension along which we as a firm work hard every day to become more diverse and inclusive. It's our pleasure to support an organisation like Project Access, which makes sure that only talent and passion determine someone's path in education, rather than the socio-economic background."
+      "de": "Wir bei McKinsey sind fest davon überzeugt, dass vielfältigere Teams bessere Ergebnisse erzielen. Neben Geschlecht und ethnischer Herkunft ist der sozioökonomische Hintergrund eine zentrale Dimension, entlang derer wir als Unternehmen jeden Tag daran arbeiten, vielfältiger und inklusiver zu werden. Es ist uns eine Freude, eine Organisation wie Project\u00a0Access zu unterstützen, die sicherstellt, dass nur Talent und Leidenschaft den Bildungsweg eines Menschen bestimmen, nicht der sozioökonomische Hintergrund.",
+      "en": "We at McKinsey are deeply convinced that more diverse teams perform better. Besides gender and ethnicity, socio-economic background is a key dimension along which we as a firm work hard every day to become more diverse and inclusive. It's our pleasure to support an organisation like Project\u00a0Access, which makes sure that only talent and passion determine someone's path in education, rather than the socio-economic background."
     },
-    "attribution": "Dr. Patrick Guggenberger · Associate Partner, McKinsey"
+    "attribution": "Dr.\u00a0Patrick Guggenberger · Associate Partner, McKinsey"
   },
   "schools": {
     "eyebrow": {
@@ -212,8 +212,8 @@
       "en": "Free sessions for **schools**."
     },
     "body": {
-      "de": "Viele Schüler:innen erfahren erst spät, welche Studienwege im Ausland offenstehen und wie Bewerbungen funktionieren. Project Access Austria bringt Studierende und Alumni internationaler Universitäten direkt an österreichische Schulen, kostenlos und passend zum Bedarf der Schule.",
-      "en": "Many students only hear late about study options abroad and how the applications work. Project Access Austria brings students and alumni of international universities directly to Austrian schools, free of charge and tailored to what each school needs."
+      "de": "Viele Schüler:innen erfahren erst spät, welche Studienwege im Ausland offenstehen und wie Bewerbungen funktionieren. Project\u00a0Access\u00a0Austria bringt Studierende und Alumni internationaler Universitäten direkt an österreichische Schulen, kostenlos und passend zum Bedarf der Schule.",
+      "en": "Many students only hear late about study options abroad and how the applications work. Project\u00a0Access\u00a0Austria brings students and alumni of international universities directly to Austrian schools, free of charge and tailored to what each school needs."
     },
     "cta": {
       "url": {
@@ -228,8 +228,8 @@
     "image": {
       "src": "assets/Website_1.webp",
       "alt": {
-        "de": "Teilnehmende arbeiten bei einem Project Access Austria Workshop",
-        "en": "Participants working in a Project Access Austria workshop"
+        "de": "Teilnehmende arbeiten bei einem Project\u00a0Access\u00a0Austria Workshop",
+        "en": "Participants working in a Project\u00a0Access\u00a0Austria workshop"
       }
     }
   },
@@ -279,8 +279,8 @@
           "en": "A personal contact"
         },
         "body": {
-          "de": "aus unserem PA Austria Team.",
-          "en": "from our PA Austria team."
+          "de": "aus unserem PA\u00a0Austria Team.",
+          "en": "from our PA\u00a0Austria team."
         }
       },
       {
@@ -299,8 +299,8 @@
     "image": {
       "src": "assets/DSC07694.webp",
       "alt": {
-        "de": "Workshop-Situation mit Project Access Austria",
-        "en": "Workshop with Project Access Austria"
+        "de": "Workshop-Situation mit Project\u00a0Access\u00a0Austria",
+        "en": "Workshop with Project\u00a0Access\u00a0Austria"
       }
     },
     "eyebrow": {

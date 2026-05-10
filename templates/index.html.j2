@@ -32,7 +32,7 @@
 {% block content %}
       <section class="hero section-shell">
         <div class="hero-copy">
-          <aside class="save-the-date">
+          <a class="save-the-date" href="{{ page_href('bootcamp') }}">
             <div class="save-the-date-date">
               <span class="save-the-date-kicker">{{ page.hero.banner.kicker[lang] }}</span>
               <span class="save-the-date-day">{{ page.hero.banner.date.day[lang] }}</span>
@@ -42,13 +42,13 @@
             <div class="save-the-date-body">
               <p class="save-the-date-event">{{ page.hero.banner.event[lang] }}</p>
               <p class="save-the-date-location">{{ page.hero.banner.location[lang] }}</p>
-              <a class="save-the-date-link" href="{{ page_href('bootcamp') }}">{{ page.hero.banner.link_text[lang] }}</a>
+              <span class="save-the-date-link">{{ page.hero.banner.link_text[lang] }}</span>
             </div>
             <span class="save-the-date-status">
               <span class="save-the-date-pulse" aria-hidden="true"></span>
               <span>{{ page.hero.banner.status[lang] }}</span>
             </span>
-          </aside>
+          </a>
           <p class="eyebrow">{{ page.hero.eyebrow[lang] }}</p>
           <h1>{{ page.hero.title[lang] | mark }}</h1>
           <p class="lead">{{ page.hero.lead[lang] }}</p>
@@ -69,12 +69,12 @@
           <div class="university-carousel-track">
             {%- for university in page.universities['items'] %}
             <span class="university-logo">
-              <img src="{{ university.logo }}" alt="{{ university.name }}" loading="lazy" />
+              <img src="{{ university.logo if university.logo.startswith('http') else asset(university.logo) }}" alt="{{ university.name }}" loading="lazy" />
             </span>
             {%- endfor %}
             {%- for university in page.universities['items'] %}
             <span class="university-logo" aria-hidden="true">
-              <img src="{{ university.logo }}" alt="" loading="lazy" />
+              <img src="{{ university.logo if university.logo.startswith('http') else asset(university.logo) }}" alt="" loading="lazy" />
             </span>
             {%- endfor %}
           </div>

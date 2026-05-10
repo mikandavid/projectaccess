@@ -1,6 +1,6 @@
 {
   "site_url": "https://projectaccess.at",
-  "site_name": "Project Access Austria",
+  "site_name": "Project\u00a0Access\u00a0Austria",
   "default_locale": {
     "de": "de_AT",
     "en": "en_GB"
@@ -10,21 +10,21 @@
     "width": 2048,
     "height": 1365,
     "alt": {
-      "de": "Teilnehmende und Mentor:innen beim Project Access Austria Bootcamp",
-      "en": "Participants and mentors at the Project Access Austria bootcamp"
+      "de": "Teilnehmende und Mentor:innen beim Project\u00a0Access\u00a0Austria Bootcamp",
+      "en": "Participants and mentors at the Project\u00a0Access\u00a0Austria bootcamp"
     }
   },
   "favicon": {
-    "ico": "assets/pa-austria-logo.png",
-    "png_192": "assets/pa-austria-logo.png",
-    "apple_touch": "assets/pa-austria-logo.png"
+    "ico": "assets/pa-favicon-32.png",
+    "png_192": "assets/pa-favicon-192.png",
+    "apple_touch": "assets/pa-favicon-180.png"
   },
   "theme_color": "#26262b",
   "organization": {
     "legal_name": "Projekt Hochschulzugang",
     "alternate_name": [
-      "PA Austria",
-      "Project Access Österreich",
+      "PA\u00a0Austria",
+      "Project\u00a0Access\u00a0Österreich",
       "Projekt Hochschulzugang"
     ],
     "founding_year": 2018,
@@ -68,18 +68,20 @@
       ]
     },
     "description": {
-      "de": "Project Access Austria ist die österreichische Sektion des internationalen Project-Access-Netzwerks. Wir unterstützen Schüler:innen und Studierende aus Österreich und Südtirol kostenlos bei Bewerbungen an selektive internationale Universitäten – mit 1:1-Mentoring, einem jährlichen Bewerbungs-Bootcamp, Schulbesuchen und Webinaren.",
-      "en": "Project Access Austria is the Austrian chapter of the international Project Access network. We support students from Austria and South Tyrol with free one-to-one mentoring, an annual application bootcamp, school visits and webinars to help them apply to selective international universities."
+      "de": "Project\u00a0Access\u00a0Austria ist die österreichische Sektion des internationalen Project-Access-Netzwerks. Wir unterstützen Schüler:innen und Studierende aus Österreich und Südtirol kostenlos bei Bewerbungen an selektive internationale Universitäten – mit 1:1-Mentoring, einem jährlichen Bewerbungs-Bootcamp, Schulbesuchen und Webinaren.",
+      "en": "Project\u00a0Access\u00a0Austria is the Austrian chapter of the international Project\u00a0Access network. We support students from Austria and South Tyrol with free one-to-one mentoring, an annual application bootcamp, school visits and webinars to help them apply to selective international universities."
     },
     "same_as": [
       "https://projectaccess.org",
-      "https://www.instagram.com/projectaccess.at/"
+      "https://www.instagram.com/projectaccess.at/",
+      "https://www.linkedin.com/company/project-access-austria/",
+      "https://www.facebook.com/projectaccessaustria/"
     ]
   },
   "brand_logo_src": "https://projectaccess.org/wp-content/uploads/2025/05/Frame-5.svg",
   "brand_aria": {
-    "de": "Project Access Austria Startseite",
-    "en": "Project Access Austria home"
+    "de": "Project\u00a0Access\u00a0Austria Startseite",
+    "en": "Project\u00a0Access\u00a0Austria home"
   },
   "nav_aria": {
     "de": "Hauptnavigation",
@@ -118,8 +120,8 @@
     {
       "page": "team",
       "label": {
-        "de": "Team & Mitmachen",
-        "en": "Team & join us"
+        "de": "Team &\u00a0Mitmachen",
+        "en": "Team &\u00a0join us"
       }
     }
   ],
@@ -168,7 +170,7 @@
     "branding": true
   },
   "footer": {
-    "name": "Project Access Austria",
+    "name": "Project\u00a0Access\u00a0Austria",
     "subtitle": {
       "de": "Projekt Hochschulzugang · Verein mit Sitz in Wien",
       "en": "Projekt Hochschulzugang · association based in Vienna"
@@ -178,18 +180,60 @@
       "en": "Register number (ZVR): 1037731270 · "
     },
     "address": {
-      "de": "Zustellanschrift: Neustiftgasse 4, 2193 Wilfersdorf, Österreich",
-      "en": "Postal address: Neustiftgasse 4, 2193 Wilfersdorf, Austria"
+      "de": "Zustellanschrift: Neustiftgasse 4, 2193 Wilfersdorf,\u00a0Österreich",
+      "en": "Postal address: Neustiftgasse 4, 2193 Wilfersdorf,\u00a0Austria"
     },
     "international": {
       "url": "https://projectaccess.org",
-      "label": "Project Access International"
+      "label": "Project\u00a0Access\u00a0International"
     },
     "instagram": {
       "url": "https://www.instagram.com/projectaccess.at/",
       "label": "Instagram"
     },
-    "email": "austria@projectaccess.org"
+    "email": "austria@projectaccess.org",
+    "socials_heading": {
+      "de": "Folge uns",
+      "en": "Follow us"
+    },
+    "socials": [
+      {
+        "id": "email",
+        "url": "mailto:austria@projectaccess.org",
+        "label": "E-Mail",
+        "aria": {
+          "de": "E-Mail an Project\u00a0Access\u00a0Austria",
+          "en": "Email Project\u00a0Access\u00a0Austria"
+        }
+      },
+      {
+        "id": "instagram",
+        "url": "https://www.instagram.com/projectaccess.at/",
+        "label": "Instagram",
+        "aria": {
+          "de": "Project\u00a0Access\u00a0Austria auf Instagram",
+          "en": "Project\u00a0Access\u00a0Austria on Instagram"
+        }
+      },
+      {
+        "id": "linkedin",
+        "url": "https://www.linkedin.com/company/project-access-austria/",
+        "label": "LinkedIn",
+        "aria": {
+          "de": "Project\u00a0Access\u00a0Austria auf LinkedIn",
+          "en": "Project\u00a0Access\u00a0Austria on LinkedIn"
+        }
+      },
+      {
+        "id": "facebook",
+        "url": "https://www.facebook.com/projectaccessaustria/",
+        "label": "Facebook",
+        "aria": {
+          "de": "Project\u00a0Access\u00a0Austria auf Facebook",
+          "en": "Project\u00a0Access\u00a0Austria on Facebook"
+        }
+      }
+    ]
   },
   "press": {
     "eyebrow": {
@@ -211,7 +255,7 @@
       },
       {
         "url": "https://www.pressreader.com/austria/der-standard/20190720/282011853953461",
-        "label": "Der Standard: über Project Access"
+        "label": "Der Standard: über Project\u00a0Access"
       },
       {
         "url": "https://weltweitestars.com/lifestyle/so-klappts-mit-dem-studium-im-ausland/",

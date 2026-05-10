@@ -1,18 +1,36 @@
+{% set social_icons = {
+  'email': '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.4l8 5 8-5V7H4zm16 2.7-7.47 4.67a1 1 0 0 1-1.06 0L4 9.7V17h16V9.7z"/></svg>',
+  'instagram': '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6zm0 2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zM17.8 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>',
+  'linkedin': '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3V9.75zM9.5 9.75h3.83v1.54h.05a4.2 4.2 0 0 1 3.78-2.08c4.04 0 4.79 2.66 4.79 6.12V21h-4v-4.94c0-1.18-.02-2.7-1.65-2.7-1.65 0-1.9 1.29-1.9 2.62V21h-4V9.75z"/></svg>',
+  'facebook': '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 22v-8.5h2.86l.43-3.32H13.5V8.06c0-.96.27-1.62 1.65-1.62h1.76V3.47A23.5 23.5 0 0 0 14.34 3.3c-2.55 0-4.3 1.56-4.3 4.42v2.46H7.18v3.32h2.86V22h3.46z"/></svg>'
+} %}
     <footer class="footer">
-      <div>
+      <div class="footer-info">
         <strong>{{ site.footer.name }}</strong>
         <p>{{ site.footer.subtitle[lang] }}</p>
         <p>{{ site.footer.legal_prefix[lang] }}<a href="mailto:{{ site.footer.email }}">{{ site.footer.email }}</a></p>
-      </div>
-      <div>
         <p>{{ site.footer.address[lang] }}</p>
         <p>
           <a href="{{ site.footer.international.url }}">{{ site.footer.international.label }}</a>
-          ·
-          <a href="{{ site.footer.instagram.url }}">{{ site.footer.instagram.label }}</a>
         </p>
         <p class="footer-lang-link">
           <a href="{{ alt_lang_href }}">{{ site.language_switch.mobile_label[lang] }}</a>
         </p>
+      </div>
+      <div class="footer-socials">
+        <span class="footer-socials-heading">{{ site.footer.socials_heading[lang] }}</span>
+        <ul class="footer-socials-list">
+          {% for s in site.footer.socials %}
+          <li>
+            <a class="footer-social footer-social-{{ s.id }}"
+               href="{{ s.url }}"
+               aria-label="{{ s.aria[lang] }}"
+               {% if s.url.startswith('http') %}target="_blank" rel="noopener"{% endif %}>
+              <span class="footer-social-icon" aria-hidden="true">{{ social_icons[s.id] | safe }}</span>
+              <span class="footer-social-label">{{ s.label }}</span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
     </footer>
