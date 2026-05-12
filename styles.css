@@ -843,6 +843,12 @@ h3 {
   margin-bottom: 1.4rem;
 }
 
+.section-heading > p:not(.eyebrow) {
+  max-width: 44rem;
+  margin: 0.2rem 0 0;
+  font-size: 0.94rem;
+}
+
 /* PROGRAMM — numbered list */
 .program-list {
   display: grid;
@@ -1082,55 +1088,68 @@ h3 {
   }
 }
 
-.partner-examples {
+/* PARTNER LOGOS — full-width strip with intro copy above the row. */
+.partner-logos-section {
   display: grid;
-  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
-  gap: clamp(1rem, 3vw, 2.2rem);
-  align-items: center;
-  padding-top: clamp(0.2rem, 1vw, 0.6rem);
+  gap: clamp(0.9rem, 2.2vw, 1.4rem);
 }
 
-.partner-mark-list {
+.partner-logos-heading {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.35rem;
+  max-width: 44rem;
+}
+
+.partner-logos-heading h2 {
+  margin: 0;
+}
+
+.partner-logos-heading p {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.partner-logo-strip {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 0.7rem;
-}
-
-.partner-mark-list span {
-  display: grid;
-  min-height: 4rem;
-  place-items: center;
-  padding: 0.9rem 1rem;
-  color: var(--ink);
-  background: var(--paper);
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius-md);
-  font-family: "Jali Latin", Inter, ui-sans-serif, system-ui, sans-serif;
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  font-weight: 700;
-  letter-spacing: 0;
-  text-align: center;
-}
-
-/* Schools snapshot inside partners — soft list */
-.schools-offers {
-  display: grid;
-  gap: 0.55rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.schools-offers li {
-  padding: 0.7rem 0 0.7rem 1rem;
-  border-left: 3px solid var(--yellow);
-  color: var(--muted);
-  font-size: 0.92rem;
+.partner-logo-item {
+  display: grid;
+  min-height: 5.4rem;
+  place-items: center;
+  padding: 0.55rem 0.7rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
 }
 
-.schools-offers strong {
-  color: var(--ink);
-  font-weight: 800;
+.partner-logo-item:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.partner-logo-item img {
+  width: auto;
+  max-width: 100%;
+  max-height: 3.65rem;
+  object-fit: contain;
+  filter: none;
+}
+
+.partner-logo-text {
+  font-family: "Jali Latin", Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: center;
 }
 
 /* PARTNERS / QUOTE — with decorative glyph */
@@ -1444,11 +1463,6 @@ h3 {
   content: none;
 }
 
-.feature-list-compact {
-  grid-template-columns: 1fr;
-  margin-top: 0.85rem;
-}
-
 .image-band {
   display: grid;
   grid-template-columns: 1.25fr 0.9fr 1.1fr;
@@ -1524,22 +1538,377 @@ h3 {
   border-radius: var(--radius-lg);
 }
 
-.school-partnership-section {
-  grid-template-columns: minmax(0, 1.1fr) minmax(16rem, 0.7fr);
-  padding: clamp(1.4rem, 3vw, 2.2rem);
+.image-text-card img {
+  aspect-ratio: 4 / 3;
+}
+
+/* SCHOOLS CHAPTER — chapter break inside partners.html announcing the
+   schools section. Cream background, image right, copy left, two CTAs.
+   Replaces the older .school-partnership-section that re-used hero styling
+   mid-page and looked like a second hero. */
+.schools-chapter {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(16rem, 0.85fr);
+  gap: clamp(1.4rem, 3.2vw, 2.6rem);
+  align-items: center;
+  padding: clamp(1.6rem, 3.4vw, 2.6rem);
   background: var(--cream);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
 }
 
-.school-partnership-section .page-hero-image {
-  align-self: stretch;
-  min-height: 16rem;
+.schools-chapter-copy h2 {
+  max-width: 18ch;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+}
+
+.schools-chapter-facts {
+  display: grid;
+  gap: 0.45rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.schools-chapter-facts li {
+  display: flex;
+  gap: 0.55rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.schools-chapter-facts li::before {
+  content: "";
+  flex-shrink: 0;
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-top: 0.45rem;
+  background: var(--yellow);
+  border-radius: 50%;
+}
+
+.schools-chapter-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  filter: saturate(0.96) sepia(0.045) contrast(1.02);
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
 }
 
-.image-text-card img {
+/* PARTNER QUOTE CARD — paper card with refined attribution. The home page
+   keeps the lighter .partners .quote treatment; partners.html uses this
+   prominent variant. */
+.partner-quote-section {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.partner-quote-card {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: clamp(1.4rem, 3vw, 2.4rem) clamp(1.4rem, 3vw, 2.6rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.partner-quote-card::before {
+  content: "\201C";
+  position: absolute;
+  top: 0.5rem;
+  left: 1.2rem;
+  font-family: "Jali Latin", Inter, sans-serif;
+  font-size: 4.6rem;
+  line-height: 1;
+  color: var(--yellow);
+  pointer-events: none;
+}
+
+.partner-quote-card blockquote {
+  margin: 0;
+  padding: 0 0 0 2.4rem;
+}
+
+.partner-quote-card blockquote p {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Jali Latin", Inter, sans-serif;
+  font-size: clamp(1.05rem, 1.55vw, 1.3rem);
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -0.015em;
+}
+
+.partner-quote-card figcaption {
+  display: grid;
+  gap: 0.1rem;
+  padding: 0.8rem 0 0 2.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.partner-quote-card figcaption strong {
+  color: var(--ink-deep);
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: -0.005em;
+}
+
+.partner-quote-card figcaption span {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+/* NEXT EVENT CARD — featured "next event" card on events.html. Image left,
+   copy with status pill, summary, detail list and two CTAs on the right.
+   Distinct from .image-text-card (which keeps a smaller, secondary feel). */
+.next-event-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: clamp(1.4rem, 3vw, 2.6rem);
+  align-items: center;
+  width: min(calc(100% - 2rem), 1160px);
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+  background: var(--green-soft);
+  border-radius: var(--radius-lg);
+}
+
+.next-event-card > img {
+  width: 100%;
   aspect-ratio: 4 / 3;
+  object-fit: cover;
+  filter: saturate(0.96) sepia(0.045) contrast(1.02);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.next-event-copy h2 {
+  max-width: 18ch;
+  margin-bottom: 0.4rem;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+}
+
+.next-event-copy > p {
+  max-width: 36rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.92rem;
+}
+
+.next-event-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.55rem;
+}
+
+.next-event-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.22rem 0.6rem 0.22rem 0.55rem;
+  background: var(--ink-deep);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.next-event-pulse {
+  flex-shrink: 0;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(243, 154, 0, 0.55);
+  animation: next-event-pulse 1.8s ease-out infinite;
+}
+
+@keyframes next-event-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(243, 154, 0, 0.55); }
+  70%  { box-shadow: 0 0 0 6px rgba(243, 154, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(243, 154, 0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .next-event-pulse { animation: none; }
+}
+
+/* STAY UPDATED — compact section pairing copy with a short list of contact
+   channel cards. Replaces the older yellow CTA panel that just said
+   "follow us". */
+.stay-updated {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
+  gap: clamp(1.2rem, 3vw, 2.4rem);
+  align-items: center;
+}
+
+.stay-updated-copy h2 {
+  max-width: 22ch;
+  margin-bottom: 0.5rem;
+}
+
+.stay-updated-copy > p {
+  margin: 0;
+  max-width: 32rem;
+  font-size: 0.92rem;
+}
+
+.stay-updated-channels {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stay-updated-channels a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem;
+  align-items: center;
+  padding: 0.85rem 1.05rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease, background 160ms ease, color 160ms ease;
+}
+
+.stay-updated-channels a:hover {
+  color: var(--cream);
+  background: var(--ink);
+  border-color: var(--ink);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.stay-updated-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  background: var(--yellow);
+  color: var(--ink-deep);
+  border-radius: 999px;
+  flex-shrink: 0;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.stay-updated-icon svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.stay-updated-channels a:hover .stay-updated-icon {
+  background: var(--cream);
+  color: var(--ink-deep);
+}
+
+.stay-updated-text {
+  display: grid;
+  gap: 0.05rem;
+  min-width: 0;
+}
+
+.stay-updated-sub {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  transition: color 160ms ease;
+}
+
+.stay-updated-channels a:hover .stay-updated-sub {
+  color: rgba(255, 253, 247, 0.72);
+}
+
+.stay-updated-label {
+  color: inherit;
+  font-size: 0.94rem;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  overflow-wrap: anywhere;
+}
+
+/* RICH ARCHIVE — variant of .archive-grid with cover image, tag pill and
+   date for past events on events.html. Selectors are chained against
+   .archive-grid so they beat the base .archive-grid article rules later in
+   the file regardless of source order. */
+.archive-grid.archive-grid-rich {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.95rem;
+}
+
+.archive-grid.archive-grid-rich article {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  gap: 0.4rem;
+  padding: 0;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.archive-grid.archive-grid-rich article > img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  filter: saturate(0.96) sepia(0.045) contrast(1.02);
+}
+
+.archive-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  padding: 1.05rem 1.05rem 0;
+}
+
+.archive-tag {
+  display: inline-flex;
+  padding: 0.2rem 0.6rem;
+  background: var(--yellow);
+  color: var(--ink-deep);
+  border-radius: 999px;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.archive-date {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.archive-grid.archive-grid-rich h3 {
+  padding: 0 1.05rem;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.archive-grid.archive-grid-rich p {
+  padding: 0 1.05rem 1.1rem;
+  margin: 0;
+  font-size: 0.86rem;
 }
 
 .faq-grid,
@@ -1567,58 +1936,84 @@ h3 {
   font-size: 0.86rem;
 }
 
-.cta-panel,
-.impact-panel {
+.cta-panel {
   padding: clamp(1.3rem, 3vw, 2rem);
   background: var(--yellow);
   border-radius: var(--radius-lg);
   color: var(--ink-deep);
 }
 
-.cta-panel h2,
-.impact-panel h2 {
+.cta-panel h2 {
   max-width: 24ch;
 }
 
-.cta-panel p,
-.impact-panel p {
+.cta-panel p {
   max-width: 46rem;
   color: var(--ink-deep);
 }
 
-.cta-panel .eyebrow,
-.impact-panel .eyebrow {
+.cta-panel .eyebrow {
   color: var(--ink-deep);
 }
 
-.impact-grid {
+/* IMPACT STATS — paper card with heading above and 4-up stats with dashed
+   divider. Replaces the older yellow .impact-panel block on the partners page
+   so the page no longer carries two heavy yellow blocks back-to-back. */
+.impact-stats {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.9rem;
-  margin-top: 1.2rem;
+  gap: 1.1rem;
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
 }
 
-.impact-grid strong {
+.impact-stats-heading {
+  display: grid;
+  gap: 0.15rem;
+  max-width: 42rem;
+}
+
+.impact-stats-heading h2 {
+  margin: 0;
+}
+
+.impact-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--line-strong);
+}
+
+.impact-stats-grid article {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.impact-stats-grid strong {
   display: block;
+  color: var(--ink);
   font-family: "Jali Latin", Inter, sans-serif;
-  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
-  line-height: 1;
+  font-size: clamp(1.7rem, 3.1vw, 2.35rem);
+  line-height: 0.95;
   letter-spacing: -0.055em;
 }
 
-.impact-grid span {
+.impact-stats-grid span {
   display: block;
-  max-width: 13rem;
-  margin-top: 0.3rem;
-  color: var(--ink-deep);
-  font-weight: 700;
-  font-size: 0.85rem;
+  max-width: 14rem;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.83rem;
+  line-height: 1.45;
 }
 
-.impact-note {
-  margin: 1rem 0 0;
-  color: var(--ink-deep);
-  font-size: 0.78rem;
+.impact-stats-note {
+  margin: 0;
+  color: rgba(38, 38, 43, 0.55);
+  font-size: 0.74rem;
   font-weight: 600;
 }
 
@@ -2060,8 +2455,16 @@ h3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .impact-grid {
+  .impact-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .partner-logo-strip {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .partner-logo-strip > li:nth-child(n+4) {
+    grid-column: auto;
   }
 }
 
@@ -2075,12 +2478,14 @@ h3 {
   .page-hero-split,
   .intro,
   .bootcamp,
-  .partner-examples,
   .two-column-section,
   .topics-section,
   .video-section,
   .image-text-card,
-  .news-contact {
+  .news-contact,
+  .next-event-card,
+  .schools-chapter,
+  .stay-updated {
     grid-template-columns: 1fr;
     gap: 1.4rem;
   }
@@ -2151,8 +2556,9 @@ h3 {
   .feature-list,
   .faq-grid,
   .archive-grid,
-  .partner-mark-list,
-  .impact-grid {
+  .archive-grid-rich,
+  .partner-logo-strip,
+  .impact-stats-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -2179,21 +2585,22 @@ h3 {
     aspect-ratio: 1 / 1;
   }
 
-  .school-partnership-section {
-    gap: 1rem;
+  .schools-chapter-image {
+    order: -1;
+    max-height: 20rem;
   }
 
-  .school-partnership-section .page-hero-image {
-    min-height: 0;
-    max-height: 18rem;
+  .next-event-card > img {
     order: -1;
+    max-height: 20rem;
   }
 
   .section-shell.image-text-card,
   .section-shell.video-section,
   .section-shell.cta-panel,
-  .section-shell.impact-panel,
-  .section-shell.school-partnership-section {
+  .section-shell.impact-stats,
+  .section-shell.schools-chapter,
+  .section-shell.next-event-card {
     width: 100%;
     max-width: none;
     padding: clamp(1.5rem, 5vw, 2.4rem) max(1rem, calc((100% - var(--max)) / 2));
@@ -2267,7 +2674,8 @@ h3 {
   .feature-list,
   .faq-grid,
   .archive-grid,
-  .partner-mark-list {
+  .archive-grid-rich,
+  .partner-logo-strip {
     grid-template-columns: 1fr;
   }
 
@@ -2309,11 +2717,11 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .impact-grid {
+  .impact-stats-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .impact-grid > article:nth-child(3):last-child {
+  .impact-stats-grid > article:nth-child(3):last-child {
     grid-column: span 2;
   }
 
@@ -2337,7 +2745,9 @@ h3 {
   .image-text-card,
   .video-section,
   .cta-panel,
-  .impact-panel,
+  .impact-stats,
+  .schools-chapter,
+  .next-event-card,
   .event-card,
   .contact-card {
     border-radius: 18px;
@@ -2428,6 +2838,26 @@ h3 {
 
   .partners .quote::before {
     font-size: 3rem;
+  }
+
+  .partner-quote-card {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+
+  .partner-quote-card::before {
+    top: 0.4rem;
+    left: 0.85rem;
+    font-size: 3.2rem;
+  }
+
+  .partner-quote-card blockquote,
+  .partner-quote-card figcaption {
+    padding-left: 1.6rem;
+  }
+
+  .stay-updated-channels a {
+    padding: 0.75rem 0.85rem;
   }
 }
 

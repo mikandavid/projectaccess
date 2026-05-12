@@ -14,24 +14,24 @@
     }
   },
   "header_cta": {
-    "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+    "url": "mailto:austria@projectaccess.org?subject=Partnerschaft%20mit%20PA%20Austria",
     "label": {
-      "de": "Zum Bootcamp anmelden",
-      "en": "Apply to the bootcamp"
+      "de": "Partnerschaft anfragen",
+      "en": "Enquire about partnership"
     }
   },
   "hero": {
     "eyebrow": {
-      "de": "Partner:innen",
-      "en": "Partners"
+      "de": "Partner:innen &\u00a0Schulen",
+      "en": "Partners &\u00a0schools"
     },
     "title": {
-      "de": "**Partner:innen** halten unsere Angebote kostenlos.",
-      "en": "**Partners** help keep our work free."
+      "de": "Gemeinsam halten **Partner:innen** unsere Angebote kostenlos.",
+      "en": "Together, **partners** keep our work free."
     },
     "lead": {
-      "de": "Mit Schulen, Unternehmen, Stiftungen und privaten Unterstützer:innen erreichen wir junge Menschen, die sonst oft später von internationalen Studienmöglichkeiten erfahren. Beiträge können Räume, Finanzierung, Expertise oder Kontakte sein.",
-      "en": "With schools, companies, foundations and private supporters, we reach young people who often hear about international study options too late. Partners can contribute space, funding, expertise or contacts."
+      "de": "Project\u00a0Access\u00a0Austria arbeitet mit Schulen, Universitäten, Unternehmen, Stiftungen und privaten Unterstützer:innen zusammen. Partner:innen ermöglichen Förderung, Expertise und Reichweite. Schulen helfen vor allem dabei, Schüler:innen direkt über unsere kostenlosen Angebote, das Mentoring und das Bootcamp zu informieren.",
+      "en": "Project\u00a0Access\u00a0Austria works with schools, universities, companies, foundations and private supporters. Partners provide funding, expertise and reach. Schools mainly help us inform students directly about our free support, mentoring and bootcamp."
     },
     "primary_cta": {
       "url": {
@@ -58,44 +58,84 @@
       }
     }
   },
+  "intro": {
+    "eyebrow": {
+      "de": "Warum Partnerschaften",
+      "en": "Why partnership"
+    },
+    "title": {
+      "de": "Bildungschancen entstehen durch viele Hände.",
+      "en": "Educational opportunities take many hands."
+    },
+    "body": {
+      "de": "Studienberatung für internationale Bewerbungen kostet privat oft mehrere tausend Euro. Project\u00a0Access\u00a0Austria stellt vergleichbare Beratung kostenlos bereit, mit Studierenden und Alumni internationaler Universitäten, einem jährlichen Bewerbungs-Bootcamp und kurzen Schulbesuchen in ganz Österreich. Möglich ist das durch Sponsoring, Netzwerkzugänge und Schulen, die uns Informationsbesuche ermöglichen. Eine Partnerschaft ist eine konkrete Form, Bildungsgerechtigkeit zu unterstützen.",
+      "en": "Private guidance on international university applications often costs several thousand euros. Project\u00a0Access\u00a0Austria provides comparable guidance free of charge, through students and alumni of international universities, an annual application bootcamp and short school visits across Austria. Sponsorship, network access and schools that host information visits make this possible. A partnership is a concrete way to support educational opportunity."
+    }
+  },
+  "impact": {
+    "eyebrow": {
+      "de": "Unsere Reichweite",
+      "en": "Our reach"
+    },
+    "title": {
+      "de": "Wen wir gemeinsam erreichen.",
+      "en": "Who we reach together."
+    },
+    "items": [
+      {
+        "value": "77%",
+        "label": {
+          "de": "unserer Alumni kommen im Schnitt für Praktika oder Vollzeitbeschäftigung nach Österreich zurück.",
+          "en": "of our alumni return to Austria on average for internships or full-time employment."
+        }
+      },
+      {
+        "value": "320+",
+        "label": {
+          "de": "Teilnehmende an 7 Bootcamps.",
+          "en": "participants across 7 bootcamps."
+        }
+      },
+      {
+        "value": "76.9%",
+        "label": {
+          "de": "durchschnittliche Erfolgsquote unserer Bewerber/innen in den Impact-Survey-Daten 2017-2021.",
+          "en": "average applicant success rate in the 2017-2021 impact survey data."
+        }
+      },
+      {
+        "value": "537",
+        "label": {
+          "de": "Mentor/innen unterstützen uns aus Universitäten in Amerika, Großbritannien und Europa.",
+          "en": "mentors support us from universities in America, the United Kingdom and Europe."
+        }
+      }
+    ]
+  },
   "support_forms": {
     "eyebrow": {
       "de": "Formen der Unterstützung",
       "en": "Forms of support"
     },
     "title": {
-      "de": "So können Partner:innen helfen.",
-      "en": "How partners can help."
+      "de": "Wie Partner:innen beitragen.",
+      "en": "How partners contribute."
     },
     "tiles": [
       {
-        "classes": "w-3 accent-yellow",
+        "classes": "w-3 accent-ink",
         "eyebrow": {
           "de": "Förderung",
           "en": "Funding"
         },
+        "eyebrow_inverted": true,
         "title": {
-          "de": "Bootcamp und Mentoring finanzieren.",
-          "en": "Fund the bootcamp and mentoring."
+          "de": "Bootcamp, Mentoring und Reichweite finanzieren.",
+          "en": "Fund the bootcamp, mentoring and outreach."
         },
         "body": {
-          "de": "Sponsoring hilft bei Unterkunft, Verpflegung, Materialien und Reisekosten. So können auch Bewerber:innen teilnehmen, für die diese Kosten sonst zu hoch wären.",
-          "en": "Sponsorship helps cover accommodation, meals, materials and travel costs. That means applicants can take part even if these costs would otherwise be too high."
-        }
-      },
-      {
-        "classes": "w-3 accent-cream",
-        "eyebrow": {
-          "de": "Räume",
-          "en": "Spaces"
-        },
-        "title": {
-          "de": "Räume für Workshops und Infoabende.",
-          "en": "Spaces for workshops and information evenings."
-        },
-        "body": {
-          "de": "Schulen, Universitäten und Unternehmen helfen uns, kostenlose Sessions dort anzubieten, wo sie gebraucht werden.",
-          "en": "Schools, universities and companies help us run free sessions where they are needed."
+          "de": "Sponsoring trägt Unterkunft, Verpflegung, Materialien und Reisekosten. So können Bewerber:innen unabhängig vom Familienbudget teilnehmen.",
+          "en": "Sponsorship covers accommodation, meals, materials and travel costs, so applicants can take part regardless of family budget."
         }
       },
       {
@@ -105,102 +145,96 @@
           "en": "Expertise"
         },
         "title": {
-          "de": "Know-how für Workshops und Interviews.",
-          "en": "Know-how for workshops and interviews."
+          "de": "Einblicke aus Studium und Praxis.",
+          "en": "Perspectives from study and practice."
         },
         "body": {
-          "de": "Partner bringen Praxiswissen ein, etwa in Workshops mit McKinsey oder Schwarzman Scholars.",
-          "en": "Partners contribute practical expertise, for example in workshops with McKinsey or Schwarzman Scholars."
+          "de": "Mentor:innen, Alumni und ausgewählte Fachleute teilen punktuell Erfahrung, etwa beim Bootcamp, in Q&As oder über Kontakte zu Hochschulen und Stipendienprogrammen.",
+          "en": "Mentors, alumni and selected specialists occasionally share their experience, for example at the bootcamp, in Q&As or through contacts with universities and scholarship programmes."
         }
       },
       {
-        "classes": "w-3 accent-green",
+        "classes": "w-3 accent-cream",
         "eyebrow": {
-          "de": "Netzwerk",
-          "en": "Network"
+          "de": "Räume",
+          "en": "Spaces"
         },
         "title": {
-          "de": "Kontakte zu Schulen, Alumni und Förder:innen.",
-          "en": "Connections to schools, alumni and funders."
+          "de": "Räume für ausgewählte Formate.",
+          "en": "Spaces for selected formats."
         },
         "body": {
-          "de": "Ein stärkeres Netzwerk bringt unsere kostenlosen Angebote schneller zu passenden Bewerber:innen.",
-          "en": "A stronger network helps our free support reach relevant applicants faster."
+          "de": "Universitäten, Unternehmen und andere Partner können für einzelne Veranstaltungen Räume oder organisatorische Unterstützung beitragen. Schulkooperationen bestehen meist aus kurzen Informationsbesuchen vor Ort.",
+          "en": "Universities, companies and other partners can contribute rooms or organisational support for selected events. School collaborations usually consist of short information visits on site."
+        }
+      },
+      {
+        "classes": "w-3 accent-yellow",
+        "eyebrow": {
+          "de": "Reichweite",
+          "en": "Reach"
+        },
+        "title": {
+          "de": "Zugang zu Schulen, Alumni und Förder:innen.",
+          "en": "Access to schools, alumni and funders."
+        },
+        "body": {
+          "de": "Ein gemeinsames Netzwerk bringt unsere kostenlosen Angebote schneller zu Bewerber:innen, die sie noch nicht kennen.",
+          "en": "A shared network brings our free programmes more quickly to applicants who do not yet know about them."
         }
       }
     ]
   },
   "partner_examples": {
     "eyebrow": {
-      "de": "Partner in Workshops",
-      "en": "Workshop partners"
+      "de": "Mit uns gearbeitet",
+      "en": "Working with us"
     },
     "title": {
-      "de": "Konkrete Unterstützung, nicht nur Logos.",
-      "en": "Concrete support, not just logos."
+      "de": "Partner aus Bildung, Wirtschaft und Verwaltung.",
+      "en": "Partners from education, industry and the public sector."
     },
-    "items": [
-      "McKinsey &\u00a0Company",
-      "Schwarzman Scholars"
-    ]
-  },
-  "impact": {
-    "eyebrow": {
-      "de": "Förderung in Zahlen",
-      "en": "Funding in numbers"
-    },
-    "title": {
-      "de": "Was Partner:innen möglich machen.",
-      "en": "What partners make possible."
+    "body": {
+      "de": "Einige unserer Partner:",
+      "en": "A selection of organisations that have supported Project\u00a0Access\u00a0Austria in recent years, for example as sponsors, through network access, school contacts or the bootcamp."
     },
     "items": [
       {
-        "value": {
-          "de": "jährlich*",
-          "en": "annual*"
-        },
-        "label": {
-          "de": "erreichte Personen über Events, Schulbesuche und Bootcamp",
-          "en": "people reached through events, school visits and the bootcamp"
-        }
+        "name": "McKinsey &\u00a0Company",
+        "logo": "assets/partner-mckinsey.svg"
       },
       {
-        "value": "120",
-        "label": {
-          "de": "Bootcamp-Teilnehmende seit 2018",
-          "en": "bootcamp participants since 2018"
-        }
+        "name": "Schwarzman Scholars",
+        "logo": "assets/partner-schwarzman-scholars-transparent.webp"
       },
       {
-        "value": "185",
-        "label": {
-          "de": "Bewerber:innen im Mentoring",
-          "en": "applicants in mentoring"
-        }
+        "name": "Bildungsdirektion Ober\u00f6sterreich",
+        "logo": "assets/partner-bildungsdirektion-oberoesterreich-transparent.webp"
       },
       {
-        "value": "0\u00a0EUR",
-        "label": {
-          "de": "Kosten für Teilnehmende",
-          "en": "cost for participants"
-        }
+        "name": "Science Center Nieder\u00f6sterreich",
+        "logo": "assets/partner-science-center-noe-transparent.webp"
+      },
+      {
+        "name": "Nieder\u00f6sterreich Werbung",
+        "logo": "assets/partner-noe-werbung.svg"
       }
-    ],
-    "note": {
-      "de": "* Jahreswert aus Events, Schulbesuchen und Bootcamp; Auswertung nach Abschluss des jeweiligen Programmjahres.",
-      "en": "* Annual figure from events, school visits and the bootcamp; reviewed after each programme year."
-    }
+    ]
   },
   "partner_quote": {
     "eyebrow": {
-      "de": "Partnerstimme",
-      "en": "Partner quote"
+      "de": "Stimme aus dem Partnerkreis",
+      "en": "From a partner"
     },
     "quote": {
       "de": "Wir bei McKinsey sind fest davon überzeugt, dass vielfältigere Teams bessere Ergebnisse erzielen. Neben Geschlecht und ethnischer Herkunft ist der sozioökonomische Hintergrund eine zentrale Dimension, entlang derer wir als Unternehmen jeden Tag daran arbeiten, vielfältiger und inklusiver zu werden. Es ist uns eine Freude, eine Organisation wie Project\u00a0Access zu unterstützen, die sicherstellt, dass nur Talent und Leidenschaft den Bildungsweg eines Menschen bestimmen, nicht der sozioökonomische Hintergrund.",
       "en": "We at McKinsey are deeply convinced that more diverse teams perform better. Besides gender and ethnicity, socio-economic background is a key dimension along which we as a firm work hard every day to become more diverse and inclusive. It's our pleasure to support an organisation like Project\u00a0Access, which makes sure that only talent and passion determine someone's path in education, rather than the socio-economic background."
     },
-    "attribution": "Dr.\u00a0Patrick Guggenberger · Associate Partner, McKinsey"
+    "attribution_name": "Dr.\u00a0Patrick Guggenberger",
+    "attribution_role": {
+      "de": "Associate Partner, McKinsey &\u00a0Company",
+      "en": "Associate Partner, McKinsey &\u00a0Company"
+    }
   },
   "schools": {
     "eyebrow": {
@@ -208,13 +242,27 @@
       "en": "School partnerships"
     },
     "title": {
-      "de": "Kostenlose Sessions für **Schulen**.",
-      "en": "Free sessions for **schools**."
+      "de": "Kurze Info-Besuche für **Schulen**.",
+      "en": "Short information visits for **schools**."
     },
     "body": {
-      "de": "Viele Schüler:innen erfahren erst spät, welche Studienwege im Ausland offenstehen und wie Bewerbungen funktionieren. Project\u00a0Access\u00a0Austria bringt Studierende und Alumni internationaler Universitäten direkt an österreichische Schulen, kostenlos und passend zum Bedarf der Schule.",
-      "en": "Many students only hear late about study options abroad and how the applications work. Project\u00a0Access\u00a0Austria brings students and alumni of international universities directly to Austrian schools, free of charge and tailored to what each school needs."
+      "de": "Viele Schüler:innen erfahren erst spät, dass es kostenlose Unterstützung für Bewerbungen an internationale Universitäten gibt. In einer Schulkooperation kommt Project\u00a0Access\u00a0Austria an die Schule, stellt die Angebote kurz vor und erklärt, wie Mentoring und Bootcamp helfen können.",
+      "en": "Many students only learn late that free support exists for applications to international universities. In a school collaboration, Project\u00a0Access\u00a0Austria visits the school, briefly presents its programmes and explains how mentoring and the bootcamp can help."
     },
+    "facts": [
+      {
+        "de": "Kurzbesuch in Klasse, Infoveranstaltung oder kleiner Gruppe.",
+        "en": "Short visit in a class, information event or small group."
+      },
+      {
+        "de": "Überblick zu Project\u00a0Access, Mentoring und Bootcamp.",
+        "en": "Overview of Project\u00a0Access, mentoring and the bootcamp."
+      },
+      {
+        "de": "Zeit für Fragen und einfache Infos zum Weitergeben.",
+        "en": "Time for questions and simple information to share."
+      }
+    ],
     "cta": {
       "url": {
         "de": "mailto:austria@projectaccess.org?subject=Schulpartnerschaft%20mit%20PA%20Austria",
@@ -228,124 +276,23 @@
     "image": {
       "src": "assets/Website_1.webp",
       "alt": {
-        "de": "Teilnehmende arbeiten bei einem Project\u00a0Access\u00a0Austria Workshop",
-        "en": "Participants working in a Project\u00a0Access\u00a0Austria workshop"
+        "de": "Teilnehmende bei einer Project\u00a0Access\u00a0Austria Session",
+        "en": "Participants at a Project\u00a0Access\u00a0Austria session"
       }
     }
-  },
-  "schools_offer": {
-    "eyebrow": {
-      "de": "Was wir anbieten",
-      "en": "What we offer"
-    },
-    "title": {
-      "de": "Was Schulen bekommen.",
-      "en": "What schools get."
-    },
-    "items": [
-      {
-        "label": {
-          "de": "Schulbesuche",
-          "en": "School visits"
-        },
-        "body": {
-          "de": "mit Studierenden und Alumni internationaler Universitäten.",
-          "en": "with students and alumni of international universities."
-        }
-      },
-      {
-        "label": {
-          "de": "Webinare",
-          "en": "Webinars"
-        },
-        "body": {
-          "de": "für Abschlussklassen oder interessierte Jahrgänge.",
-          "en": "for final-year classes or interested year groups."
-        }
-      },
-      {
-        "label": {
-          "de": "Materialien",
-          "en": "Materials"
-        },
-        "body": {
-          "de": "zu Studium im Ausland, Bewerbungen und Finanzierung.",
-          "en": "on studying abroad, applications and funding."
-        }
-      },
-      {
-        "label": {
-          "de": "Persönliche Ansprechperson",
-          "en": "A personal contact"
-        },
-        "body": {
-          "de": "aus unserem PA\u00a0Austria Team.",
-          "en": "from our PA\u00a0Austria team."
-        }
-      },
-      {
-        "label": {
-          "de": "Sessionplanung",
-          "en": "Session planning"
-        },
-        "body": {
-          "de": "abgestimmt auf Zielgruppe, Format und Schwerpunkt.",
-          "en": "adapted to the audience, format and focus."
-        }
-      }
-    ]
-  },
-  "schools_topics": {
-    "image": {
-      "src": "assets/DSC07694.webp",
-      "alt": {
-        "de": "Workshop-Situation mit Project\u00a0Access\u00a0Austria",
-        "en": "Workshop with Project\u00a0Access\u00a0Austria"
-      }
-    },
-    "eyebrow": {
-      "de": "Mögliche Themen",
-      "en": "Possible topics"
-    },
-    "title": {
-      "de": "Mögliche Themen für Schulsessions.",
-      "en": "Possible topics for school sessions."
-    },
-    "items": [
-      {
-        "de": "Bewerbungen im UK, in den USA und in Europa",
-        "en": "Applications in the UK, the US and Europe"
-      },
-      {
-        "de": "Auswahl passender Studiengänge und Universitäten",
-        "en": "Choosing courses and universities that fit"
-      },
-      {
-        "de": "Personal Statement, Essay und Interviews",
-        "en": "Personal statement, essay and interviews"
-      },
-      {
-        "de": "Stipendien, Finanzierung und Kosten im Ausland",
-        "en": "Scholarships, funding and costs abroad"
-      },
-      {
-        "de": "Studium in Österreich vs. Studium im Ausland",
-        "en": "Studying in Austria vs. abroad"
-      }
-    ]
   },
   "cta_panel": {
     "eyebrow": {
       "de": "Kontakt",
-      "en": "Contact"
+      "en": "Get in touch"
     },
     "title": {
-      "de": "Anfragen und Kontakt.",
-      "en": "Enquiries and contact."
+      "de": "Schreiben Sie uns.",
+      "en": "Write to us."
     },
     "body": {
-      "de": "Schreiben Sie uns mit dem passenden Betreff. Wir melden uns innerhalb weniger Tage.",
-      "en": "Write to us with the relevant subject line. We usually reply within a few days."
+      "de": "Für Sponsoring, Schulbesuche oder andere Kooperationen erreichen Sie uns per E-Mail. Wir melden uns mit einem konkreten nächsten Schritt.",
+      "en": "For sponsorship, school visits or other collaborations, contact us by email. We will reply with a concrete next step."
     },
     "primary_cta": {
       "url": {
@@ -353,8 +300,8 @@
         "en": "mailto:austria@projectaccess.org?subject=Partnership%20with%20PA%20Austria"
       },
       "label": {
-        "de": "Partnerschaft anfragen",
-        "en": "Enquire about partnership"
+        "de": "Für Unternehmen &\u00a0Stiftungen",
+        "en": "For companies &\u00a0foundations"
       }
     },
     "secondary_cta": {
@@ -363,9 +310,10 @@
         "en": "mailto:austria@projectaccess.org?subject=School%20partnership%20with%20PA%20Austria"
       },
       "label": {
-        "de": "Schulpartnerschaft anfragen",
-        "en": "Enquire about school partnership"
+        "de": "Für Schulen",
+        "en": "For schools"
       }
-    }
+    },
+    "email": "austria@projectaccess.org"
   }
 }

@@ -48,21 +48,18 @@
         <img class="page-hero-image" src="{{ asset(page.hero.image.src) }}" alt="{{ page.hero.image.alt[lang] }}" fetchpriority="high" decoding="async" />
       </section>
 
-      <section class="section-shell cta-panel">
-        <p class="eyebrow">{{ page.current.eyebrow[lang] }}</p>
-        <h2>{{ page.current.title[lang] }}</h2>
-        <p>{{ page.current.body[lang] }}</p>
-        <div class="hero-actions">
-          <a class="button" href="{{ t(page.current.primary_cta.url) }}">{{ page.current.primary_cta.label[lang] }}</a>
-          <a class="button button-secondary" href="{{ t(page.current.secondary_cta.url) }}">{{ page.current.secondary_cta.label[lang] }}</a>
-        </div>
-      </section>
-
-      <section class="section-shell image-text-card">
+      <section class="section-shell next-event-card">
         <img src="{{ asset(page.next_event.image.src) }}" alt="{{ page.next_event.image.alt[lang] }}" loading="lazy" decoding="async" />
-        <div>
-          <p class="eyebrow">{{ page.next_event.eyebrow[lang] }}</p>
+        <div class="next-event-copy">
+          <p class="eyebrow next-event-eyebrow">
+            <span>{{ page.next_event.eyebrow[lang] }}</span>
+            <span class="next-event-status">
+              <span class="next-event-pulse" aria-hidden="true"></span>
+              {{ page.next_event.status_label[lang] }}
+            </span>
+          </p>
           <h2>{{ page.next_event.title }}</h2>
+          <p>{{ page.next_event.summary[lang] }}</p>
           <dl class="details">
             {%- for d in page.next_event.details %}
             <div>
@@ -71,8 +68,68 @@
             </div>
             {%- endfor %}
           </dl>
-          <a class="button" href="{{ page_href(page.next_event.cta.page) }}">{{ page.next_event.cta.label[lang] }}</a>
+          <div class="hero-actions">
+            <a class="button" href="{{ t(page.next_event.primary_cta.url) }}">{{ page.next_event.primary_cta.label[lang] }}</a>
+            <a class="button button-secondary" href="{{ page_href(page.next_event.secondary_cta.page) }}">{{ page.next_event.secondary_cta.label[lang] }}</a>
+          </div>
         </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">{{ page.programmes.eyebrow[lang] }}</p>
+          <h2>{{ page.programmes.title[lang] }}</h2>
+          {%- if page.programmes.get('lead') %}
+          <p>{{ page.programmes.lead[lang] }}</p>
+          {%- endif %}
+        </div>
+        <div class="bento support-bento">
+          {%- for tile in page.programmes.tiles %}
+          <article class="bento-tile {{ tile.classes }}">
+            <div>
+              <p class="eyebrow"{% if tile.get('eyebrow_inverted') %} style="color: rgba(255, 255, 255, 0.72);"{% endif %}>{{ tile.eyebrow[lang] }}</p>
+              <h3>{{ tile.title[lang] }}</h3>
+              {%- if tile.get('body') %}
+              <p>{{ tile.body[lang] }}</p>
+              {%- endif %}
+            </div>
+          </article>
+          {%- endfor %}
+        </div>
+      </section>
+
+      <section class="section-shell stay-updated">
+        <div class="stay-updated-copy">
+          <p class="eyebrow">{{ page.stay_updated.eyebrow[lang] }}</p>
+          <h2>{{ page.stay_updated.title[lang] }}</h2>
+          <p>{{ page.stay_updated.body[lang] }}</p>
+        </div>
+        <ul class="stay-updated-channels">
+          {%- for channel in page.stay_updated.channels %}
+          <li>
+            <a href="{{ channel.url }}"{% if channel.url.startswith('http') %} target="_blank" rel="noopener"{% endif %}>
+              <span class="stay-updated-icon" aria-hidden="true">
+                {%- if channel.icon == 'instagram' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                </svg>
+                {%- elif channel.icon == 'email' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m3 7 9 6 9-6" />
+                </svg>
+                {%- endif %}
+              </span>
+              <span class="stay-updated-text">
+                <span class="stay-updated-sub">{{ channel.sublabel[lang] }}</span>
+                <span class="stay-updated-label">{{ channel.label }}</span>
+              </span>
+            </a>
+          </li>
+          {%- endfor %}
+        </ul>
       </section>
 
       <section class="section-shell">
@@ -80,10 +137,18 @@
           <p class="eyebrow">{{ page.archive.eyebrow[lang] }}</p>
           <h2>{{ page.archive.title[lang] }}</h2>
         </div>
-        <div class="archive-grid">
+        <div class="archive-grid archive-grid-rich">
           {%- for item in page.archive['items'] %}
           <article>
-            <p class="eyebrow">{{ item.tag[lang] }}</p>
+            {%- if item.get('image') %}
+            <img src="{{ asset(item.image) }}" alt="{{ item.image_alt[lang] }}" loading="lazy" decoding="async" />
+            {%- endif %}
+            <div class="archive-meta">
+              <span class="archive-tag">{{ item.tag[lang] }}</span>
+              {%- if item.get('date') %}
+              <span class="archive-date">{{ item.date[lang] }}</span>
+              {%- endif %}
+            </div>
             <h3>{{ item.title }}</h3>
             <p>{{ item.body[lang] }}</p>
           </article>

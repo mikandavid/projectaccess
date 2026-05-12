@@ -98,38 +98,34 @@
     },
     "items": [
       {
-        "value": "185",
+        "value": "350+",
         "label": {
-          "de": "Jugendliche im Mentoring",
-          "en": "students mentored"
+          "de": "Jugendliche erhielten Mentor:innen",
+          "en": "young people received mentors"
         }
       },
       {
-        "value": "120",
+        "value": "320+",
         "label": {
-          "de": "Bootcamp-Teilnehmende seit 2018",
-          "en": "bootcamp participants since 2018"
+          "de": "Teilnehmende an 7 Bootcamps",
+          "en": "participants across 7 bootcamps"
         }
       },
       {
-        "value": "77–84\u00a0%*",
+        "value": "76.9\u00a0%",
         "label": {
-          "de": "Zusagen an Top-3-Wunschunis je nach Jahrgang",
-          "en": "offers from top-three universities of choice, depending on cohort"
+          "de": "durchschnittliche Erfolgsquote unserer Bewerber:innen",
+          "en": "average success rate for our applicants"
         }
       },
       {
-        "value": "5.000+",
+        "value": "537",
         "label": {
-          "de": "Mentor:innen im internationalen Netzwerk",
-          "en": "mentors in the international network"
+          "de": "Mentor:innen unterstützen uns aus Universitäten in Amerika, Großbritannien und Europa",
+          "en": "mentors support us from universities in America, the UK and Europe"
         }
       }
-    ],
-    "note": {
-      "de": "* Basis: interne PA\u00a0Austria Auswertung der Bewerbungsjahrgänge und Angaben von Project\u00a0Access\u00a0International.",
-      "en": "* Based on internal PA\u00a0Austria cohort tracking and Project\u00a0Access\u00a0International figures."
-    }
+    ]
   },
   "intro": {
     "eyebrow": {

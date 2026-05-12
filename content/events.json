@@ -26,12 +26,12 @@
       "en": "Events &\u00a0webinars"
     },
     "title": {
-      "de": "Termine, Webinare und **Schulbesuche**",
-      "en": "Events, webinars and **school visits**"
+      "de": "Termine, Webinare und **Schulbesuche**.",
+      "en": "Events, webinars and **school visits**."
     },
     "lead": {
-      "de": "Wir kommen an Schulen, halten Webinare, organisieren Bootcamps und sind auf Bildungsmessen vertreten. So bekommen Schüler:innen einen ehrlichen Einblick in internationale Bewerbungen.",
-      "en": "We visit schools, run webinars, organise bootcamps and attend education fairs, so students get an honest look at international university applications."
+      "de": "Project\u00a0Access\u00a0Austria ist das Jahr über an Schulen, in Webinaren und auf Bildungsmessen unterwegs – und veranstaltet jährlich ein Bewerbungs-Bootcamp. So erhalten Schüler:innen aus ganz Österreich und Südtirol einen ehrlichen Einblick in internationale Bewerbungen.",
+      "en": "Project\u00a0Access\u00a0Austria is active in schools, webinars and education fairs throughout the year – and runs an annual application bootcamp. Students from across Austria and South Tyrol get an honest look at international university applications."
     },
     "primary_cta": {
       "url": "https://www.instagram.com/projectaccess.at/",
@@ -58,34 +58,6 @@
       }
     }
   },
-  "current": {
-    "eyebrow": {
-      "de": "Aktuelle Termine",
-      "en": "Upcoming dates"
-    },
-    "title": {
-      "de": "Aktuelle Termine.",
-      "en": "Upcoming dates."
-    },
-    "body": {
-      "de": "Neue Termine teilen wir auf Instagram und per E-Mail. Schulen können jederzeit eine Session anfragen.",
-      "en": "We share new dates on Instagram and by email. Schools can request a session at any time."
-    },
-    "primary_cta": {
-      "url": "https://www.instagram.com/projectaccess.at/",
-      "label": {
-        "de": "@projectaccess.at",
-        "en": "@projectaccess.at"
-      }
-    },
-    "secondary_cta": {
-      "url": "mailto:austria@projectaccess.org",
-      "label": {
-        "de": "austria@projectaccess.org",
-        "en": "austria@projectaccess.org"
-      }
-    }
-  },
   "next_event": {
     "image": {
       "src": "assets/DSC07622.webp",
@@ -99,6 +71,10 @@
       "en": "Next event"
     },
     "title": "PA\u00a0Austria Bootcamp 2026",
+    "summary": {
+      "de": "Vier Tage kostenloses Bewerbungstraining mit Studierenden, Alumni und Admissions Officers internationaler Universitäten. Bewerbungen sind offen, Plätze sind begrenzt und werden laufend ausgewählt.",
+      "en": "Four days of free application training with students, alumni and admissions officers of international universities. Applications are open and places are selected on a rolling basis."
+    },
     "details": [
       {
         "term": {
@@ -141,18 +117,140 @@
         }
       }
     ],
-    "cta": {
+    "primary_cta": {
+      "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+      "label": {
+        "de": "Zur Anmeldung",
+        "en": "Apply"
+      }
+    },
+    "secondary_cta": {
       "page": "bootcamp",
       "label": {
         "de": "Bootcamp ansehen",
         "en": "Bootcamp details"
       }
+    },
+    "status_label": {
+      "de": "Anmeldung offen",
+      "en": "Applications open"
     }
+  },
+  "programmes": {
+    "eyebrow": {
+      "de": "Wo wir auftreten",
+      "en": "What we run"
+    },
+    "title": {
+      "de": "Vier Formate übers Jahr.",
+      "en": "Four formats throughout the year."
+    },
+    "lead": {
+      "de": "Vom einstündigen Vortrag bis zum mehrtägigen Bootcamp – die Formate werden auf Zielgruppe und Zeitrahmen abgestimmt.",
+      "en": "From a one-hour talk to a multi-day bootcamp – formats are adapted to the audience and time frame."
+    },
+    "tiles": [
+      {
+        "classes": "w-3 accent-ink",
+        "eyebrow": {
+          "de": "Schulbesuche",
+          "en": "School visits"
+        },
+        "eyebrow_inverted": true,
+        "title": {
+          "de": "Vorträge an Schulen in ganz Österreich.",
+          "en": "Talks at schools across Austria."
+        },
+        "body": {
+          "de": "Studierende und Alumni internationaler Universitäten besuchen Klassen, beantworten Fragen aus erster Hand und ordnen Studienwege im Ausland realistisch ein.",
+          "en": "Students and alumni of international universities visit classes, answer questions first-hand and give a realistic picture of study paths abroad."
+        }
+      },
+      {
+        "classes": "w-3",
+        "eyebrow": {
+          "de": "Webinare",
+          "en": "Webinars"
+        },
+        "title": {
+          "de": "Online-Sessions zu Bewerbung und Finanzierung.",
+          "en": "Online sessions on applications and funding."
+        },
+        "body": {
+          "de": "Themen wie Studienwahl, Personal Statement, Stipendien oder Aufnahmeverfahren in 60–90\u00a0Minuten, mit Live-Fragen.",
+          "en": "Topics like course choice, personal statements, scholarships and selection processes in 60–90\u00a0minutes, with live questions."
+        }
+      },
+      {
+        "classes": "w-3 accent-yellow",
+        "eyebrow": {
+          "de": "Bootcamp",
+          "en": "Bootcamp"
+        },
+        "title": {
+          "de": "Vier Tage intensives Bewerbungstraining.",
+          "en": "Four days of intensive application training."
+        },
+        "body": {
+          "de": "Einmal pro Jahr in Niederösterreich. Kleingruppen, Mock Interviews und konkretes Feedback – inklusive Unterkunft und Verpflegung.",
+          "en": "Once a year in Lower Austria. Small groups, mock interviews and concrete feedback – including accommodation and meals."
+        }
+      },
+      {
+        "classes": "w-3 accent-cream",
+        "eyebrow": {
+          "de": "Bildungsmessen",
+          "en": "Education fairs"
+        },
+        "title": {
+          "de": "Präsenz auf Studienmessen wie der BeSt.",
+          "en": "Presence at fairs such as BeSt in Vienna."
+        },
+        "body": {
+          "de": "Schüler:innen, Eltern und Lehrkräfte können uns direkt am Stand zu Studium im Ausland und Bewerbungen ansprechen.",
+          "en": "Students, parents and teachers can speak with us directly at the stand about studying abroad and applications."
+        }
+      }
+    ]
+  },
+  "stay_updated": {
+    "eyebrow": {
+      "de": "Aktuelle Termine",
+      "en": "Upcoming dates"
+    },
+    "title": {
+      "de": "Wo neue Termine zuerst auftauchen.",
+      "en": "Where new dates appear first."
+    },
+    "body": {
+      "de": "Konkrete Termine für Webinare, Schulbesuche und Messen kündigen wir auf Instagram und per E-Mail an. Schulen können jederzeit eine eigene Session anfragen.",
+      "en": "Concrete dates for webinars, school visits and fairs are announced on Instagram and by email. Schools can request a dedicated session at any time."
+    },
+    "channels": [
+      {
+        "label": "@projectaccess.at",
+        "sublabel": {
+          "de": "Instagram",
+          "en": "Instagram"
+        },
+        "url": "https://www.instagram.com/projectaccess.at/",
+        "icon": "instagram"
+      },
+      {
+        "label": "austria@projectaccess.org",
+        "sublabel": {
+          "de": "E-Mail",
+          "en": "Email"
+        },
+        "url": "mailto:austria@projectaccess.org",
+        "icon": "email"
+      }
+    ]
   },
   "archive": {
     "eyebrow": {
-      "de": "Archiv",
-      "en": "Archive"
+      "de": "Vergangene Events",
+      "en": "Past events"
     },
     "title": {
       "de": "Was zuletzt stattgefunden hat.",
@@ -161,24 +259,42 @@
     "items": [
       {
         "tag": {
-          "de": "Vergangen",
-          "en": "Past"
+          "de": "Bildungsmesse",
+          "en": "Education fair"
+        },
+        "date": {
+          "de": "März 2026",
+          "en": "March 2026"
         },
         "title": "BeSt-Messe Wien 2026",
         "body": {
           "de": "12.–15.\u00a0März\u00a02026, Messe Wien, Stand\u00a0A37. Wir haben mit Schüler:innen, Eltern und Lehrkräften über Bewerbungen an internationalen Universitäten, Finanzierung und das Bootcamp gesprochen.",
           "en": "12–15\u00a0March\u00a02026, Messe Wien, stand\u00a0A37. We spoke with students, parents and teachers about applications to international universities, funding and the bootcamp."
+        },
+        "image": "assets/Screenshot_2026-03-04.webp",
+        "image_alt": {
+          "de": "Stand von Project\u00a0Access\u00a0Austria auf der BeSt-Messe in Wien",
+          "en": "Project\u00a0Access\u00a0Austria stand at the BeSt fair in Vienna"
         }
       },
       {
         "tag": {
-          "de": "Vergangen",
-          "en": "Past"
+          "de": "Bootcamp",
+          "en": "Bootcamp"
         },
-        "title": "Bootcamp 2025",
+        "date": {
+          "de": "Sommer 2025",
+          "en": "Summer 2025"
+        },
+        "title": "PA\u00a0Austria Bootcamp 2025",
         "body": {
-          "de": "31.\u00a0Juli bis 3.\u00a0August\u00a02025 in Horn. Vier Tage zu Studienwahl, Essays, Interviews und Finanzierung mit Bewerber:innen aus Österreich.",
-          "en": "31\u00a0July to 3\u00a0August\u00a02025 in Horn. Four days on course choice, essays, interviews and funding with applicants from Austria."
+          "de": "31.\u00a0Juli bis 3.\u00a0August\u00a02025 in Horn. Vier Tage zu Studienwahl, Essays, Interviews und Finanzierung mit Bewerber:innen aus Österreich und Südtirol.",
+          "en": "31\u00a0July to 3\u00a0August\u00a02025 in Horn. Four days on course choice, essays, interviews and funding with applicants from Austria and South Tyrol."
+        },
+        "image": "assets/DSC07819.webp",
+        "image_alt": {
+          "de": "Teilnehmende beim Bootcamp 2025 in Horn",
+          "en": "Participants at the 2025 bootcamp in Horn"
         }
       }
     ]
