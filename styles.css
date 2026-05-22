@@ -1233,50 +1233,17 @@ h3 {
   gap: 0.7rem;
 }
 
-/* On the team page each group is a small subsection: thin label above a
-   row of team cards. The label uses the same eyebrow look as section
-   headings so it ties back into the rest of the visual system. We use a
-   flexbox layout (rather than a hard 4-col grid) so groups with fewer
-   members or odd counts still pack cleanly without leaving a single card
-   stranded on its own row. */
-.team-group + .team-group {
-  margin-top: clamp(1.6rem, 3.4vw, 2.4rem);
-}
-
-.team-group-label {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin: 0 0 0.85rem;
-  color: var(--ink);
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-}
-
-.team-group-label::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--line);
-  min-width: 2.5rem;
-}
-
-.team-group .full-team-grid {
+/* On the team page the full roster is shown as one continuous list. We use
+   flexbox so the cards reflow cleanly across widths without leaving awkward
+   gaps when the last row has fewer members. */
+.team-section .full-team-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.7rem;
 }
 
-.team-group .full-team-grid > .team-card {
-  /* Flex-grow: 1 lets cards stretch to fill the row, so a 5-member group
-     fits on a single line as 5 slightly narrower cards rather than 4 + 1
-     orphan. flex-shrink: 1 lets the basis collapse a little when 5 cards
-     just barely don't fit at their preferred size (e.g. ~780px content
-     width). The max-width keeps single- or double-member groups
-     (Postgrad, IT) from blowing up to fill the whole row. */
+.team-section .full-team-grid > .team-card {
   flex: 1 1 10rem;
   max-width: 17rem;
 }
