@@ -46,6 +46,13 @@
         "de": "Teil des Teams werden",
         "en": "Join the team"
       }
+    },
+    "image": {
+      "src": "assets/DSC_7234.webp",
+      "alt": {
+        "de": "Mentor:innen und Teilnehmende beim PA\u00a0Austria Bootcamp",
+        "en": "Mentors and participants at the PA\u00a0Austria bootcamp"
+      }
     }
   },
   "team_section": {
@@ -66,16 +73,18 @@
       "role": {
         "de": "President &\u00a0Head of Product · WU Wien / QUT",
         "en": "President &\u00a0Head of Product · WU Vienna / QUT"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/yoantalkov/"
     },
     {
       "key": "katrin_outreach",
       "image": "assets/Katrin_Outreach.webp",
       "name": "Katrin",
       "role": {
-        "de": "Country Manager &\u00a0Head of Outreach · Oxford / Warwick",
-        "en": "Country Manager &\u00a0Head of Outreach · Oxford / Warwick"
-      }
+        "de": "Country Director · Oxford / Warwick",
+        "en": "Country Director · Oxford / Warwick"
+      },
+      "linkedin": "https://www.linkedin.com/in/katrin-hirtenlehner/"
     },
     {
       "key": "diana",
@@ -84,7 +93,8 @@
       "role": {
         "de": "Head of Postgrad · LSE",
         "en": "Head of Postgrad · LSE"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/diana-manianchira-217269166/"
     },
     {
       "key": "yan",
@@ -93,7 +103,8 @@
       "role": {
         "de": "Kassier · Sciences Po",
         "en": "Treasurer · Sciences Po"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/yan-s-matschi-scpoedu/"
     },
     {
       "key": "melanie",
@@ -102,7 +113,8 @@
       "role": {
         "de": "Product Team · ESCP",
         "en": "Product team · ESCP"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/melanie-azetm%C3%BCller-7b167b20a/"
     },
     {
       "key": "nicholas",
@@ -111,7 +123,8 @@
       "role": {
         "de": "Product Team · WU Wien",
         "en": "Product team · WU Vienna"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/ntyloch/"
     },
     {
       "key": "sarah",
@@ -120,7 +133,8 @@
       "role": {
         "de": "Product Team · Oxford / American University of Paris",
         "en": "Product team · Oxford / American University of Paris"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/sarahglavan/"
     },
     {
       "key": "david_amsterdam",
@@ -129,7 +143,8 @@
       "role": {
         "de": "Product Team · VU Amsterdam",
         "en": "Product team · VU Amsterdam"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/david-zehner/"
     },
     {
       "key": "emmely",
@@ -138,7 +153,8 @@
       "role": {
         "de": "Outreach &\u00a0Social Media · IMC FH Krems",
         "en": "Outreach &\u00a0social media · IMC FH Krems"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/emmely-antonia-patrasso/"
     },
     {
       "key": "zeno",
@@ -147,16 +163,18 @@
       "role": {
         "de": "Outreach · Georgia Tech",
         "en": "Outreach · Georgia Tech"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/zeno-paukner/"
     },
     {
       "key": "katrin_tum",
-      "image": "assets/Katrin2.webp",
+      "image": "assets/Kati_Outreach_TUM.webp",
       "name": "Katrin",
       "role": {
         "de": "Outreach · TUM",
         "en": "Outreach · TUM"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/katrin-mathe-1445732a7/"
     },
     {
       "key": "theo",
@@ -165,7 +183,8 @@
       "role": {
         "de": "Outreach · WU Wien",
         "en": "Outreach · WU Vienna"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/theo-haselbauer/"
     },
     {
       "key": "valentin",
@@ -174,7 +193,8 @@
       "role": {
         "de": "Outreach",
         "en": "Outreach"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/valentin-krissmanek-92824a203/"
     },
     {
       "key": "daniel",
@@ -183,7 +203,8 @@
       "role": {
         "de": "Postgrad · MedUni Innsbruck",
         "en": "Postgrad · MedUni Innsbruck"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/daniel-sucur-738656378/"
     },
     {
       "key": "sonu",
@@ -192,7 +213,8 @@
       "role": {
         "de": "Postgrad · Oxford",
         "en": "Postgrad · Oxford"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/sonu2000/"
     },
     {
       "key": "david_tu",
@@ -201,7 +223,8 @@
       "role": {
         "de": "IT · TU Wien",
         "en": "IT · TU Vienna"
-      }
+      },
+      "linkedin": "https://www.linkedin.com/in/david-mikan-727b41260/"
     }
   ],
   "groups": [

@@ -172,15 +172,15 @@ Legal:
 ## Useful Legacy Images
 
 Logo and identity:
-- https://images.squarespace-cdn.com/content/v1/5a1abda8aeb6251ef0a76deb/1632849372023-PRRVCTHKVNAVP87JG0F1/PA+Austria%404x.png
+- `assets/pa-austria-logo.png`
 
 Bootcamp / programme photography:
-- https://images.squarespace-cdn.com/content/v1/5a1abda8aeb6251ef0a76deb/1618064587866-Z2FBN5SNX4D15JXUO0EH/project+access-10.jpg
-- https://images.squarespace-cdn.com/content/v1/5a1abda8aeb6251ef0a76deb/1694464896192-RG062Y4WY5U7MHJLMRQ3/Website_1.jpg
-- https://images.squarespace-cdn.com/content/v1/5a1abda8aeb6251ef0a76deb/1694465041592-FINNPDXP2AGSBVX91ZDN/DSC07694.jpg
-- https://images.squarespace-cdn.com/content/v1/5a1abda8aeb6251ef0a76deb/1736775140738-Z2Y2X8OQQUXLPROVTFOY/DSC_6695.jpg
+- `assets/official-study-session.jpg`
+- `assets/Website_1.jpg`
+- `assets/DSC07694.jpg`
+- `assets/DSC_6695.jpg`
 
 Sponsor image:
-- https://images.squarespace-cdn.com/content/v1/5a1abda8aeb6251ef0a76deb/1618064791402-JUU2P1Y185FDCLQ5W7KD/project+access-10298888.jpg
+- `assets/partner-event.jpg`
 
 Team headshots are available on the legacy about/team page and are referenced directly in the first site draft.

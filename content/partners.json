@@ -104,10 +104,10 @@
         }
       },
       {
-        "value": "537",
+        "value": "720+",
         "label": {
-          "de": "Mentor/innen unterstützen uns aus Universitäten in Amerika, Großbritannien und Europa.",
-          "en": "mentors support us from universities in America, the United Kingdom and Europe."
+          "de": "Menschen erreichen wir jährlich durch Events und Seminare.",
+          "en": "people reached yearly through events and seminars."
         }
       }
     ]
@@ -210,14 +210,6 @@
       {
         "name": "Bildungsdirektion Ober\u00f6sterreich",
         "logo": "assets/partner-bildungsdirektion-oberoesterreich-transparent.webp"
-      },
-      {
-        "name": "Science Center Nieder\u00f6sterreich",
-        "logo": "assets/partner-science-center-noe-transparent.webp"
-      },
-      {
-        "name": "Nieder\u00f6sterreich Werbung",
-        "logo": "assets/partner-noe-werbung.svg"
       }
     ]
   },

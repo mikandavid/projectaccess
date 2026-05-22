@@ -1,13 +1,16 @@
 {% extends "base.html.j2" %}
 {% block content %}
-      <section class="page-hero section-shell">
-        <p class="eyebrow">{{ page.hero.eyebrow[lang] }}</p>
-        <h1>{{ page.hero.title[lang] | mark }}</h1>
-        <p class="lead">{{ page.hero.lead[lang] }}</p>
-        <div class="hero-actions">
-          <a class="button" href="{{ t(page.hero.primary_cta.url) }}">{{ page.hero.primary_cta.label[lang] }}</a>
-          <a class="button button-secondary" href="{{ t(page.hero.secondary_cta.url) }}">{{ page.hero.secondary_cta.label[lang] }}</a>
+      <section class="page-hero page-hero-split section-shell">
+        <div>
+          <p class="eyebrow">{{ page.hero.eyebrow[lang] }}</p>
+          <h1>{{ page.hero.title[lang] | mark }}</h1>
+          <p class="lead">{{ page.hero.lead[lang] }}</p>
+          <div class="hero-actions">
+            <a class="button" href="{{ t(page.hero.primary_cta.url) }}">{{ page.hero.primary_cta.label[lang] }}</a>
+            <a class="button button-secondary" href="{{ t(page.hero.secondary_cta.url) }}">{{ page.hero.secondary_cta.label[lang] }}</a>
+          </div>
         </div>
+        <img class="page-hero-image" src="{{ asset(page.hero.image.src) }}" alt="{{ page.hero.image.alt[lang] }}" fetchpriority="high" decoding="async" />
       </section>
 
       <section class="team-section section-shell" id="{{ anchor('team') }}">
@@ -15,15 +18,33 @@
           <p class="eyebrow">{{ page.team_section.eyebrow[lang] }}</p>
           <h2>{{ page.team_section.title[lang] }}</h2>
         </div>
-        <div class="full-team-grid">
-          {%- for member in team_members %}
-          <article class="team-card">
-            <img src="{{ asset(member.image) }}" alt="{{ member.name }} – {{ member.role[lang] }}" loading="lazy" decoding="async" />
-            <h3>{{ member.name }}</h3>
-            <p>{{ member.role[lang] }}</p>
-          </article>
-          {%- endfor %}
+        {%- for group in team_groups %}
+        <div class="team-group">
+          <p class="team-group-label">{{ group.title[lang] }}</p>
+          <div class="full-team-grid">
+            {%- for member in group.members %}
+            <article class="team-card">
+              <img src="{{ asset(member.image) }}" alt="{{ member.name }} – {{ member.role[lang] }}" loading="lazy" decoding="async" />
+              <div class="team-card-body">
+                <div class="team-card-header">
+                  <h3>{{ member.name }}</h3>
+                  {%- if member.get('linkedin') %}
+                  <a class="team-card-linkedin" href="{{ member.linkedin }}" aria-label="{{ ('LinkedIn-Profil von ' if lang == 'de' else 'LinkedIn profile of ') ~ member.name }}" target="_blank" rel="noopener noreferrer">
+                    <span class="team-card-linkedin-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.38a1.56 1.56 0 0 1 0 3.12ZM5.56 18.5h2.76V9.88H5.56V18.5Zm4.5 0h2.76v-4.8c0-1.26.24-2.48 1.8-2.48 1.54 0 1.56 1.44 1.56 2.56v4.72H19v-5.28c0-2.6-.56-4.6-3.6-4.6-1.46 0-2.44.8-2.84 1.56h-.04V9.88h-2.46V18.5Z" />
+                      </svg>
+                    </span>
+                  </a>
+                  {%- endif %}
+                </div>
+                <p>{{ member.role[lang] }}</p>
+              </div>
+            </article>
+            {%- endfor %}
+          </div>
         </div>
+        {%- endfor %}
       </section>
 
       <section class="section-shell two-column-section" id="{{ anchor('engagement') }}">

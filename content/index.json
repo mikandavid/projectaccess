@@ -160,35 +160,47 @@
     "items": [
       {
         "name": "Harvard University",
-        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/file-15-1-1.svg"
+        "logo": "assets/logos/harvard.svg"
       },
       {
         "name": "University of Oxford",
-        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/file-14-1-1.svg"
+        "logo": "assets/logos/oxford.svg"
       },
       {
         "name": "University of Cambridge",
-        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/Group-18-1.svg"
+        "logo": "assets/logos/cambridge.svg"
+      },
+      {
+        "name": "London School of Economics and Political Science",
+        "logo": "assets/logos/lse.svg"
+      },
+      {
+        "name": "HEC Paris",
+        "logo": "assets/logos/hec-paris.svg"
+      },
+      {
+        "name": "Princeton University",
+        "logo": "assets/logos/princeton.svg"
       },
       {
         "name": "Stanford University",
-        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/Stanford_wordmark_2012-1-2.svg"
+        "logo": "assets/logos/stanford.svg"
       },
       {
         "name": "Columbia University",
-        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/file-9-1-1.svg"
+        "logo": "assets/logos/columbia.svg"
       },
       {
         "name": "ETH Zurich",
-        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/file-5-1-1.svg"
+        "logo": "assets/logos/eth-zurich.svg"
       },
       {
         "name": "Sciences Po",
-        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/file-4-1-1.svg"
+        "logo": "assets/logos/sciences-po.svg"
       },
       {
         "name": "Bocconi University",
-        "logo": "https://projectaccess.org/wp-content/uploads/2025/08/file-3-1-1.svg"
+        "logo": "assets/logos/bocconi.svg"
       }
     ]
   },

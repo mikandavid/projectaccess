@@ -46,9 +46,10 @@
     <meta name="twitter:image:alt" content="{{ og_image_alt }}" />
     {%- endif %}
 
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset(site.favicon.ico) }}" />
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset(site.favicon.png_192) }}" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset(site.favicon.apple_touch) }}" />
+    <link rel="icon" href="{{ site.site_url }}/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ absolute_asset_url(site.favicon.png_192) }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ absolute_asset_url(site.favicon.ico) }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ absolute_asset_url(site.favicon.apple_touch) }}" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

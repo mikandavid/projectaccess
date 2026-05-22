@@ -111,7 +111,8 @@
 
       <section class="bootcamp section-shell" id="{{ anchor('bootcamp') }}">
         <div class="image-collage">
-          <img src="{{ asset(page.bootcamp.image_small.src) }}" alt="{{ page.bootcamp.image_small.alt[lang] }}" loading="lazy" decoding="async" />
+          <img class="image-large" src="{{ asset(page.bootcamp.image_large.src) }}" alt="{{ page.bootcamp.image_large.alt[lang] }}" loading="lazy" decoding="async" />
+          <img class="image-small" src="{{ asset(page.bootcamp.image_small.src) }}" alt="{{ page.bootcamp.image_small.alt[lang] }}" loading="lazy" decoding="async" />
         </div>
         <div class="bootcamp-copy">
           <p class="eyebrow">{{ page.bootcamp.eyebrow[lang] }}</p>
@@ -176,8 +177,21 @@
           {%- for member in team_preview_members %}
           <article class="team-card">
             <img src="{{ asset(member.image) }}" alt="{{ member.name }} – {{ member.role[lang] }}" loading="lazy" decoding="async" />
-            <h3>{{ member.name }}</h3>
-            <p>{{ member.role[lang] }}</p>
+            <div class="team-card-body">
+              <div class="team-card-header">
+                <h3>{{ member.name }}</h3>
+                {%- if member.get('linkedin') %}
+                <a class="team-card-linkedin" href="{{ member.linkedin }}" aria-label="{{ ('LinkedIn-Profil von ' if lang == 'de' else 'LinkedIn profile of ') ~ member.name }}" target="_blank" rel="noopener noreferrer">
+                  <span class="team-card-linkedin-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.38a1.56 1.56 0 0 1 0 3.12ZM5.56 18.5h2.76V9.88H5.56V18.5Zm4.5 0h2.76v-4.8c0-1.26.24-2.48 1.8-2.48 1.54 0 1.56 1.44 1.56 2.56v4.72H19v-5.28c0-2.6-.56-4.6-3.6-4.6-1.46 0-2.44.8-2.84 1.56h-.04V9.88h-2.46V18.5Z" />
+                    </svg>
+                  </span>
+                </a>
+                {%- endif %}
+              </div>
+              <p>{{ member.role[lang] }}</p>
+            </div>
           </article>
           {%- endfor %}
           <a class="team-card team-cta-card" href="{{ page_href(page.team_preview.cta.page) }}" aria-label="{{ page.team_preview.cta.aria[lang] }}">
