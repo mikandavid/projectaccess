@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bewerbungs-Bootcamp 2026 · Project Access Austria</title>
-    <meta name="description" content="Druckbarer A5-Flyer zum kostenlosen Bewerbungs-Bootcamp von Project Access Austria, 23.–26. Juli 2026 in Horn, Niederösterreich." />
+    <meta name="description" content="Druckbarer A5-Flyer zum kostenlosen Bewerbungs-Bootcamp von Project Access Austria, 23.–26.&nbsp;Juli&nbsp;2026 in Horn, Niederösterreich." />
     <meta name="robots" content="noindex,nofollow" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,15 +14,16 @@
 
     <style>
       /* ------------------------------------------------------------------
-         FLYER (A5 portrait, print-optimised, white background).
-         The page is built as a single .flyer-page container sized exactly
-         148 x 210 mm so the print preview / PDF export matches one-to-one.
-         On screen we mimic a paper sheet on a neutral backdrop; on print
-         we strip everything except the page itself.
+         FLYER — A5 portrait, white background, print-ready.
+         Magazine-cover layout: a full-bleed photo occupies the top third
+         and carries the brand, eyebrow and the headline directly on it,
+         so the picture earns its real estate instead of taking a slice on
+         its own. The lower two thirds use the page's padded content area
+         for facts, programme and CTA.
          ------------------------------------------------------------------ */
 
       @page {
-        size: A5 portrait;
+        size: 148mm 210mm;
         margin: 0;
       }
 
@@ -52,357 +53,450 @@
         position: relative;
         width: 148mm;
         height: 210mm;
-        padding: 7mm 10mm 7mm;
-        background: #ffffff;
+        background-color: #fffdf8;
+        background-image:
+          radial-gradient(circle at 8% 45%, rgba(255, 200, 127, 0.16), rgba(255, 200, 127, 0) 33mm),
+          linear-gradient(180deg, #ffffff 0%, #fffdf8 54%, #fff8eb 100%);
         color: var(--ink);
         box-shadow: 0 24px 60px rgba(20, 20, 23, 0.18);
         overflow: hidden;
-        display: grid;
-        grid-template-rows: auto auto auto auto auto 1fr auto;
-        row-gap: 2.1mm;
+        display: flex;
+        flex-direction: column;
       }
 
-      /* TOP STRIP */
-      .flyer-top {
+      /* HERO — full-bleed photo with logo, eyebrow and headline overlaid.
+         A bottom-anchored ink gradient keeps the type readable regardless
+         of the photo content. */
+      .flyer-hero {
+        position: relative;
+        width: 100%;
+        height: 68mm;
+        flex: 0 0 auto;
+        color: #fff;
+        background: var(--ink-deep);
+      }
+
+      .flyer-hero-photo {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 42%;
+      }
+
+      .flyer-hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background:
+          linear-gradient(180deg, rgba(20, 20, 23, 0.55) 0%, rgba(20, 20, 23, 0) 24%, rgba(20, 20, 23, 0) 32%, rgba(20, 20, 23, 0.5) 58%, rgba(20, 20, 23, 0.92) 100%);
+      }
+
+      .flyer-hero-top {
         position: absolute;
         top: 7mm;
+        left: 10mm;
         right: 10mm;
+        z-index: 2;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-between;
+        gap: 6mm;
       }
 
-      .flyer-brand {
-        display: inline-flex;
-        align-items: center;
-      }
-
-      .flyer-brand img {
-        display: block;
-        width: 39mm;
+      .flyer-hero-logo {
+        width: 34mm;
         height: auto;
+        filter: brightness(0) invert(1);
       }
 
-      /* HERO */
-      .flyer-hero {
-        display: grid;
-        gap: 1.8mm;
-      }
-
-      .flyer-eyebrow {
+      /* Hero date — postage-stamp inspired tag with double outline,
+         decorative stars and a slight tilt so it feels stamped on, not
+         pasted from a UI kit. */
+      .flyer-hero-eyebrow {
+        position: relative;
         margin: 0;
-        color: var(--ink);
-        font-size: 7.5pt;
+        padding: 2mm 3.4mm 2mm 3.4mm;
+        background: #fffdf7;
+        color: var(--ink-deep);
+        border: 0.35mm solid var(--ink-deep);
+        outline-offset: 0.7mm;
+        box-shadow: 0.7mm 0.7mm 0 rgba(243, 154, 0, 0.9), 0 6px 18px rgba(20, 20, 23, 0.18);
+        font-size: 7pt;
         font-weight: 900;
-        letter-spacing: 0.16em;
+        letter-spacing: 0.14em;
         text-transform: uppercase;
+        transform: rotate(2.5deg);
+        white-space: nowrap;
       }
 
-      .flyer-title {
+      .flyer-hero-eyebrow::before,
+      .flyer-hero-eyebrow::after {
+        content: "✦";
+        color: var(--yellow);
+        font-size: 6.4pt;
+        font-weight: 900;
+        margin: 0 1.2mm;
+        position: relative;
+        top: -0.15mm;
+      }
+
+      .flyer-hero-title {
+        position: absolute;
+        left: 10mm;
+        right: 10mm;
+        bottom: 6mm;
+        z-index: 2;
         margin: 0;
         font-family: "Jali Latin", Inter, sans-serif;
         font-weight: 700;
-        font-size: 24pt;
-        line-height: 1.03;
+        font-size: 21pt;
+        line-height: 1.04;
         letter-spacing: -0.035em;
-        color: var(--ink-deep);
+        color: #fff;
       }
 
-      .flyer-title .mark {
-        background-image: linear-gradient(120deg, rgba(243, 154, 0, 0.32), rgba(243, 154, 0, 0.32));
-        background-repeat: no-repeat;
-        background-size: 100% 0.36em;
-        background-position: 0 88%;
-        padding: 0 0.05em;
+      .flyer-hero-title em {
+        font-style: normal;
+        color: var(--yellow);
+      }
+
+      /* BODY — padded white area below the hero. */
+      .flyer-body {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        padding: 6mm 10mm 6mm;
       }
 
       .flyer-lead {
         margin: 0;
-        color: rgba(38, 38, 43, 0.76);
-        font-size: 9.1pt;
-        line-height: 1.46;
-        max-width: 111mm;
+        color: var(--muted);
+        font-size: 8.6pt;
+        line-height: 1.45;
       }
 
-      /* FACTS — a two-by-two grid is more legible on A5 than four narrow
-         tickets, especially once the cost line has to include accommodation. */
+      /* FACTS — single tidy row, hairline separator, no boxes. */
       .flyer-facts {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 2.4mm;
-        margin: 0;
-        padding: 0;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 3mm;
+        margin: 4mm 0 0;
+        padding: 3mm 0 0;
         list-style: none;
+        border-top: 0.3mm solid rgba(38, 38, 43, 0.18);
       }
 
       .flyer-facts li {
         display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 2.8mm;
-        align-items: center;
-        min-height: 14.6mm;
-        padding: 2.5mm 3.2mm;
-        background: #fffdf7;
-        border: 0.35mm solid rgba(38, 38, 43, 0.1);
-        border-radius: 3.2mm;
-      }
-
-      .flyer-facts-icon {
-        display: inline-grid;
-        place-items: center;
-        width: 7.6mm;
-        height: 7.6mm;
-        background: var(--green-soft);
-        color: var(--ink-deep);
-        border-radius: 50%;
-        flex: 0 0 auto;
-      }
-
-      .flyer-facts-icon svg {
-        width: 4mm;
-        height: 4mm;
-      }
-
-      .flyer-facts-icon--cost {
-        font-size: 10.5pt;
-        font-weight: 900;
-        line-height: 1;
-      }
-
-      .flyer-facts-text {
-        display: grid;
-        gap: 0.4mm;
-        min-width: 0;
+        gap: 0.6mm;
       }
 
       .flyer-facts-label {
-        margin: 0;
         color: var(--muted);
-        font-size: 6.1pt;
+        font-size: 5.8pt;
         font-weight: 800;
-        letter-spacing: 0.13em;
+        letter-spacing: 0.14em;
         text-transform: uppercase;
       }
 
       .flyer-facts-value {
-        margin: 0;
         color: var(--ink-deep);
-        font-size: 9.1pt;
+        font-size: 8.6pt;
         font-weight: 700;
-        line-height: 1.18;
+        line-height: 1.22;
       }
 
-      /* PROGRAMME — numbered grid mirroring the website's .program-list */
-      .flyer-section-heading {
-        display: flex;
-        align-items: baseline;
-        gap: 3mm;
-        margin: 0;
+      /* PROGRAMME — short, scannable list with the website's numbered style */
+      .flyer-programme {
+        margin: 5mm 0 5mm;
       }
 
-      .flyer-section-heading h2 {
-        margin: 0;
+      .flyer-programme h2 {
+        margin: 0 0 2.4mm;
         font-family: "Jali Latin", Inter, sans-serif;
         font-weight: 700;
-        font-size: 14pt;
+        font-size: 11.5pt;
         letter-spacing: -0.03em;
         color: var(--ink-deep);
       }
 
-      .flyer-section-heading::after {
-        content: "";
-        flex: 1;
-        height: 0.3mm;
-        background: rgba(38, 38, 43, 0.18);
-      }
-
-      .flyer-program {
+      .flyer-programme ol {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2.45mm 5mm;
+        gap: 2mm 6mm;
         margin: 0;
         padding: 0;
         list-style: none;
         counter-reset: prog;
       }
 
-      .flyer-program li {
+      .flyer-programme li {
         position: relative;
-        padding-left: 8mm;
+        padding-left: 7mm;
         counter-increment: prog;
+        font-size: 8.4pt;
+        line-height: 1.3;
+        color: var(--ink);
       }
 
-      .flyer-program li::before {
+      .flyer-programme li::before {
         content: counter(prog, decimal-leading-zero);
         position: absolute;
-        top: -0.4mm;
+        top: -0.3mm;
         left: 0;
         color: var(--yellow);
         font-family: "Jali Latin", Inter, sans-serif;
         font-weight: 700;
-        font-size: 11pt;
+        font-size: 10pt;
         letter-spacing: -0.04em;
       }
 
-      .flyer-program h3 {
-        margin: 0 0 0.6mm;
-        font-family: Inter, sans-serif;
-        font-size: 8.7pt;
-        font-weight: 800;
+      .flyer-programme strong {
+        display: block;
         color: var(--ink-deep);
-        line-height: 1.2;
+        font-weight: 800;
+        font-size: 8.6pt;
       }
 
-      .flyer-program p {
+      /* PARTNERS — slim strip showing the universities whose officers join.
+         The intro line calls out the Cambridge collaboration explicitly. */
+      .flyer-partners {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 4mm;
+        margin: 0 0 1mm;
+        padding-top: 2.8mm;
+        border-top: 0.3mm solid rgba(38, 38, 43, 0.18);
+      }
+
+      .flyer-partners-copy {
+        display: grid;
+        gap: 0.5mm;
+        max-width: 56mm;
+        padding-left: 2mm;
+      }
+
+      .flyer-partners-note {
         margin: 0;
-        color: var(--muted);
-        font-size: 7.55pt;
-        line-height: 1.35;
+        color: var(--ink);
+        font-size: 7.6pt;
+        font-weight: 600;
+        line-height: 1.32;
       }
 
-      /* CTA + QR ROW */
+      .flyer-partners-note strong {
+        color: var(--ink-deep);
+        font-weight: 800;
+      }
+
+      .flyer-partners-logos {
+        display: grid;
+        grid-template-columns: repeat(2, 23mm);
+        align-items: center;
+        justify-items: center;
+        justify-content: flex-end;
+        gap: 2.5mm 5mm;
+        margin: 0;
+        padding: 0 2mm 0 0;
+        list-style: none;
+      }
+
+      .flyer-partners-logos img {
+        display: block;
+        width: auto;
+        max-width: 23mm;
+        max-height: 5mm;
+        object-fit: contain;
+      }
+
+      /* CTA — warm peach fill that stands clearly off the cream page
+         (the previous `--cream` matched the background and read as an
+         empty bordered box). A soft yellow glow and a small corner
+         mark add print-poster character. */
       .flyer-cta {
+        position: relative;
         display: grid;
         grid-template-columns: 1fr auto;
-        gap: 4.5mm;
-        align-items: stretch;
-        padding: 4mm 5mm;
-        background: var(--yellow);
-        border-radius: 4mm;
+        gap: 5mm;
+        align-items: center;
+        margin-top: 4.5mm;
+        padding: 1.4mm 5mm 3.4mm;
+        background-color: #fff0d6;
+        background-image:
+          radial-gradient(circle at 88% 18%, rgba(243, 154, 0, 0.18), rgba(243, 154, 0, 0) 22mm);
         color: var(--ink-deep);
-        border: 0.4mm solid rgba(20, 20, 23, 0.1);
+        border-radius: 2.8mm;
+        overflow: hidden;
       }
 
-      .flyer-cta-copy {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1.4mm;
+      .flyer-cta::before {
+        content: "✦";
+        position: absolute;
+        top: 2mm;
+        right: 3mm;
+        color: var(--yellow);
+        font-size: 7pt;
+        font-weight: 900;
       }
 
       .flyer-cta-eyebrow {
-        margin: 0;
-        font-size: 7pt;
+        display: inline-flex;
+        align-items: center;
+        gap: 2.6mm;
+        margin: 0 0 3.2mm;
+        color: var(--yellow);
+        font-size: 6.6pt;
         font-weight: 900;
-        letter-spacing: 0.15em;
+        letter-spacing: 0.18em;
         text-transform: uppercase;
-        color: var(--ink-deep);
+      }
+
+      /* Deadline — rubber-stamp look with double outline and a small
+         tilt so it reads as urgent rather than as a chip. */
+      .flyer-cta-deadline {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding: 1mm 2.6mm;
+        color: #b34a00;
+        border: 0.4mm solid #b34a00;
+
+        outline-offset: 0.55mm;
+        font-size: 6.4pt;
+        font-weight: 900;
+        letter-spacing: 0.12em;
+        transform: rotate(-2.2deg);
       }
 
       .flyer-cta-title {
         margin: 0;
         font-family: "Jali Latin", Inter, sans-serif;
         font-weight: 700;
-        font-size: 14.6pt;
-        line-height: 1.05;
-        letter-spacing: -0.025em;
+        font-size: 11.5pt;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
         color: var(--ink-deep);
       }
 
       .flyer-cta-url {
-        margin: 0;
-        font-family: "Inter", monospace;
-        font-size: 8.7pt;
-        font-weight: 800;
+        margin: 1.4mm 0 0;
         color: var(--ink-deep);
-        word-break: break-all;
+        font-size: 8.6pt;
+        font-weight: 700;
+        letter-spacing: -0.005em;
       }
 
-      .flyer-cta-note {
-        margin: 0;
-        max-width: 72mm;
-        font-size: 7.3pt;
-        font-weight: 600;
-        color: rgba(38, 38, 43, 0.78);
+      .flyer-cta-url::before {
+        content: "→ ";
+        color: var(--yellow);
+        font-weight: 900;
       }
 
       .flyer-qr {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         gap: 1.2mm;
-        padding: 2.5mm;
-        background: #fff;
-        border-radius: 2.4mm;
+        padding: 0;
+        background: transparent;
       }
 
       .flyer-qr img {
         display: block;
-        width: 26mm;
-        height: 26mm;
+        width: 22mm;
+        height: 22mm;
       }
 
-      .flyer-qr-label {
-        font-size: 6.5pt;
-        font-weight: 800;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--ink-deep);
-      }
-
-      /* FOOTER — contact channels, kept thin and informational. */
-      .flyer-footer {
-        display: block;
-        align-items: center;
-        padding-top: 2.5mm;
-        border-top: 0.3mm solid rgba(38, 38, 43, 0.16);
+      .flyer-qr span {
         color: var(--muted);
-        font-size: 7pt;
+        font-size: 5.6pt;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
       }
 
-      .flyer-channels {
+      /* FOOTER — single unobtrusive line. */
+      .flyer-footer {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
-        gap: 2.5mm 5mm;
-        margin: 0;
-        padding: 0;
-        list-style: none;
+        align-items: baseline;
+        gap: 4mm;
+        margin-top: auto;
+        padding-top: 3mm;
+        color: var(--muted);
+        font-size: 6.4pt;
       }
 
-      .flyer-channels li {
+      .flyer-footer-channels {
         display: inline-flex;
-        align-items: center;
-        gap: 1.6mm;
+        gap: 4mm;
         color: var(--ink);
         font-weight: 700;
-        white-space: nowrap;
-      }
-
-      .flyer-channels svg {
-        width: 3.4mm;
-        height: 3.4mm;
-        flex: 0 0 auto;
       }
 
       .flyer-imprint {
-        position: absolute;
-        right: 10mm;
-        bottom: 1.8mm;
-        margin: 0;
-        color: rgba(38, 38, 43, 0.42);
-        font-size: 4.6pt;
-        line-height: 1;
-        white-space: nowrap;
+        color: rgba(38, 38, 43, 0.45);
+        font-size: 5.4pt;
       }
 
-      /* PRINT — drop the on-screen "paper on desk" framing so the page
-         takes the full A5 sheet and nothing else prints. */
+      /* PRINT — pin the flyer to the physical page so Cmd+P / Save as PDF
+         matches the on-screen layout. Browsers often scale or offset fixed-
+         size content when it sits inside a padded, centered preview frame. */
       @media print {
+        *,
+        *::before,
+        *::after {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+
         html,
         body {
-          background: #fff;
+          width: 148mm;
+          height: 210mm;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: hidden;
+          background: #fff !important;
         }
 
         .flyer-stage {
+          display: block;
+          width: 148mm;
+          height: 210mm;
+          margin: 0;
           padding: 0;
           min-height: 0;
         }
 
         .flyer-page {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 148mm;
+          height: 210mm;
+          margin: 0;
           box-shadow: none;
+          overflow: hidden;
           page-break-after: avoid;
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        /* CSS filters are dropped by most print engines — the SVG already
+           has white type and reads fine on the dark hero without inversion. */
+        .flyer-hero-logo {
+          filter: none;
+        }
+
+        /* Transforms + box-shadows often mis-register in print; keep the
+           tilted look but simplify the shadow stack. */
+        .flyer-hero-eyebrow {
+          box-shadow: 0.7mm 0.7mm 0 rgba(243, 154, 0, 0.9);
         }
       }
     </style>
@@ -410,146 +504,95 @@
   <body>
     <div class="flyer-stage">
       <article class="flyer-page" aria-label="Project Access Austria · Bewerbungs-Bootcamp 2026">
-        <!-- TOP STRIP -->
-        <header class="flyer-top">
-          <div class="flyer-brand">
-            <img src="assets/logos/project-access-international-ink.svg" alt="Project Access" />
+        <header class="flyer-hero">
+          <img
+            class="flyer-hero-photo"
+            src="assets/DSC_6695.webp"
+            alt="Teilnehmende beim Project Access Austria Bootcamp"
+          />
+          <div class="flyer-hero-top">
+            <img
+              class="flyer-hero-logo"
+              src="assets/logos/project-access-international.svg"
+              alt="Project Access"
+            />
+            <p class="flyer-hero-eyebrow">23.–26.&nbsp;Juli&nbsp;2026</p>
           </div>
+          <h1 class="flyer-hero-title">
+            Vier&nbsp;Tage für&nbsp;deine<br />
+            <em>internationale&nbsp;Bewerbung.</em>
+          </h1>
         </header>
 
-        <!-- HERO -->
-        <section class="flyer-hero">
-          <p class="flyer-eyebrow">Bewerbungs-Bootcamp · 23.–26.&nbsp;Juli&nbsp;2026</p>
-          <h1 class="flyer-title">
-            <span class="mark">Oxford, Harvard&nbsp;&amp;&nbsp;Co.</span><br />
-            Deine Chance.
-          </h1>
+        <div class="flyer-body">
           <p class="flyer-lead">
-            Project&nbsp;Access ist eine Initiative von österreichischen Studierenden an internationalen Spitzenunis. Wir unterstützen dich kostenlos bei der Bewerbung an deiner Traumuni – mit Bootcamp, persönlichen Mentor:innen und ehrlichem Feedback.
+            Project&nbsp;Access begleitet Schüler:innen und&nbsp;Studierende aus&nbsp;Österreich bei Bewerbungen für Top-Unis weltweit. Vier&nbsp;Tage mit Admissions&nbsp;Officers, Studierenden und&nbsp;Alumni.<br />Total kostenlos, inklusive&nbsp;Unterkunft und&nbsp;Verpflegung!
           </p>
-        </section>
 
-        <!-- KEY FACTS -->
-        <ul class="flyer-facts" aria-label="Eckdaten zum Bootcamp">
-          <li>
-            <span class="flyer-facts-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3.5" y="5" width="17" height="15" rx="2.5" />
-                <path d="M3.5 9.5h17" />
-                <path d="M8 3v4M16 3v4" />
-              </svg>
-            </span>
-            <div class="flyer-facts-text">
-              <span class="flyer-facts-label">Datum</span>
-              <span class="flyer-facts-value">23.–26.&nbsp;Juli&nbsp;2026</span>
-            </div>
-          </li>
-          <li>
-            <span class="flyer-facts-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 21s7-6.2 7-11.5a7 7 0 1 0-14 0C5 14.8 12 21 12 21z" />
-                <circle cx="12" cy="9.5" r="2.5" />
-              </svg>
-            </span>
-            <div class="flyer-facts-text">
-              <span class="flyer-facts-label">Ort</span>
-              <span class="flyer-facts-value">Horn, Niederösterreich</span>
-            </div>
-          </li>
-          <li>
-            <span class="flyer-facts-icon flyer-facts-icon--cost" aria-hidden="true">
-              €
-            </span>
-            <div class="flyer-facts-text">
-              <span class="flyer-facts-label">Kosten</span>
-              <span class="flyer-facts-value">Kostenlos · inkl. Unterkunft &amp; Verpflegung</span>
-            </div>
-          </li>
-          <li>
-            <span class="flyer-facts-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2.5 9.5 12 5l9.5 4.5L12 14 2.5 9.5z" />
-                <path d="M6.5 11.5v4.2c0 1.5 2.5 2.8 5.5 2.8s5.5-1.3 5.5-2.8v-4.2" />
-                <path d="M20.5 10v5" />
-              </svg>
-            </span>
-            <div class="flyer-facts-text">
-              <span class="flyer-facts-label">Für wen</span>
-              <span class="flyer-facts-value">Bachelor, Master &amp; PhD</span>
-            </div>
-          </li>
-        </ul>
-
-        <!-- PROGRAMME -->
-        <div class="flyer-section-heading">
-          <h2>Programm</h2>
-        </div>
-
-        <ol class="flyer-program">
-          <li>
-            <h3>Mock Interviews</h3>
-            <p>Echte Probeinterviews mit internationalen Admission Officers.</p>
-          </li>
-          <li>
-            <h3>Workshops &amp; Coaching</h3>
-            <p>Sessions mit Coaches und Studierenden von Top-Unis weltweit.</p>
-          </li>
-          <li>
-            <h3>Writing Classes</h3>
-            <p>Personal Statements und Essays Schritt für Schritt geschrieben.</p>
-          </li>
-          <li>
-            <h3>Seminare &amp; Speaker:innen</h3>
-            <p>Externe Speaker und Studierende teilen Erfahrungen und Insider-Wissen.</p>
-          </li>
-          <li>
-            <h3>Studienwahl &amp; Finanzierung</h3>
-            <p>Klar erklärt: passende Studiengänge, Stipendien und Förderungen.</p>
-          </li>
-          <li>
-            <h3>Community</h3>
-            <p>Lerne motivierte Talente aus ganz Österreich und Südtirol kennen.</p>
-          </li>
-        </ol>
-
-        <!-- spacer row provided by grid 1fr -->
-        <div aria-hidden="true"></div>
-
-        <!-- CTA + QR -->
-        <section class="flyer-cta" aria-label="Jetzt anmelden">
-          <div class="flyer-cta-copy">
-            <p class="flyer-cta-eyebrow">Jetzt bewerben</p>
-            <p class="flyer-cta-title">Sichere dir deinen Platz<br />beim Bootcamp.</p>
-            <p class="flyer-cta-url">projectaccess.at/bootcamp</p>
-            <p class="flyer-cta-note">QR scannen für Anmeldung, Ablauf, Zielgruppe und Auswahlkriterien.</p>
-          </div>
-          <div class="flyer-qr">
-            <img
-              src="assets/bootcamp-2026-qr.svg"
-              alt="QR-Code zur Bootcamp-Anmeldung auf projectaccess.at"
-            />
-            <span class="flyer-qr-label">Zur Anmeldung</span>
-          </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer class="flyer-footer">
-          <ul class="flyer-channels">
+          <ul class="flyer-facts">
             <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-                <path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.9.3 2.3.5.6.2 1 .5 1.5 1 .5.5.8.9 1 1.5.2.4.4 1.1.5 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 1.9-.5 2.3-.2.6-.5 1-1 1.5s-.9.8-1.5 1c-.4.2-1.1.4-2.3.5-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.9-.3-2.3-.5-.6-.2-1-.5-1.5-1s-.8-.9-1-1.5c-.2-.4-.4-1.1-.5-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.3-1.9.5-2.3.2-.6.5-1 1-1.5s.9-.8 1.5-1c.4-.2 1.1-.4 2.3-.5C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.4-.6.7-.8 1.2-.2.4-.3 1-.4 2.1C2.7 8.5 2.7 8.9 2.7 12s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.4.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2zm5.1-2.3a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3z"/>
-              </svg>
-              @projectaccess.at
+              <span class="flyer-facts-label">Wann</span>
+              <span class="flyer-facts-value">23.–26.&nbsp;Juli&nbsp;2026</span>
             </li>
             <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-                <path d="M3.5 5.5c0-1.1.9-2 2-2h13c1.1 0 2 .9 2 2v13c0 1.1-.9 2-2 2h-13c-1.1 0-2-.9-2-2v-13zm2 0v.4l6.5 4.6 6.5-4.6V5.5h-13zm13 2.4-6 4.2c-.3.2-.7.2-1 0L5.5 7.9V18.5h13V7.9z"/>
-              </svg>
-              austria@projectaccess.org
+              <span class="flyer-facts-label">Wo</span>
+              <span class="flyer-facts-value">Horn, Niederösterreich</span>
+            </li>
+            <li>
+              <span class="flyer-facts-label">Für wen</span>
+              <span class="flyer-facts-value">Schüler:innen &amp; Studierende</span>
+            </li>
+            <li>
+              <span class="flyer-facts-label">Beitrag</span>
+              <span class="flyer-facts-value">Kostenlos</span>
             </li>
           </ul>
-        </footer>
-        <p class="flyer-imprint">Impressum: Projekt Hochschulzugang, Eigenherstellung, Wien</p>
+
+          <section class="flyer-programme">
+            <h2>Was dich erwartet</h2>
+            <ol>
+              <li><strong>Mock&nbsp;Interviews</strong> mit&nbsp;Admissions&nbsp;Officers</li>
+              <li><strong>Personal&nbsp;Statement</strong> &amp;&nbsp;Essay-Coaching</li>
+              <li><strong>Studienwahl</strong> &amp;&nbsp;Finanzierung</li>
+              <li><strong>Community</strong> aus&nbsp;Österreich&nbsp;&amp;&nbsp;International</li>
+            </ol>
+          </section>
+
+          <div class="flyer-partners">
+            <div class="flyer-partners-copy">
+              <p class="flyer-partners-note">In&nbsp;Kooperation mit&nbsp;der <strong>University&nbsp;of&nbsp;Cambridge</strong> – Admissions&nbsp;Officers vor&nbsp;Ort in&nbsp;Horn.</p>
+            </div>
+            <ul class="flyer-partners-logos" aria-label="Vertretene Universitäten">
+              <li><img src="assets/logos/harvard.svg" alt="Harvard University" /></li>
+              <li><img src="assets/logos/oxford.svg" alt="University of Oxford" /></li>
+              <li><img src="assets/logos/cambridge.png" alt="University of Cambridge" /></li>
+              <li><img src="assets/logos/mit.svg" alt="Massachusetts Institute of Technology" /></li>
+            </ul>
+          </div>
+
+          <section class="flyer-cta" aria-label="Jetzt anmelden">
+            <div>
+              <p class="flyer-cta-eyebrow">
+                <span>Jetzt&nbsp;bewerben</span>
+                <span class="flyer-cta-deadline">Anmeldeschluss&nbsp;21.&nbsp;Juni&nbsp;2026</span>
+              </p>
+              <p class="flyer-cta-title">Sichere&nbsp;dir deinen&nbsp;Platz beim&nbsp;Bootcamp&nbsp;2026.</p>
+              <p class="flyer-cta-url">projectaccess.at</p>
+            </div>
+            <div class="flyer-qr">
+              <img src="assets/projectaccess-at-qr.svg" alt="QR-Code zu projectaccess.at" />
+              <span>Scan&nbsp;mich</span>
+            </div>
+          </section>
+
+          <footer class="flyer-footer">
+            <span class="flyer-footer-channels">
+              <span>@projectaccess.at</span>
+              <span>austria@projectaccess.org</span>
+            </span>
+            <span class="flyer-imprint">Projekt&nbsp;Hochschulzugang · Wien</span>
+          </footer>
+        </div>
       </article>
     </div>
   </body>
