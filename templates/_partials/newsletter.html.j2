@@ -1,0 +1,21 @@
+      <section class="newsletter section-shell" aria-label="{{ site.newsletter.aria[lang] }}">
+        <a class="newsletter-postcard" href="{{ site.newsletter.url }}" target="_blank" rel="noopener">
+          <div class="newsletter-copy">
+            <p class="eyebrow">{{ site.newsletter.eyebrow[lang] }}</p>
+            <h2>{{ site.newsletter.title[lang] }}</h2>
+            <p>{{ site.newsletter.body[lang] }}</p>
+            <span class="button newsletter-button">{{ site.newsletter.cta[lang] }}</span>
+          </div>
+          <div class="newsletter-postage" aria-hidden="true">
+            <span class="newsletter-postmark">
+              <span>{{ site.newsletter.postmark_top }}</span>
+              <span>{{ site.newsletter.postmark_bottom }}</span>
+            </span>
+            <span class="newsletter-stamp">
+              <span class="newsletter-stamp-inner">
+                <img src="{{ asset('assets/pa-logomark-white.webp') }}" alt="" loading="lazy" decoding="async" />
+              </span>
+            </span>
+          </div>
+        </a>
+      </section>

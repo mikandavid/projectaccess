@@ -223,10 +223,19 @@
       "en": "Where new dates appear first."
     },
     "body": {
-      "de": "Konkrete Termine für Webinare, Schulbesuche und Messen kündigen wir auf Instagram und per E-Mail an. Schulen können jederzeit eine eigene Session anfragen.",
-      "en": "Concrete dates for webinars, school visits and fairs are announced on Instagram and by email. Schools can request a dedicated session at any time."
+      "de": "Konkrete Termine für Webinare, Schulbesuche und Messen kündigen wir auf Instagram und in unserem Newsletter an. Schulen können jederzeit eine eigene Session anfragen.",
+      "en": "Concrete dates for webinars, school visits and fairs are announced on Instagram and in our newsletter. Schools can request a dedicated session at any time."
     },
     "channels": [
+      {
+        "label": "PA\u00a0Austria Newsletter",
+        "sublabel": {
+          "de": "Newsletter",
+          "en": "Newsletter"
+        },
+        "url": "https://airtable.com/appSrxV1MH9LEChsv/shriRjvsfQX4UZiSg",
+        "icon": "newsletter"
+      },
       {
         "label": "@projectaccess.at",
         "sublabel": {

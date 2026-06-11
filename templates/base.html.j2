@@ -68,6 +68,7 @@
     {% include "_partials/header.html.j2" %}
     <main{% if main_id %} id="{{ main_id }}"{% endif %}>
       {% block content %}{% endblock %}
+      {% include "_partials/newsletter.html.j2" %}
     </main>
     {% include "_partials/footer.html.j2" %}
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>

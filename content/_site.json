@@ -159,6 +159,31 @@
       "en": "Show English version"
     }
   },
+  "newsletter": {
+    "url": "https://airtable.com/appSrxV1MH9LEChsv/shriRjvsfQX4UZiSg",
+    "aria": {
+      "de": "Newsletter abonnieren",
+      "en": "Subscribe to the newsletter"
+    },
+    "eyebrow": {
+      "de": "Newsletter",
+      "en": "Newsletter"
+    },
+    "title": {
+      "de": "Behalte Project\u00a0Access im Blick",
+      "en": "Updates that take you places."
+    },
+    "body": {
+      "de": "Bewerbungsfristen, Webinare, Bootcamp-News und freie Mentoring-Plätze – ein paar Mal im Jahr direkt in dein Postfach. Kein Spam, versprochen.",
+      "en": "Application deadlines, webinars, bootcamp news and open mentoring spots – a few times a year, straight to your inbox. No spam, promise."
+    },
+    "cta": {
+      "de": "Newsletter abonnieren",
+      "en": "Subscribe to the newsletter"
+    },
+    "postmark_top": "PA·AT",
+    "postmark_bottom": "2026"
+  },
   "calendly_badge": {
     "url": "https://calendly.com/austria-projectaccess/dein-call-mit-project-access",
     "text": {
