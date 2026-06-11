@@ -159,8 +159,12 @@
     },
     "items": [
       {
-        "name": "Harvard University",
-        "logo": "assets/logos/harvard.svg"
+        "name": "University of California, Berkeley",
+        "logo": "assets/logos/berkeley.svg"
+      },
+      {
+        "name": "University College London",
+        "logo": "assets/logos/ucl.svg"
       },
       {
         "name": "University of Oxford",
@@ -168,7 +172,15 @@
       },
       {
         "name": "University of Cambridge",
-        "logo": "assets/logos/cambridge.svg"
+        "logo": "assets/logos/cambridge.webp"
+      },
+      {
+        "name": "Harvard University",
+        "logo": "assets/logos/harvard.svg"
+      },
+      {
+        "name": "Massachusetts Institute of Technology",
+        "logo": "assets/logos/mit.svg"
       },
       {
         "name": "London School of Economics and Political Science",
@@ -199,8 +211,8 @@
         "logo": "assets/logos/sciences-po.svg"
       },
       {
-        "name": "Bocconi University",
-        "logo": "assets/logos/bocconi.svg"
+        "name": "Dartmouth College",
+        "logo": "assets/logos/dartmouth.svg"
       }
     ]
   },
