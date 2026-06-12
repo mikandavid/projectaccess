@@ -42,6 +42,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: var(--yellow-soft);
+  color: var(--ink-deep);
+}
+
 html {
   scroll-behavior: smooth;
   /* Sticky header has variable height (logo + paddings ~= 4-5rem). When
@@ -289,6 +294,15 @@ h3 {
 
 .nav a:hover {
   color: #fff;
+}
+
+/* Current page indicator. */
+.nav a.is-active {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.45em;
 }
 
 /* BUTTONS */
@@ -689,13 +703,31 @@ h3 {
 }
 
 .eyebrow {
-  display: block;
-  margin-bottom: 0.55rem;
-  color: var(--ink);
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  margin-bottom: 0.45rem;
+  color: var(--eyebrow-color, rgba(38, 38, 43, 0.62));
   font-size: 0.68rem;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 0.13em;
   text-transform: uppercase;
+}
+
+/* Eyebrows are intentionally quiet labels. Dark or high-contrast cards retint
+   them locally so they stay readable without turning into heavy UI pills. */
+
+.cta-panel,
+.bento-tile.accent-yellow,
+.event-card {
+  --eyebrow-color: var(--ink-deep);
+}
+
+.bento-tile.accent-ink,
+.contact-card,
+.team-cta-card {
+  --eyebrow-color: var(--yellow-soft);
 }
 
 .lead {
@@ -1075,6 +1107,10 @@ h3 {
   color: rgba(255, 255, 255, 0.72);
 }
 
+.bento-tile.accent-ink .eyebrow {
+  color: var(--yellow-soft);
+}
+
 .bento-tile.accent-ink .tile-link:hover {
   color: var(--yellow-soft);
 }
@@ -1105,8 +1141,9 @@ h3 {
 }
 
 @media (min-width: 721px) {
+  /* A gentle stagger keeps the grid playful without reading as misalignment. */
   .bento-tile:nth-child(even) {
-    --tile-offset: 0.8rem;
+    --tile-offset: 0.45rem;
     transform: translateY(var(--tile-offset));
   }
 }
@@ -1233,20 +1270,6 @@ h3 {
   gap: 0.7rem;
 }
 
-/* On the team page the full roster is shown as one continuous list. We use
-   flexbox so the cards reflow cleanly across widths without leaving awkward
-   gaps when the last row has fewer members. */
-.team-section .full-team-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.7rem;
-}
-
-.team-section .full-team-grid > .team-card {
-  flex: 1 1 10rem;
-  max-width: 17rem;
-}
 
 .team-card {
   overflow: hidden;
@@ -1372,18 +1395,14 @@ h3 {
   font-size: 0.86rem;
 }
 
-.team-cta-card::after {
-  content: "→";
-  position: absolute;
-  right: 0.9rem;
-  bottom: 0.7rem;
-  color: var(--yellow-soft);
-  font-size: 1.25rem;
-  font-weight: 900;
+/* The link label already carries its own arrow; nudge it on hover instead of
+   stacking a second decorative arrow in the corner. */
+.team-cta-card strong {
+  display: inline-block;
   transition: transform 160ms ease;
 }
 
-.team-cta-card:hover::after {
+.team-cta-card:hover strong {
   transform: translateX(3px);
 }
 
@@ -1404,9 +1423,11 @@ h3 {
   max-width: 44rem;
 }
 
+/* Full roster: auto-fill keeps every card the same width, so a short last
+   row never stretches its cards wider than the rest of the grid. */
 .full-team-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
   gap: 0.7rem;
 }
 
@@ -1505,13 +1526,24 @@ h3 {
 }
 
 .feature-list li {
-  padding: 0.8rem 0.9rem;
+  position: relative;
+  padding: 0.8rem 0.9rem 0.8rem 2.35rem;
   color: var(--ink);
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   font-weight: 600;
   font-size: 0.9rem;
+}
+
+/* Checkmark for plain feature lists; the numbered bootcamp variant
+   overrides this with its own counter. */
+.feature-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0.95rem;
+  color: var(--yellow);
+  font-weight: 900;
 }
 
 .topics-section {
@@ -2041,6 +2073,10 @@ h3 {
 }
 
 .cta-panel {
+  /* Boxed panels carry their section padding inside the colored box, so give
+     them outer breathing room — otherwise they sit glued to neighbouring
+     cards (schools chapter, newsletter postcard). */
+  margin-block: clamp(1.2rem, 2.6vw, 2rem);
   padding: clamp(1.3rem, 3vw, 2rem);
   background: var(--yellow);
   border-radius: var(--radius-lg);
@@ -2179,9 +2215,12 @@ h3 {
   color: #fff;
 }
 
-.contact-card .eyebrow,
 .contact-card p {
   color: rgba(255, 255, 255, 0.72);
+}
+
+.contact-card .eyebrow {
+  color: var(--yellow-soft);
 }
 
 .contact-card a {
@@ -2645,6 +2684,13 @@ h3 {
     left: 0;
     right: 0;
     z-index: 30;
+    /* Reset the desktop grid placement: an absolutely positioned grid item
+       with an explicit grid-column resolves left/right against that narrow
+       grid area, which pinned the open menu under the middle column instead
+       of spanning the header. Auto placement makes the header's padding box
+       the containing block, so the panel runs edge to edge. */
+    grid-area: auto;
+    justify-self: auto;
     display: none;
     flex-direction: column;
     gap: 0.85rem;
@@ -2777,11 +2823,12 @@ h3 {
     padding-top: clamp(1.4rem, 5vw, 2.2rem);
   }
 
-  /* Center the save-the-date ticket once the hero column stacks. */
+  /* Keep the date ticket first on mobile so the event timing stays visible
+     right away when the hero stacks. */
   .hero-copy > .save-the-date {
     display: grid;
-    margin-inline: auto;
-    transform-origin: top center;
+    margin: 0 0 1rem;
+    transform-origin: top left;
   }
 
   /* Constrain stacked hero/page-hero images so they don't dominate the fold. */

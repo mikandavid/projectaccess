@@ -31,7 +31,7 @@
       <div class="nav-shell-panel">
         <nav class="nav" aria-label="{{ site.nav_aria[lang] }}">
           {%- for item in site.nav %}
-          <a href="{{ page_href(item.page, anchor_key=item.get('anchor_key')) }}">{{ item.label[lang] }}</a>
+          <a href="{{ page_href(item.page, anchor_key=item.get('anchor_key')) }}"{% if item.page == page_key and not item.get('anchor_key') %} class="is-active" aria-current="page"{% endif %}>{{ item.label[lang] }}</a>
           {%- endfor %}
         </nav>
         <a class="mobile-lang-link" href="{{ alt_lang_href }}">{{ site.language_switch.mobile_label[lang] }}</a>

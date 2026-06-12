@@ -112,7 +112,7 @@
         }
       },
       {
-        "value": "76.9\u00a0%",
+        "value": "77\u00a0%",
         "label": {
           "de": "durchschnittliche Erfolgsquote unserer Bewerber:innen",
           "en": "average success rate for our applicants"
@@ -388,6 +388,10 @@
           "de": "Bootcamp, Schulbesuche und Outreach mitgestalten.",
           "en": "Help run the bootcamp, school visits and outreach."
         },
+        "body": {
+          "de": "Organisation, Kommunikation, Events und Tech – ehrenamtlich, remote und vor Ort.",
+          "en": "Organisation, communications, events and tech – volunteer-run, remote and on site."
+        },
         "link": {
           "page": "team",
           "label": {
@@ -405,6 +409,10 @@
         "title": {
           "de": "Schulpartnerschaften.",
           "en": "School partnerships."
+        },
+        "body": {
+          "de": "Wir kommen für kurze, kostenlose Info-Besuche an Schulen in ganz Österreich.",
+          "en": "We visit schools across Austria for short, free info sessions."
         },
         "link": {
           "page": "partners",

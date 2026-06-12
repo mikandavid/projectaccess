@@ -49,7 +49,6 @@
               <span>{{ page.hero.banner.status[lang] }}</span>
             </span>
           </a>
-          <p class="eyebrow">{{ page.hero.eyebrow[lang] }}</p>
           <h1>{{ page.hero.title[lang] | mark }}</h1>
           <p class="lead">{{ page.hero.lead[lang] }}</p>
           <div class="hero-actions">
@@ -115,7 +114,6 @@
           <img class="image-small" src="{{ asset(page.bootcamp.image_small.src) }}" alt="{{ page.bootcamp.image_small.alt[lang] }}" loading="lazy" decoding="async" />
         </div>
         <div class="bootcamp-copy">
-          <p class="eyebrow">{{ page.bootcamp.eyebrow[lang] }}</p>
           <h2>{{ page.bootcamp.title[lang] | mark }}</h2>
           <p>{{ page.bootcamp.body[lang] }}</p>
           <dl class="details">
@@ -134,14 +132,13 @@
 
       <section class="section-shell" id="{{ anchor('engagement') }}">
         <div class="section-heading">
-          <p class="eyebrow">{{ page.engagement.eyebrow[lang] }}</p>
           <h2>{{ page.engagement.title[lang] | mark }}</h2>
         </div>
         <div class="bento">
           {%- for tile in page.engagement.tiles %}
           <article class="bento-tile {{ tile.classes }}">
             <div>
-              <p class="eyebrow"{% if tile.get('eyebrow_inverted') %} style="color: rgba(255, 255, 255, 0.72);"{% endif %}>{{ tile.eyebrow[lang] }}</p>
+              <p class="eyebrow">{{ tile.eyebrow[lang] }}</p>
               <h3>{{ tile.title[lang] }}</h3>
               {%- if tile.get('body') %}
               <p>{{ tile.body[lang] }}</p>
@@ -170,7 +167,6 @@
 
       <section class="team-section section-shell" id="{{ anchor('team') }}">
         <div class="section-heading">
-          <p class="eyebrow">{{ page.team_preview.eyebrow[lang] }}</p>
           <h2>{{ page.team_preview.title[lang] }}</h2>
         </div>
         <div class="team-grid">
@@ -233,7 +229,6 @@
           <a class="inline-link" href="{{ page_href(page.news_contact.news.cta.page) }}">{{ page.news_contact.news.cta.label[lang] }}</a>
         </div>
         <div class="contact-card">
-          <p class="eyebrow">{{ page.news_contact.contact.eyebrow[lang] }}</p>
           <h2>{{ page.news_contact.contact.title[lang] }}</h2>
           <a href="mailto:{{ site.footer.email }}">
             <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
