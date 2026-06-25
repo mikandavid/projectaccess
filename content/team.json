@@ -14,10 +14,13 @@
     }
   },
   "header_cta": {
-    "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+    "url": "https://airtable.com/appSrxV1MH9LEChsv/shriRjvsfQX4UZiSg",
     "label": {
-      "de": "Zum Bootcamp anmelden",
-      "en": "Apply to the bootcamp"
+      "de": "Newsletter abonnieren",
+      "en": "Subscribe to the newsletter"
+    },
+    "short_label": {
+      "de": "Newsletter"
     }
   },
   "hero": {
@@ -81,8 +84,8 @@
       "image": "assets/Katrin_Outreach.webp",
       "name": "Katrin",
       "role": {
-        "de": "Country Director · Oxford / Warwick",
-        "en": "Country Director · Oxford / Warwick"
+        "de": "Country Director & Head of Outreach · Oxford / Warwick",
+        "en": "Country Director & Head of Outreach · Oxford / Warwick"
       },
       "linkedin": "https://www.linkedin.com/in/katrin-hirtenlehner/"
     },

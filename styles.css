@@ -611,6 +611,19 @@ h3 {
   }
 }
 
+/* Closed-application state: swap the live yellow sticker for a muted, static one. */
+.save-the-date-status.is-closed {
+  background: var(--ink-deep);
+  color: var(--paper);
+  box-shadow: 0 6px 14px rgba(38, 38, 43, 0.18);
+}
+
+.save-the-date-status.is-closed .save-the-date-pulse {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: none;
+  animation: none;
+}
+
 @media (max-width: 480px) {
   .save-the-date {
     grid-template-columns: 1fr;
@@ -1878,6 +1891,27 @@ h3 {
 
 @media (prefers-reduced-motion: reduce) {
   .next-event-pulse { animation: none; }
+}
+
+/* Closed-application state for the next-event card status chip. */
+.next-event-status.is-closed .next-event-pulse {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: none;
+  animation: none;
+}
+
+/* Inline notice used to flag a closed application round in a page hero. */
+.hero-notice {
+  margin: 0 0 1.6rem;
+  padding: 0.85rem 1.1rem;
+  background: var(--green-soft);
+  border-left: 4px solid var(--yellow);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 46ch;
 }
 
 /* STAY UPDATED — compact section pairing copy with a short list of contact

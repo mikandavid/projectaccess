@@ -9,12 +9,11 @@
           <span class="lang-switch-link{% if lang == 'en' %} is-active{% endif %}" {% if lang == 'en' %}aria-current="true"{% endif %}>{{ site.language_switch.en_label }}</span>
         </a>
         {% if page.header_cta %}
-        <a class="button button-small header-cta{% if lang == 'de' %} header-cta-shortenable{% endif %}" href="{{ t(page.header_cta.url) }}">
-          {% if lang == 'de' %}
+        {% set cta_short = page.header_cta.short_label[lang] if page.header_cta.get('short_label') and page.header_cta.short_label.get(lang) else none %}
+        <a class="button button-small header-cta{% if cta_short %} header-cta-shortenable{% endif %}" href="{{ t(page.header_cta.url) }}">
           <span class="header-cta-label header-cta-label-full">{{ page.header_cta.label[lang] }}</span>
-          <span class="header-cta-label header-cta-label-short">Anmelden</span>
-          {% else %}
-          <span class="header-cta-label header-cta-label-full">{{ page.header_cta.label[lang] }}</span>
+          {% if cta_short %}
+          <span class="header-cta-label header-cta-label-short">{{ cta_short }}</span>
           {% endif %}
         </a>
         {% endif %}

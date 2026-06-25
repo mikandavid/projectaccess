@@ -14,18 +14,22 @@
     }
   },
   "header_cta": {
-    "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+    "url": "https://airtable.com/appSrxV1MH9LEChsv/shriRjvsfQX4UZiSg",
     "label": {
-      "de": "Zum Bootcamp anmelden",
-      "en": "Apply to the bootcamp"
+      "de": "Newsletter abonnieren",
+      "en": "Subscribe to the newsletter"
+    },
+    "short_label": {
+      "de": "Newsletter"
     }
   },
   "hero": {
     "banner": {
       "status": {
-        "de": "Anmeldung offen",
-        "en": "Applications open"
+        "de": "Anmeldung geschlossen",
+        "en": "Applications closed"
       },
+      "status_closed": true,
       "kicker": {
         "de": "Save the Date",
         "en": "Save the date"
@@ -66,10 +70,10 @@
       "en": "We help students in Austria apply to international universities, for free: through one-to-one mentoring, the bootcamp and honest feedback from people who have been through it."
     },
     "primary_cta": {
-      "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+      "url": "https://airtable.com/appSrxV1MH9LEChsv/shriRjvsfQX4UZiSg",
       "label": {
-        "de": "Zum Bootcamp anmelden",
-        "en": "Apply to the bootcamp"
+        "de": "Newsletter abonnieren",
+        "en": "Subscribe to the newsletter"
       }
     },
     "secondary_cta": {
@@ -270,16 +274,16 @@
   },
   "bootcamp": {
     "eyebrow": {
-      "de": "Bootcamp 2026 · Anmeldung offen",
-      "en": "Bootcamp 2026 · applications open"
+      "de": "Bootcamp 2026 · Anmeldung geschlossen",
+      "en": "Bootcamp 2026 · applications closed"
     },
     "title": {
       "de": "Bootcamp 2026 in Horn.",
       "en": "Bootcamp 2026 in Horn."
     },
     "body": {
-      "de": "Beim Bootcamp arbeiten Schüler:innen und Studierende in kleinen Gruppen an ihren Bewerbungen. Dabei geht es um Studienwahl, Essays, Interviews und Finanzierung. Bewerbungen für Bachelor, Master und PhD sind willkommen.",
-      "en": "At the bootcamp, students work on their applications in small groups. We cover course choice, essays, interviews and funding. Bachelor, master and PhD applicants are welcome."
+      "de": "Beim Bootcamp arbeiten Schüler:innen und Studierende in kleinen Gruppen an ihren Bewerbungen. Dabei geht es um Studienwahl, Essays, Interviews und Finanzierung. Die Anmeldung für 2026 ist geschlossen – abonniere unseren Newsletter, um die nächste Runde nicht zu verpassen.",
+      "en": "At the bootcamp, students work on their applications in small groups. We cover course choice, essays, interviews and funding. Applications for 2026 are closed – subscribe to our newsletter so you don't miss the next round."
     },
     "details": [
       {

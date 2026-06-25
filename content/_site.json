@@ -184,16 +184,6 @@
     "postmark_top": "PA·AT",
     "postmark_bottom": "2026"
   },
-  "calendly_badge": {
-    "url": "https://calendly.com/austria-projectaccess/dein-call-mit-project-access",
-    "text": {
-      "de": "Buche hier deinen Call mit uns!",
-      "en": "Book a call with us!"
-    },
-    "color": "#26262b",
-    "text_color": "#fffdf7",
-    "branding": true
-  },
   "footer": {
     "name": "Project\u00a0Access\u00a0Austria",
     "subtitle": {

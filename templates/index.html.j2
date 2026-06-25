@@ -44,7 +44,7 @@
               <p class="save-the-date-location">{{ page.hero.banner.location[lang] }}</p>
               <span class="save-the-date-link">{{ page.hero.banner.link_text[lang] }}</span>
             </div>
-            <span class="save-the-date-status">
+            <span class="save-the-date-status{% if page.hero.banner.get('status_closed') %} is-closed{% endif %}">
               <span class="save-the-date-pulse" aria-hidden="true"></span>
               <span>{{ page.hero.banner.status[lang] }}</span>
             </span>

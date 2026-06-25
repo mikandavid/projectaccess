@@ -21,10 +21,13 @@
     }
   },
   "header_cta": {
-    "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+    "url": "https://airtable.com/appSrxV1MH9LEChsv/shriRjvsfQX4UZiSg",
     "label": {
-      "de": "Zum Bootcamp anmelden",
-      "en": "Apply to the bootcamp"
+      "de": "Newsletter abonnieren",
+      "en": "Subscribe to the newsletter"
+    },
+    "short_label": {
+      "de": "Newsletter"
     }
   },
   "hero": {
@@ -40,11 +43,15 @@
       "de": "Schüler:innen und Studierende aus Österreich und Südtirol arbeiten an ihren Bewerbungen, gemeinsam mit Admissions Officers, Studierenden und Alumni internationaler Universitäten. Die Teilnahme ist kostenlos.",
       "en": "Students from Austria and South Tyrol work on their applications with admissions officers, students and alumni of international universities. Participation is free."
     },
+    "notice": {
+      "de": "Die Anmeldung für das Bootcamp 2026 ist geschlossen. Abonniere unseren Newsletter und bleib zu kommenden Bootcamps, Webinaren und Events auf dem Laufenden.",
+      "en": "Applications for Bootcamp 2026 are closed. Subscribe to our newsletter to stay in the loop about future bootcamps, webinars and events."
+    },
     "primary_cta": {
-      "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+      "url": "https://airtable.com/appSrxV1MH9LEChsv/shriRjvsfQX4UZiSg",
       "label": {
-        "de": "Zur Anmeldung",
-        "en": "Apply"
+        "de": "Newsletter abonnieren",
+        "en": "Subscribe to the newsletter"
       }
     },
     "secondary_cta": {

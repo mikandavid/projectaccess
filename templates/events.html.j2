@@ -28,8 +28,8 @@
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "EUR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE"
+    "availability": "https://schema.org/SoldOut",
+    "url": "{{ site.site_url }}/{{ 'en/' if lang == 'en' else '' }}bootcamp.html"
   }
 }
 </script>
@@ -53,7 +53,7 @@
         <div class="next-event-copy">
           <p class="eyebrow next-event-eyebrow">
             <span>{{ page.next_event.eyebrow[lang] }}</span>
-            <span class="next-event-status">
+            <span class="next-event-status{% if page.next_event.get('status_closed') %} is-closed{% endif %}">
               <span class="next-event-pulse" aria-hidden="true"></span>
               {{ page.next_event.status_label[lang] }}
             </span>

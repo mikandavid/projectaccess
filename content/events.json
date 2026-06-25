@@ -14,10 +14,13 @@
     }
   },
   "header_cta": {
-    "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+    "url": "https://airtable.com/appSrxV1MH9LEChsv/shriRjvsfQX4UZiSg",
     "label": {
-      "de": "Zum Bootcamp anmelden",
-      "en": "Apply to the bootcamp"
+      "de": "Newsletter abonnieren",
+      "en": "Subscribe to the newsletter"
+    },
+    "short_label": {
+      "de": "Newsletter"
     }
   },
   "hero": {
@@ -72,8 +75,8 @@
     },
     "title": "PA\u00a0Austria Bootcamp 2026",
     "summary": {
-      "de": "Vier Tage kostenloses Bewerbungstraining mit Studierenden, Alumni und Admissions Officers internationaler Universitäten. Bewerbungen sind offen, Plätze sind begrenzt und werden laufend ausgewählt.",
-      "en": "Four days of free application training with students, alumni and admissions officers of international universities. Applications are open and places are selected on a rolling basis."
+      "de": "Vier Tage kostenloses Bewerbungstraining mit Studierenden, Alumni und Admissions Officers internationaler Universitäten. Die Anmeldung für 2026 ist geschlossen – über unseren Newsletter erfährst du, wann die nächste Runde startet.",
+      "en": "Four days of free application training with students, alumni and admissions officers of international universities. Applications for 2026 are closed – our newsletter is where we announce when the next round opens."
     },
     "details": [
       {
@@ -118,10 +121,10 @@
       }
     ],
     "primary_cta": {
-      "url": "https://airtable.com/appSrxV1MH9LEChsv/shrIVlh0hcQlHqStE",
+      "url": "https://airtable.com/appSrxV1MH9LEChsv/shriRjvsfQX4UZiSg",
       "label": {
-        "de": "Zur Anmeldung",
-        "en": "Apply"
+        "de": "Newsletter abonnieren",
+        "en": "Subscribe to the newsletter"
       }
     },
     "secondary_cta": {
@@ -132,9 +135,10 @@
       }
     },
     "status_label": {
-      "de": "Anmeldung offen",
-      "en": "Applications open"
-    }
+      "de": "Anmeldung geschlossen",
+      "en": "Applications closed"
+    },
+    "status_closed": true
   },
   "programmes": {
     "eyebrow": {

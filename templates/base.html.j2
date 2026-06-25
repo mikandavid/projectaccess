@@ -53,13 +53,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://assets.calendly.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="{{ asset('styles.css') }}" />
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 
     {% include "_partials/structured_data.html.j2" %}
     {% block structured_data %}{% endblock %}
@@ -71,21 +69,5 @@
       {% include "_partials/newsletter.html.j2" %}
     </main>
     {% include "_partials/footer.html.j2" %}
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script type="text/javascript">
-      window.addEventListener("load", function () {
-        if (!window.Calendly) {
-          return;
-        }
-
-        window.Calendly.initBadgeWidget({
-          url: {{ site.calendly_badge.url|tojson }},
-          text: {{ site.calendly_badge.text[lang]|tojson }},
-          color: {{ site.calendly_badge.color|tojson }},
-          textColor: {{ site.calendly_badge.text_color|tojson }},
-          branding: {{ site.calendly_badge.branding|tojson }}
-        });
-      });
-    </script>
   </body>
 </html>
